@@ -1,0 +1,57 @@
+{
+  "function": {
+    "name": "getValueFromSymbolExpression",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "getValueFromSymbolExpression",
+    "description": "Reads the %pp% expression embedded in a symbol object and returns its current value via ctx.success.",
+    "waitMode": "Asynchronous",
+    "category": "Other",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/Any"
+    },
+    "visible": true,
+    "injectContextObject": true,
+    "arguments": [
+      {
+        "name": "ctx",
+        "displayName": "ctx",
+        "type": "tchmi:framework#/definitions/ContextReference",
+        "description": "Context Reference",
+        "defaultValue": null,
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbolObj",
+        "displayName": "Symbol Object",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Object passed with 'Yes, pass symbol reference' containing __symbol.__expression.__expression.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "0.0.0.0",
+    "major": 0,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "getValueFromSymbolExpression.js",
+      "type": "JavaScript",
+      "description": ""
+    }
+  ]
+}

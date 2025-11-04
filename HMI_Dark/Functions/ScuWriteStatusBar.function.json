@@ -1,0 +1,70 @@
+{
+    
+        "function": {
+            "name": "ScuWriteStatusBar",
+            "namespace": "TcHmi.Functions.HMI_Dark",
+            "displayName": "ScuWriteStatusBar",
+            "description": "Compõe texto de status bar baseado no estado da máquina (enum 0-5) e strings de estado/modo",
+            "waitMode": "Synchronous",
+            "category": "HMI_Dark",
+            "returnValue": {
+                "type": "tchmi:general#/definitions/String"
+            },
+            "visible": true,
+            "injectContextObject": false,
+            "arguments": [
+                {
+                    "name": "eEstateMachine",
+                    "displayName": "Estado da Máquina",
+                    "type": "tchmi:general#/definitions/Integer",
+                    "description": "Enum do estado: 0=EMERGENCY_ALERT, 1=MANIFOLD_OFF, 2=STOPPED, 3=STATIC_MODE, 4=DYNAMIC_MODE, 5=TRANSITION_CHANGE",
+                    "defaultValue": null,
+                    "required": true,
+                    "bindable": true,
+                    "restParameter": false,
+                    "asReference": false,
+                    "allowControlAttributeBindingOptions": false
+                },
+                {
+                    "name": "sEstado",
+                    "displayName": "Texto do Estado",
+                    "type": "tchmi:general#/definitions/String",
+                    "description": "String contendo o texto descritivo do estado atual",
+                    "defaultValue": null,
+                    "required": true,
+                    "bindable": true,
+                    "restParameter": false,
+                    "asReference": false,
+                    "allowControlAttributeBindingOptions": false
+                },
+                {
+                    "name": "sModo",
+                    "displayName": "Texto do Modo",
+                    "type": "tchmi:general#/definitions/String",
+                    "description": "String contendo o texto descritivo do modo (obrigatório para estados 2-5)",
+                    "defaultValue": null,
+                    "required": true,
+                    "bindable": true,
+                    "restParameter": false,
+                    "asReference": false,
+                    "allowControlAttributeBindingOptions": false
+                }
+            ]
+    },
+    "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+    "apiVersion": 1,
+    "version": {
+        "full": "0.0.0.0",
+        "major": 0,
+        "minor": 0,
+        "revision": 0,
+        "build": 0
+    },
+    "dependencyFiles": [
+        {
+            "name": "ScuWriteStatusBar.js",
+            "type": "JavaScript",
+            "description": ""
+        }
+    ]
+}

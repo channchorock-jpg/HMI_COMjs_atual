@@ -1,0 +1,93 @@
+{
+  "function": {
+    "name": "BindSensorToNumericInput",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "BindSensorToNumericInput",
+    "description": "Cria bind de %pp%stSensors[idx]::stRampInput::fTargetValue%/pp% (idx=0 ou 1 conforme iSensorBind) para a propriedade Value do NumericInput passado como controle.",
+    "waitMode": "Synchronous",
+    "category": "Other",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/Boolean"
+    },
+    "visible": true,
+    "injectContextObject": false,
+    "arguments": [
+      {
+        "name": "iSensorBind",
+        "displayName": "iSensorBind",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "0 → bind stSensors[0]; 1 → bind stSensors[1].",
+        "defaultValue": "0",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "stSensors",
+        "displayName": "stSensors",
+        "type": "tchmi:general#/definitions/Object",
+        "description": "%pp%stSensors%/pp% (mantido p/ compatibilidade).",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "stFeedback",
+        "displayName": "stFeedback",
+        "type": "tchmi:general#/definitions/Object",
+        "description": "%pp%stFeedback%/pp% (não utilizado).",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "numericInputCtrl",
+        "displayName": "NumericInput (Control)",
+        "type": "tchmi:framework#/definitions/Control",
+        "description": "Selecione o controle NumericInput (objeto controle, não string).",
+        "defaultValue": "%ctrl%InputBox_SetPoint%/ctrl%",
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "dfff",
+        "displayName": "dffdf",
+        "type": "tchmi:server#/definitions/PLC1.ST_SENSOR",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "0.0.0.0",
+    "major": 0,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "BindSensorToNumericInput.js",
+      "type": "JavaScript",
+      "description": ""
+    }
+  ]
+}

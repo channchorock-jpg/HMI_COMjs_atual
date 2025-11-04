@@ -1,0 +1,45 @@
+{
+  "function": {
+    "name": "__resolveControl",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "Util - Resolve Control (IDs)",
+    "description": "Resolve uma referência de controle e retorna apenas um resumo serializável: controlId, userControlId (prefixo do UC) e hasControl.",
+    "waitMode": "Synchronous",
+    "category": "HMI_Dark / Utils",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/Any"
+    },
+    "visible": true,
+    "injectContextObject": false,
+    "arguments": [
+      {
+        "name": "controlOrId",
+        "displayName": "Control or Id",
+        "type": "tchmi:framework#/definitions/Control",
+        "description": "This is an important Parameter which does... This text is used in a tooltip.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "0.0.0.0",
+    "major": 0,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "__resolveControl.js",
+      "type": "JavaScript",
+      "description": ""
+    }
+  ]
+}

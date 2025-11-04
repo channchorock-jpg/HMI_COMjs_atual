@@ -1,0 +1,64 @@
+{
+    "function": {
+        "name": "SetControlColor",
+        "namespace": "TcHmi.Functions.HMI_Dark",
+        "displayName": "SetControlColor",
+        "description": "Aplica cor de FUNDO (Color do framework; sólido/gradiente) e, opcionalmente, cor da FONTE (Color do framework; se gradiente, usa a primeira cor).",
+        "waitMode": "Synchronous",
+        "category": "Other",
+        "returnValue": { "type": "tchmi:general#/definitions/Boolean" },
+        "visible": true,
+        "injectContextObject": false,
+        "arguments": [
+            {
+                "name": "control",
+                "displayName": "Control",
+                "type": "tchmi:framework#/definitions/Control",
+                "description": "Selecione o controle alvo (Button/ToggleButton/etc.).",
+                "defaultValue": null,
+                "required": true,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false
+            },
+            {
+                "name": "color",
+                "displayName": "Background Color",
+                "type": "tchmi:framework#/definitions/Color",
+                "description": "Color do framework para o FUNDO. Se gradiente, será convertido para linear-gradient(...).",
+                "defaultValue": { "color": "rgba(30,144,255,1)" },
+                "required": true,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false
+            },
+            {
+                "name": "fontColor",
+                "displayName": "Font Color (optional)",
+                "type": "tchmi:framework#/definitions/Color",
+                "description": "Color do framework para a FONTE. Se gradiente, usa a primeira cor dos stopPoints.",
+                "defaultValue": null,
+                "required": false,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false
+            }
+        ]
+    },
+    "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.46/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+    "apiVersion": 1,
+    "version": {
+        "full": "0.0.0.0",
+        "major": 0,
+        "minor": 0,
+        "revision": 0,
+        "build": 0
+    },
+    "dependencyFiles": [
+        {
+            "name": "SetControlColor.js",
+            "type": "JavaScript",
+            "description": ""
+        }
+    ]
+}

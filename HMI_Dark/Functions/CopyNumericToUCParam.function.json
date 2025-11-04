@@ -1,0 +1,57 @@
+{
+  "function": {
+    "name": "CopyNumericToUCParam",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "CopyNumericToUCParamSunc",
+    "description": "Lê o valor de um TcHmiNumericInput (por ID) e escreve no parâmetro interno do UserControl chamando o setter informado.",
+    "waitMode": "Synchronous",
+    "category": "Other",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/Boolean",
+      "description": "true se conseguiu escrever; false caso contrário"
+    },
+    "visible": true,
+    "injectContextObject": false,
+    "arguments": [
+      {
+        "name": "numericInputId",
+        "displayName": "ID do TcHmiNumericInput",
+        "type": "tchmi:general#/definitions/String",
+        "description": "ID do NumericInput dentro do UserControl (ex.: \"SCU_Feed_Setpoint_UC.InputBox_SetPoint\")",
+        "defaultValue": "",
+        "required": false,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "userControlId",
+        "displayName": "ID do UserControl",
+        "type": "tchmi:general#/definitions/String",
+        "description": "ID do UserControl raiz (ex.: \"SCU_Feed_Setpoint_UC\")",
+        "defaultValue": "",
+        "required": false,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "setterName",
+        "displayName": "Nome do setter do parâmetro",
+        "type": "tchmi:general#/definitions/String",
+        "description": "Nome do método setter do parâmetro interno do UserControl (ex.: \"setTargetValue\")",
+        "defaultValue": "",
+        "required": false,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "../.hmiframework/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "dependencyFiles": []
+}

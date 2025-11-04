@@ -1,0 +1,865 @@
+<div id="SCU_select" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-unit="%" data-tchmi-height-unit="px" data-tchmi-bottom="0" data-tchmi-width-mode="Value" data-tchmi-height-mode="Parent" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="%" data-tchmi-width="100" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="100" data-tchmi-zindex="-1">
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+    {
+    "color": "rgba(84, 82, 82, 1)"
+    }
+</script>
+<div id="Button_SCU_1_SELECT" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="SCU 1" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="40" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="11" data-tchmi-bottom-unit="%" data-tchmi-bottom="5" data-tchmi-right-unit="%" data-tchmi-right="70" data-tchmi-text-font-size-unit="px" data-tchmi-toggle-group="%i%iScuSelct%/i%" data-tchmi-toggle-state="Normal" data-tchmi-state-symbol="%i%ScuActualView::Group1%/i%">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "angle": 0.0,
+  "stopPoints": [
+    {
+      "color": "rgba(136, 134, 134, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(211, 206, 206, 1)",
+      "stop": "56.18%"
+    },
+    {
+      "color": "rgba(191, 189, 189, 1)",
+      "stop": "98.53%"
+    }
+  ]
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+    [
+    {
+    "blur": 2.0,
+    "blurUnit": "px",
+    "color": {
+    "color": "rgba(176, 171, 171, 1)"
+    },
+    "inset": false,
+    "offsetX": 0,
+    "offsetXUnit": "px",
+    "offsetY": 0,
+    "offsetYUnit": "px",
+    "spread": 0.5,
+    "spreadUnit": "px"
+    }
+    ]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Button_SCU_1_SELECT.onStatePressed",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": false,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:framework#/definitions/ToggleState",
+                  "symbolExpression": "%ctrl%Button_SCU_1_SELECT::ToggleState%/ctrl%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ToggleState",
+                  "value": "Active"
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%SCU_Painel_Manifold_Completo_1%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                    "value": "stAxisCommandInput"
+                  },
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%s%PLC1.SCU1.AxisCommandInput%/s%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%SCU_Painel_Manifold_Completo_1%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                    "value": "stAxisOutput"
+                  },
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%s%PLC1.SCU1.AxisOutput%/s%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%SCU_Painel_Manifold_Completo_1%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                    "value": "stFeedback"
+                  },
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%s%PLC1.HMI_SCU1.stFeedback%/s%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%SCU_Feed_Setpoint_5%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                    "value": "Scu_Ramp_fTarget"
+                  },
+                  {
+                    "objectType": "Symbol",
+                    "symbolExpression": "%s%PLC1.SCU1.Sensors.0.stRampInput.fTargetValue%/s%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%SCU_Feed_Setpoint_5%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                    "value": "stControle"
+                  },
+                  {
+                    "objectType": "Symbol",
+                    "symbolExpression": "%s%PLC1.HMI_SCU1.stControle[0]%/s%"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": []
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "ActionTemplate",
+        "active": true,
+        "templateName": "ButtonPressureSelectColor",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_SCU_1_SELECT%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/Color",
+            "value": {
+              "angle": 0.0,
+              "stopPoints": [
+                {
+                  "color": "rgba(218, 218, 218, 1)",
+                  "stop": "0%"
+                },
+                {
+                  "color": "rgba(218, 218, 218, 1)",
+                  "stop": "22.62%"
+                },
+                {
+                  "color": "rgba(191, 189, 189, 1)",
+                  "stop": "50.89%"
+                },
+                {
+                  "color": "rgba(200, 200, 200, 1)",
+                  "stop": "72.02%"
+                },
+                {
+                  "color": "rgba(200, 200, 200, 1)",
+                  "stop": "100%"
+                }
+              ]
+            }
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/Color",
+            "value": {
+              "color": "rgba(4, 150, 193, 1)"
+            }
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Button_SCU_1_SELECT.onStateReleased",
+    "actions": [
+      {
+        "objectType": "ActionTemplate",
+        "active": true,
+        "templateName": "ButtonReleasedGray",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_SCU_1_SELECT%/ctrl%"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Button_SCU_1_SELECT.onPressed",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": false,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%SCU_Painel_Manifold_Completo_1%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "stAxisCommandInput"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%s%PLC1.SCU1.AxisCommandInput%/s%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": false,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%SCU_Painel_Manifold_Completo_1%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "stAxisOutput"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%s%PLC1.SCU1.AxisOutput%/s%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": false,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%SCU_Painel_Manifold_Completo_1%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "stFeedback"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%s%PLC1.HMI_SCU1.stFeedback%/s%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": false,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%SCU_Painel_Manifold_Completo_1%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "eCurrentState"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%s%PLC1.SCU1.eCurrentState%/s%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": false,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%SCU_Feed_Setpoint_5%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Scu_Ramp_fTarget"
+          },
+          {
+            "objectType": "Symbol",
+            "symbolExpression": "%s%PLC1.SCU1.Sensors.0.stRampInput.fTargetValue%/s%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": false,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%SCU_Feed_Setpoint_5%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "stControle"
+          },
+          {
+            "objectType": "Symbol",
+            "symbolExpression": "%s%PLC1.HMI_SCU1.stControle[0]%/s%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "ActionTemplate",
+        "active": false,
+        "templateName": "BindControlSCU1",
+        "fnParams": [],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Button_SCU_2_SELECT" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="px" data-tchmi-left="36" data-tchmi-left-unit="%" data-tchmi-text="SCU 2" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="40" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="11" data-tchmi-bottom-unit="%" data-tchmi-bottom="5" data-tchmi-right-unit="%" data-tchmi-right="38" data-tchmi-toggle-group="%i%iScuSelct%/i%" data-tchmi-state-symbol="%i%ScuActualView::Group2%/i%">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "angle": 0.0,
+  "stopPoints": [
+    {
+      "color": "rgba(136, 134, 134, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(211, 206, 206, 1)",
+      "stop": "56.18%"
+    },
+    {
+      "color": "rgba(191, 189, 189, 1)",
+      "stop": "98.53%"
+    }
+  ]
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+    [
+    {
+    "blur": 2.0,
+    "blurUnit": "px",
+    "color": {
+    "color": "rgba(176, 171, 171, 1)"
+    },
+    "inset": false,
+    "offsetX": 0,
+    "offsetXUnit": "px",
+    "offsetY": 0,
+    "offsetYUnit": "px",
+    "spread": 0.5,
+    "spreadUnit": "px"
+    }
+    ]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Button_SCU_2_SELECT.onStatePressed",
+    "actions": [
+      {
+        "objectType": "ActionTemplate",
+        "active": true,
+        "templateName": "ButtonPressureSelectColor",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_SCU_2_SELECT%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/Color",
+            "value": {
+              "angle": 0.0,
+              "stopPoints": [
+                {
+                  "color": "rgba(218, 218, 218, 1)",
+                  "stop": "0%"
+                },
+                {
+                  "color": "rgba(218, 218, 218, 1)",
+                  "stop": "22.62%"
+                },
+                {
+                  "color": "rgba(191, 189, 189, 1)",
+                  "stop": "50.89%"
+                },
+                {
+                  "color": "rgba(200, 200, 200, 1)",
+                  "stop": "72.02%"
+                },
+                {
+                  "color": "rgba(200, 200, 200, 1)",
+                  "stop": "100%"
+                }
+              ]
+            }
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/Color",
+            "value": {
+              "color": "rgba(4, 150, 193, 1)"
+            }
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Button_SCU_2_SELECT.onStateReleased",
+    "actions": [
+      {
+        "objectType": "ActionTemplate",
+        "active": true,
+        "templateName": "ButtonReleasedGray",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_SCU_2_SELECT%/ctrl%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": false,
+        "symbolExpression": "%i%bTestBool%/i%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": false
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Button_SCU_3_SELECT" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="px" data-tchmi-left="68" data-tchmi-left-unit="%" data-tchmi-text="SCU 3" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="40" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="11" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-toggle-group="%i%iScuSelct%/i%" data-tchmi-state-symbol="%i%ScuActualView::Group3%/i%">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "angle": 0.0,
+  "stopPoints": [
+    {
+      "color": "rgba(136, 134, 134, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(211, 206, 206, 1)",
+      "stop": "56.18%"
+    },
+    {
+      "color": "rgba(191, 189, 189, 1)",
+      "stop": "98.53%"
+    }
+  ]
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+    [
+    {
+    "blur": 2.0,
+    "blurUnit": "px",
+    "color": {
+    "color": "rgba(176, 171, 171, 1)"
+    },
+    "inset": false,
+    "offsetX": 0,
+    "offsetXUnit": "px",
+    "offsetY": 0,
+    "offsetYUnit": "px",
+    "spread": 0.5,
+    "spreadUnit": "px"
+    }
+    ]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Button_SCU_3_SELECT.onStatePressed",
+    "actions": [
+      {
+        "objectType": "ActionTemplate",
+        "active": true,
+        "templateName": "ButtonPressureSelectColor",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_SCU_3_SELECT%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/Color",
+            "value": {
+              "angle": 0.0,
+              "stopPoints": [
+                {
+                  "color": "rgba(218, 218, 218, 1)",
+                  "stop": "0%"
+                },
+                {
+                  "color": "rgba(218, 218, 218, 1)",
+                  "stop": "22.62%"
+                },
+                {
+                  "color": "rgba(191, 189, 189, 1)",
+                  "stop": "50.89%"
+                },
+                {
+                  "color": "rgba(200, 200, 200, 1)",
+                  "stop": "72.02%"
+                },
+                {
+                  "color": "rgba(200, 200, 200, 1)",
+                  "stop": "100%"
+                }
+              ]
+            }
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/Color",
+            "value": {
+              "color": "rgba(4, 150, 193, 1)"
+            }
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Button_SCU_3_SELECT.onStateReleased",
+    "actions": [
+      {
+        "objectType": "ActionTemplate",
+        "active": true,
+        "templateName": "ButtonReleasedGray",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_SCU_3_SELECT%/ctrl%"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+    [
+    {
+    "blur": 10.55,
+    "blurUnit": "px",
+    "color": {
+    "color": "rgba(0, 0, 0, 1)"
+    },
+    "inset": true,
+    "offsetX": 0,
+    "offsetXUnit": "px",
+    "offsetY": 0,
+    "offsetYUnit": "px",
+    "spread": 0.05,
+    "spreadUnit": "px"
+    }
+    ]
+</script>
+<div id="TcHmiRectangle" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-zindex="0" data-tchmi-right="0" data-tchmi-bottom="0">
+
+    <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+        {
+        "angle": 0.0,
+        "stopPoints": [
+        {
+        "color": "rgba(6, 5, 5, 0.0196078)",
+        "stop": "0%"
+        },
+        {
+        "color": "rgba(15, 14, 14, 0.0313725)",
+        "stop": "19.4%"
+        },
+        {
+        "color": "rgba(101, 98, 98, 1)",
+        "stop": "41.56%"
+        },
+        {
+        "color": "rgba(10, 9, 9, 0.0196078)",
+        "stop": "72.29%"
+        },
+        {
+        "color": "rgba(43, 43, 43, 1)",
+        "stop": "96.73%"
+        }
+        ]
+        }
+    </script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+</div>
+</div>

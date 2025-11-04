@@ -1,0 +1,16 @@
+{
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/LocalizationDescription.Schema.json",
+  "locale": "en",
+  "localizedText": {
+    "L_Language": "Language",
+    "L_German": "German",
+    "L_English": "English",
+    "L_LanguageSelection": "Language Selection",
+    "L_CloseText": "Close",
+    "L_HOME": "HOME",
+    "L_Contole": "Contole",
+    "L_Configurações": "Configurações",
+    "L_Alarmes": "Alarmes",
+    "L_TecladoVirtual": "Teclado Virtual"
+  }
+}

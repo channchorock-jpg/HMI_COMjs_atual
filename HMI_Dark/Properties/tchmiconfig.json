@@ -1,0 +1,1114 @@
+{
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "basePath": "./framework",
+  "scaleMode": "None",
+  "startupView": "Desktop.view",
+  "loginPage": "/Pages/LoginPage.html",
+  "tcHmiServer": {
+    "websocketIntervalTime": 500,
+    "websocketTimeout": 20000,
+    "websocketSystemTimeout": 60000,
+    "websocketSubscriptionMode": "Change"
+  },
+  "activeTheme": "Base-Dark",
+  "themes": {
+    "Base-Dark": {
+      "resources": [
+        {
+          "name": "Themes/Base-Dark/Base-DarkStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        },
+        {
+          "name": "Themes/Base-Dark/Base-Dark.theme",
+          "description": "",
+          "type": "ThemedValues"
+        }
+      ],
+      "replacesThemeForControls": [],
+      "replacesThemeForPackageComponents": []
+    },
+    "Base": {
+      "resources": [
+        {
+          "name": "Themes/Base/Base.theme",
+          "description": "",
+          "type": "ThemedValues"
+        },
+        {
+          "name": "Themes/Base/BaseStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        }
+      ],
+      "replacesThemeForControls": [],
+      "replacesThemeForPackageComponents": []
+    }
+  },
+  "dependencyFiles": [
+    {
+      "name": "Fonts/Fonts.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "Functions/UpdateLanguageIcon.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/RestoreControlColor.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/SetControlBoxShadow.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/SetControlColor.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/ScuWriteStatusBar.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/BindSensorToNumericInput.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/ConvertTimeToReal.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/ImprimirValorControle.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/WriteIntAndControlValueToSymbol.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/CopyNumericToUCParam.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/CopyNumericToUCParamAsync.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/getValueFromSymbolExpression.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/ReadUCParamToLog.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/TestFuncion.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/WriteRealToSymbol.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/__resolveControl.js",
+      "description": "",
+      "type": "JavaScript"
+    }
+  ],
+  "userControls": [
+    {
+      "url": "Backups/SCU_Feed_Setpoint_bckp.usercontrol"
+    },
+    {
+      "url": "User_Contols/0.Controle/Limites_e_Erro.usercontrol"
+    },
+    {
+      "url": "User_Contols/0.Controle/SCU_Feed_Setpoint.usercontrol"
+    },
+    {
+      "url": "User_Contols/0.Controle/SCU_Limites.usercontrol"
+    },
+    {
+      "url": "User_Contols/0.Controle/SCU_Painel_Manifold_Completo.usercontrol"
+    },
+    {
+      "url": "User_Contols/0.Controle/SCU_PID.usercontrol"
+    },
+    {
+      "url": "User_Contols/0.Controle/UserControl1.usercontrol"
+    },
+    {
+      "url": "User_Contols/1.Headers/SCU_select.usercontrol"
+    }
+  ],
+  "content": [
+    {
+      "url": "Pages/SCU_Tela_Comando.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Alarmes.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Configurações.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Contole.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/HOME.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/HostContent.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/TecladoVirtual.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    }
+  ],
+  "views": [
+    {
+      "url": "Controle View/View1.view",
+      "preload": false,
+      "keepAlive": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Desktop.view",
+      "preload": false,
+      "keepAlive": false,
+      "preloadBindings": false
+    }
+  ],
+  "userFunctions": [
+    {
+      "url": "Functions/BindSensorToNumericInput.js"
+    },
+    {
+      "url": "Functions/ConvertTimeToReal.js"
+    },
+    {
+      "url": "Functions/CopyNumericToUCParam.js"
+    },
+    {
+      "url": "Functions/CopyNumericToUCParamAsync.js"
+    },
+    {
+      "url": "Functions/getValueFromSymbolExpression.js"
+    },
+    {
+      "url": "Functions/ImprimirValorControle.js"
+    },
+    {
+      "url": "Functions/ReadUCParamToLog.js"
+    },
+    {
+      "url": "Functions/RestoreControlColor.js"
+    },
+    {
+      "url": "Functions/ScuWriteStatusBar.js"
+    },
+    {
+      "url": "Functions/SetControlBoxShadow.js"
+    },
+    {
+      "url": "Functions/SetControlColor.js"
+    },
+    {
+      "url": "Functions/TestFuncion.js"
+    },
+    {
+      "url": "Functions/UpdateLanguageIcon.js"
+    },
+    {
+      "url": "Functions/WriteIntAndControlValueToSymbol.js"
+    },
+    {
+      "url": "Functions/WriteRealToSymbol.js"
+    },
+    {
+      "url": "Functions/__resolveControl.js"
+    }
+  ],
+  "symbols": {
+    "internal": {
+      "bTestBool": {
+        "value": false,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "BtesteToogle": {
+        "value": true,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "iScuSelct": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/INT",
+        "persist": false,
+        "readonly": false
+      },
+      "ScuActualView": {
+        "type": "tchmi:project#/definitions/ScuGroup",
+        "persist": false,
+        "readonly": false
+      },
+      "ssss": {
+        "value": 1,
+        "type": "tchmi:general#/definitions/INT",
+        "persist": false,
+        "readonly": false
+      },
+      "fFeedbackValue": {
+        "value": "",
+        "type": "tchmi:general#/definitions/String",
+        "persist": false,
+        "readonly": false
+      },
+      "stFeedBack": {
+        "type": "tchmi:project#/definitions/stUserControlFeedBack",
+        "persist": false,
+        "readonly": false
+      }
+    },
+    "themedResources": {}
+  },
+  "trigger": [],
+  "actionTemplates": [
+    {
+      "displayname": "ButtonPressesGray",
+      "name": "ButtonPressesGray",
+      "category": "Action Templates",
+      "actions": [
+        {
+          "objectType": "Function",
+          "active": false,
+          "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+          "fnParams": [
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:framework#/definitions/Control",
+              "symbolExpression": "%tp%Control%/tp%"
+            },
+            {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": {
+                "angle": 114.69026548672582,
+                "stopPoints": [
+                  {
+                    "color": "rgba(211, 206, 206, 1)",
+                    "stop": "0%"
+                  },
+                  {
+                    "color": "rgba(211, 206, 206, 1)",
+                    "stop": "0.23%"
+                  },
+                  {
+                    "color": "rgba(136, 134, 134, 1)",
+                    "stop": "52.98%"
+                  },
+                  {
+                    "color": "rgba(211, 206, 206, 1)",
+                    "stop": "95.24%"
+                  }
+                ]
+              }
+            },
+            {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": null
+            }
+          ],
+          "asyncWait": true
+        },
+        {
+          "objectType": "Function",
+          "active": true,
+          "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+          "fnParams": [
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:framework#/definitions/Control",
+              "symbolExpression": "%tp%Control%/tp%"
+            },
+            {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": {
+                "angle": 0.0,
+                "stopPoints": [
+                  {
+                    "color": "rgba(218, 218, 218, 1)",
+                    "stop": "0%"
+                  },
+                  {
+                    "color": "rgba(218, 218, 218, 1)",
+                    "stop": "22.62%"
+                  },
+                  {
+                    "color": "rgba(191, 189, 189, 1)",
+                    "stop": "50.89%"
+                  },
+                  {
+                    "color": "rgba(200, 200, 200, 1)",
+                    "stop": "72.02%"
+                  },
+                  {
+                    "color": "rgba(200, 200, 200, 1)",
+                    "stop": "100%"
+                  }
+                ]
+              }
+            },
+            {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": {
+                "color": "rgba(103, 100, 100, 1)"
+              }
+            }
+          ],
+          "asyncWait": true
+        }
+      ],
+      "parameters": [
+        {
+          "name": "Control",
+          "type": "tchmi:framework#/definitions/Control",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "displayname": "ButtonReleasedGray",
+      "name": "ButtonReleasedGray",
+      "category": "Action Templates",
+      "actions": [
+        {
+          "objectType": "Function",
+          "active": false,
+          "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+          "fnParams": [
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:framework#/definitions/Control",
+              "symbolExpression": "%tp%Control%/tp%"
+            },
+            {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": {
+                "angle": 0.0,
+                "stopPoints": [
+                  {
+                    "color": "rgba(137, 135, 135, 1)",
+                    "stop": "0%"
+                  },
+                  {
+                    "color": "rgba(206, 202, 202, 1)",
+                    "stop": "51.49%"
+                  },
+                  {
+                    "color": "rgba(137, 135, 135, 1)",
+                    "stop": "100%"
+                  }
+                ]
+              }
+            }
+          ],
+          "asyncWait": true
+        },
+        {
+          "objectType": "Function",
+          "active": true,
+          "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+          "fnParams": [
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:framework#/definitions/Control",
+              "symbolExpression": "%tp%Control%/tp%"
+            }
+          ],
+          "asyncWait": true
+        }
+      ],
+      "parameters": [
+        {
+          "name": "Control",
+          "type": "tchmi:framework#/definitions/Control",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "displayname": "ButtonPressureSelectColor",
+      "name": "ButtonPressureSelectColor",
+      "category": "Action Templates",
+      "actions": [
+        {
+          "objectType": "Function",
+          "active": true,
+          "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+          "fnParams": [
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:framework#/definitions/Control",
+              "symbolExpression": "%tp%Control%/tp%"
+            },
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:general#/definitions/String",
+              "symbolExpression": "%tp%BackGroundColor %/tp%"
+            },
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "symbolExpression": "%tp%FontColor%/tp%"
+            }
+          ],
+          "asyncWait": true
+        }
+      ],
+      "parameters": [
+        {
+          "name": "Control",
+          "type": "tchmi:framework#/definitions/Control",
+          "description": ""
+        },
+        {
+          "name": "BackGroundColor ",
+          "type": "tchmi:framework#/definitions/Color",
+          "description": ""
+        },
+        {
+          "name": "FontColor",
+          "type": "tchmi:framework#/definitions/Color",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "displayname": "BindControlSCU1",
+      "name": "BindControlSCU1",
+      "category": "Action Templates",
+      "actions": [
+        {
+          "objectType": "SwitchCase",
+          "active": true,
+          "compare": {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/INT",
+            "symbolExpression": "%s%PLC1.HMI_SCU1.stFeedback::iActiveSesnor%/s%"
+          },
+          "cases": [
+            {
+              "caseValue": {
+                "objectType": "FunctionExpression",
+                "functionExpression": "2"
+              },
+              "actions": [
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Painel_Manifold_Completo_1%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "stAxisCommandInput"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "symbolExpression": "%s%PLC1.SCU1.AxisCommandInput%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Painel_Manifold_Completo_1%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "stAxisOutput"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "symbolExpression": "%s%PLC1.SCU1.AxisOutput%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Painel_Manifold_Completo_1%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "stFeedback"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "symbolExpression": "%s%PLC1.HMI_SCU1.stFeedback%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Painel_Manifold_Completo_1%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "eCurrentState"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "symbolExpression": "%s%PLC1.SCU1.eCurrentState%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "Scu_Ramp_fTarget"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "symbolExpression": "%s%PLC1.SCU1.Sensors.0.stRampInput.fTargetValue%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "stControle"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "symbolExpression": "%s%PLC1.HMI_SCU1.stControle[0]%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "stFeedback"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "symbolExpression": "%s%PLC1.HMI_SCU1.stFeedback%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "stSensorConfig"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "symbolExpression": "%s%PLC1.HMI_SCU1.stControle[0]%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "iSensorBind"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "symbolExpression": "%s%PLC1.HMI_SCU1.stFeedback::iIndiceSensor[0]%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                }
+              ]
+            }
+          ],
+          "asyncWait": true
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "displayname": "SelsectBindSensorSCU1",
+      "name": "SelsectBindSensorSCU1",
+      "category": "Action Templates",
+      "actions": [
+        {
+          "objectType": "SwitchCase",
+          "active": true,
+          "compare": {
+            "objectType": "Symbol",
+            "valueType": null,
+            "symbolExpression": "%tp%iStaticSenseSelect%/tp%"
+          },
+          "cases": [
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/INT",
+                "value": 1
+              },
+              "actions": [
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "Scu_Ramp_fTarget"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "symbolExpression": "%s%PLC1.SCU1.Sensors.0.stRampInput.fTargetValue%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "stControle"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "symbolExpression": "%s%PLC1.HMI_SCU1.stControle[0]%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "stFeedback"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "symbolExpression": "%s%PLC1.HMI_SCU1.stFeedback%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "stSensorConfig"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "symbolExpression": "%s%PLC1.HMI_SCU1.stControle[0]%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "iSensorBind"
+                    },
+                    {
+                      "objectType": "FunctionExpression",
+                      "functionExpression": "%s%PLC1.HMI_SCU1.stFeedback::iIndiceSensor[0]%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                }
+              ]
+            },
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/INT",
+                "value": 2
+              },
+              "actions": [
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "Scu_Ramp_fTarget"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "symbolExpression": "%s%PLC1.SCU1.Sensors.1.stRampInput.fTargetValue%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "stControle"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "symbolExpression": "%s%PLC1.HMI_SCU1.stControle[1]%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "stFeedback"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "symbolExpression": "%s%PLC1.HMI_SCU1.stFeedback%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "stSensorConfig"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "symbolExpression": "%s%PLC1.HMI_SCU1.stControle[1]%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+                  "fnParams": [
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:framework#/definitions/Control",
+                      "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
+                    },
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+                      "value": "iSensorBind"
+                    },
+                    {
+                      "objectType": "Symbol",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "symbolExpression": "%s%PLC1.HMI_SCU1.stFeedback::iIndiceSensor[1]%/s%"
+                    }
+                  ],
+                  "asyncWait": true
+                }
+              ]
+            }
+          ],
+          "asyncWait": true
+        }
+      ],
+      "parameters": [
+        {
+          "name": "iStaticSenseSelect",
+          "type": "tchmi:general#/definitions/INT",
+          "description": ""
+        }
+      ]
+    }
+  ],
+  "languages": {
+    "de": "Localization/de.localization",
+    "en": "Localization/en.localization"
+  },
+  "languageFallback": "",
+  "disableLoadingOptimization": false,
+  "creatorSettings": {
+    "viewport": {
+      "defaultWidth": 1920,
+      "defaultHeight": 1080
+    }
+  },
+  "binding": {
+    "symbolError": "Ignore"
+  },
+  "packages": [
+    {
+      "name": "Beckhoff.TwinCAT.HMI.BA.Icons",
+      "basePath": "/Beckhoff.TwinCAT.HMI.BA.Icons"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.BaseTemplate",
+      "basePath": "/Beckhoff.TwinCAT.HMI.BaseTemplate"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Controls",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Controls"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Framework",
+      "basePath": "/framework"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Functions",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.ResponsiveNavigation",
+      "basePath": "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.ScopeControl",
+      "basePath": "/Beckhoff.TwinCAT.HMI.ScopeControl"
+    }
+  ],
+  "keyboardLayouts": [
+    {
+      "url": "KeyboardLayouts/German - compact.keyboard.json"
+    },
+    {
+      "url": "KeyboardLayouts/Numpad (plusminus).keyboard.json"
+    },
+    {
+      "url": "KeyboardLayouts/US - compact.keyboard.json"
+    }
+  ],
+  "systemKeyboard": {
+    "providerName": "",
+    "projectKeyboardMapping": {
+      "de": {
+        "text": "KeyboardLayouts/German - compact.keyboard.json",
+        "decimal": "KeyboardLayouts/Numpad (plusminus).keyboard.json",
+        "numeric": ""
+      },
+      "en": {
+        "text": "KeyboardLayouts/US - compact.keyboard.json",
+        "decimal": "KeyboardLayouts/Numpad (plusminus).keyboard.json",
+        "numeric": ""
+      }
+    }
+  },
+  "systemPopups": {
+    "providerName": "Beckhoff.TcHmiPopups"
+  }
+}

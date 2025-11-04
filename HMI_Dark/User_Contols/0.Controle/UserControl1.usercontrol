@@ -1,0 +1,848 @@
+
+<div id="SCU_Feed_Setpoint_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="573" data-tchmi-height="273" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
+
+    <div id="Label_Setpoint" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="21.5" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Setpoint" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="89" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="17.5">
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 1,
+            "right": 1,
+            "top": 1,
+            "bottom": 1,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 0.0,
+            "topRight": 15.0,
+            "bottomLeft": 15.0,
+            "bottomRight": 0.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "angle": 0.0,
+            "stopPoints": [
+            {
+            "color": "rgba(114, 204, 252, 1)",
+            "stop": "3.56%"
+            },
+            {
+            "color": "rgba(140, 213, 252, 1)",
+            "stop": "47.59%"
+            },
+            {
+            "color": "rgba(114, 204, 252, 1)",
+            "stop": "97.48%"
+            }
+            ]
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+            [
+            {
+            "blur": 4.0,
+            "blurUnit": "px",
+            "color": {
+            "color": "rgba(0, 0, 0, 1)"
+            },
+            "inset": true,
+            "offsetX": 0,
+            "offsetXUnit": "px",
+            "offsetY": 0,
+            "offsetYUnit": "px",
+            "spread": -0.4,
+            "spreadUnit": "px"
+            }
+            ]
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+            {
+            "color": "rgba(0, 0, 0, 1)"
+            }
+        </script>
+    </div>
+
+    <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+        {
+        "color": "rgba(84, 82, 82, 1)"
+        }
+    </script>
+
+
+    <div id="InputBox_SetPoint" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-height="21.5" data-tchmi-height-unit="px" data-tchmi-left="237" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="121.75" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="20" data-tchmi-value="%pp%Scu_Ramp_fTarget%/pp%">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+            {
+            "top": 1.5,
+            "right": 1.5,
+            "bottom": 1.5,
+            "left": 1.5
+            }
+        </script>
+
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "color": "rgba(255, 255, 255, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-value-color" type="application/json">
+            {
+            "color": "rgba(0, 0, 0, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+            [
+            {
+            "event": "InputBox_SetPoint.onUserInteractionFinished",
+            "actions": []
+            }
+            ]
+        </script>
+    </div>
+    <div id="Label_Unit_set" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="21.5" data-tchmi-height-unit="px" data-tchmi-left="379.25" data-tchmi-left-unit="px" data-tchmi-text="mm" data-tchmi-top="121.75" data-tchmi-top-unit="px" data-tchmi-width="36.5" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="17.5">
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 0.0,
+            "topRight": 0.0,
+            "bottomLeft": 0.0,
+            "bottomRight": 0.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "color": "rgba(105, 104, 104, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+            [
+            {
+            "blur": 2.5,
+            "blurUnit": "px",
+            "color": {
+            "color": "rgba(0, 0, 0, 1)"
+            },
+            "inset": true,
+            "offsetX": 0,
+            "offsetXUnit": "px",
+            "offsetY": 0,
+            "offsetYUnit": "px",
+            "spread": -0.4,
+            "spreadUnit": "px"
+            }
+            ]
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+            {
+            "color": "rgba(143, 140, 140, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+            {
+            "color": "rgba(246, 246, 246, 1)"
+            }
+        </script>
+    </div>
+    <div id="Button_Start_Ramp" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="21.5" data-tchmi-height-unit="px" data-tchmi-left="470.25" data-tchmi-left-unit="px" data-tchmi-text="Iniciar Rampa" data-tchmi-top="116.75" data-tchmi-top-unit="px" data-tchmi-width="58.5" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="10" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold">
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "angle": 0.0,
+            "stopPoints": [
+            {
+            "color": "rgba(6, 181, 113, 1)",
+            "stop": "0%"
+            },
+            {
+            "color": "rgba(14, 230, 147, 1)",
+            "stop": "56.18%"
+            },
+            {
+            "color": "rgba(6, 181, 113, 1)",
+            "stop": "98.53%"
+            }
+            ]
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+            [
+            {
+            "blur": 2.5,
+            "blurUnit": "px",
+            "color": {
+            "color": "rgba(176, 171, 171, 1)"
+            },
+            "inset": false,
+            "offsetX": 0,
+            "offsetXUnit": "px",
+            "offsetY": 0,
+            "offsetYUnit": "px",
+            "spread": 0.25,
+            "spreadUnit": "px"
+            }
+            ]
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 1,
+            "right": 1,
+            "top": 1,
+            "bottom": 1,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+            [
+            {
+            "event": "Button_Start_Ramp.onPressed",
+            "actions": [
+            {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%pp%Scu_Ramp_fTarget%/pp%",
+            "value": {
+            "objectType": "FunctionExpression",
+            "functionExpression": "%ctrl%InputBox_SetPoint::Value%/ctrl%"
+            },
+            "asyncWait": true
+            },
+            {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%pp%stControle::bEnableRamp%/pp%",
+            "value": {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/BOOL",
+            "value": false
+            },
+            "asyncWait": true
+            }
+            ]
+            }
+            ]
+        </script>
+    </div>
+    <div id="Label_FeedBack" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="21.5" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Feedback" data-tchmi-top="92" data-tchmi-top-unit="px" data-tchmi-width="89" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="17.5">
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 1,
+            "right": 1,
+            "top": 1,
+            "bottom": 1,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 0.0,
+            "topRight": 15.0,
+            "bottomLeft": 15.0,
+            "bottomRight": 0.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "angle": 0.0,
+            "stopPoints": [
+            {
+            "color": "rgba(114, 204, 252, 1)",
+            "stop": "3.56%"
+            },
+            {
+            "color": "rgba(140, 213, 252, 1)",
+            "stop": "47.59%"
+            },
+            {
+            "color": "rgba(114, 204, 252, 1)",
+            "stop": "97.48%"
+            }
+            ]
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+            [
+            {
+            "blur": 4.0,
+            "blurUnit": "px",
+            "color": {
+            "color": "rgba(0, 0, 0, 1)"
+            },
+            "inset": true,
+            "offsetX": 0,
+            "offsetXUnit": "px",
+            "offsetY": 0,
+            "offsetYUnit": "px",
+            "spread": -0.4,
+            "spreadUnit": "px"
+            }
+            ]
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+            {
+            "color": "rgba(0, 0, 0, 1)"
+            }
+        </script>
+    </div>
+    <div id="Button_Stop_Ramp" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="21.5" data-tchmi-height-unit="px" data-tchmi-left="469.75" data-tchmi-left-unit="px" data-tchmi-text="Parar Rampa" data-tchmi-top="173.75" data-tchmi-top-unit="px" data-tchmi-width="57.5" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="10" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold">
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "angle": 0.0,
+            "stopPoints": [
+            {
+            "color": "rgba(160, 4, 4, 1)",
+            "stop": "1.06%"
+            },
+            {
+            "color": "rgba(244, 12, 49, 1)",
+            "stop": "52.54%"
+            },
+            {
+            "color": "rgba(160, 4, 4, 1)",
+            "stop": "98.73%"
+            }
+            ]
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+            [
+            {
+            "blur": 2.5,
+            "blurUnit": "px",
+            "color": {
+            "color": "rgba(255, 255, 255, 1)"
+            },
+            "inset": false,
+            "offsetX": 0,
+            "offsetXUnit": "px",
+            "offsetY": 0,
+            "offsetYUnit": "px",
+            "spread": 0.25,
+            "spreadUnit": "px"
+            }
+            ]
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 1,
+            "right": 1,
+            "top": 1,
+            "bottom": 1,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+    </div>
+    <div id="Button_Apply_Rate" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="21.5" data-tchmi-height-unit="px" data-tchmi-left="470.25" data-tchmi-left-unit="px" data-tchmi-text="Aplicar Taxa" data-tchmi-top="226.75" data-tchmi-top-unit="px" data-tchmi-width="58.5" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="10" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold">
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "angle": 0.0,
+            "stopPoints": [
+            {
+            "color": "rgba(170, 159, 12, 1)",
+            "stop": "0%"
+            },
+            {
+            "color": "rgba(249, 223, 3, 1)",
+            "stop": "48.87%"
+            },
+            {
+            "color": "rgba(180, 167, 11, 1)",
+            "stop": "100%"
+            }
+            ]
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+            [
+            {
+            "blur": 2.5,
+            "blurUnit": "px",
+            "color": {
+            "color": "rgba(176, 171, 171, 1)"
+            },
+            "inset": false,
+            "offsetX": 0,
+            "offsetXUnit": "px",
+            "offsetY": 0,
+            "offsetYUnit": "px",
+            "spread": 0.25,
+            "spreadUnit": "px"
+            }
+            ]
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+            {
+            "color": "rgba(8, 104, 66, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+            {
+            "color": "rgba(0, 0, 0, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 1,
+            "right": 1,
+            "top": 1,
+            "bottom": 1,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+    </div>
+    <div id="Label_rate" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="21.5" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Taxa" data-tchmi-top="122" data-tchmi-top-unit="px" data-tchmi-width="89" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="17.5">
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 1,
+            "right": 1,
+            "top": 1,
+            "bottom": 1,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 0.0,
+            "topRight": 15.0,
+            "bottomLeft": 15.0,
+            "bottomRight": 0.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "angle": 0.0,
+            "stopPoints": [
+            {
+            "color": "rgba(114, 204, 252, 1)",
+            "stop": "3.56%"
+            },
+            {
+            "color": "rgba(140, 213, 252, 1)",
+            "stop": "47.59%"
+            },
+            {
+            "color": "rgba(114, 204, 252, 1)",
+            "stop": "97.48%"
+            }
+            ]
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+            [
+            {
+            "blur": 4.0,
+            "blurUnit": "px",
+            "color": {
+            "color": "rgba(0, 0, 0, 1)"
+            },
+            "inset": true,
+            "offsetX": 0,
+            "offsetXUnit": "px",
+            "offsetY": 0,
+            "offsetYUnit": "px",
+            "spread": -0.4,
+            "spreadUnit": "px"
+            }
+            ]
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+            {
+            "color": "rgba(0, 0, 0, 1)"
+            }
+        </script>
+    </div>
+    <div id="InputBox_Rate" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height="21.5" data-tchmi-height-unit="px" data-tchmi-left="237" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="226.75" data-tchmi-top-unit="px" data-tchmi-value="0" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="20">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+            {
+            "top": 1.5,
+            "right": 1.5,
+            "bottom": 1.5,
+            "left": 1.5
+            }
+        </script>
+
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "color": "rgba(255, 255, 255, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-value-color" type="application/json">
+            {
+            "color": "rgba(0, 0, 0, 1)"
+            }
+        </script>
+    </div>
+    <div id="Label_Unit_rate" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="21.5" data-tchmi-height-unit="px" data-tchmi-left="379.25" data-tchmi-left-unit="px" data-tchmi-text="mm" data-tchmi-top="226.75" data-tchmi-top-unit="px" data-tchmi-width="36.5" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="17.5">
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 0.0,
+            "topRight": 0.0,
+            "bottomLeft": 0.0,
+            "bottomRight": 0.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "color": "rgba(105, 104, 104, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+            [
+            {
+            "blur": 2.5,
+            "blurUnit": "px",
+            "color": {
+            "color": "rgba(0, 0, 0, 1)"
+            },
+            "inset": true,
+            "offsetX": 0,
+            "offsetXUnit": "px",
+            "offsetY": 0,
+            "offsetYUnit": "px",
+            "spread": -0.4,
+            "spreadUnit": "px"
+            }
+            ]
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+            {
+            "color": "rgba(143, 140, 140, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+            {
+            "color": "rgba(246, 246, 246, 1)"
+            }
+        </script>
+    </div>
+    <div id="Label_feedBack_value" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="21.5" data-tchmi-height-unit="px" data-tchmi-left="256" data-tchmi-left-unit="px" data-tchmi-text="%f%&quot;0.000&quot; + &quot; mm&quot;%/f%" data-tchmi-top="172.75" data-tchmi-top-unit="px" data-tchmi-width="118" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-tooltip="">
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "color": "rgba(105, 104, 104, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+            {
+            "color": "rgba(246, 246, 246, 1)"
+            }
+        </script>
+    </div>
+    <div id="Button_Actv_mode" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="28" data-tchmi-height-unit="px" data-tchmi-left="440.5" data-tchmi-left-unit="px" data-tchmi-text="Ativar Modo" data-tchmi-top="42" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="9" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold">
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "angle": 0.0,
+            "stopPoints": [
+            {
+            "color": "rgba(136, 134, 134, 1)",
+            "stop": "0%"
+            },
+            {
+            "color": "rgba(211, 206, 206, 1)",
+            "stop": "56.18%"
+            },
+            {
+            "color": "rgba(191, 189, 189, 1)",
+            "stop": "98.53%"
+            }
+            ]
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+            [
+            {
+            "blur": 2.5,
+            "blurUnit": "px",
+            "color": {
+            "color": "rgba(176, 171, 171, 1)"
+            },
+            "inset": false,
+            "offsetX": 0,
+            "offsetXUnit": "px",
+            "offsetY": 0,
+            "offsetYUnit": "px",
+            "spread": 0.25,
+            "spreadUnit": "px"
+            }
+            ]
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+
+
+        <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+            {
+            "color": "rgba(0, 0, 0, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 1,
+            "right": 1,
+            "top": 1,
+            "bottom": 1,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+    </div>
+    <div id="TcHmiEllipse" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+    </div>
+
+    <script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+        [
+        {
+        "blur": 7.5,
+        "blurUnit": "px",
+        "color": {
+        "color": "rgba(0, 0, 0, 255)"
+        },
+        "inset": true,
+        "offsetX": 0,
+        "offsetXUnit": "px",
+        "offsetY": 0,
+        "offsetYUnit": "px",
+        "spread": -0.05,
+        "spreadUnit": "px"
+        }
+        ]
+    </script>
+</div>

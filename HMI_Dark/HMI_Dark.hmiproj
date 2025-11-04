@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.props" Condition="Exists('$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <TcHmiDirectory>$(registry:HKEY_CURRENT_USER\Software\Beckhoff\TwinCAT3\3.1@InstallDir)\..\Functions\TE2000-HMI-Engineering</TcHmiDirectory>
+    <TcHmiDirectory Condition="'$(TcHmiDirectory)'==''">$(registry:HKEY_LOCAL_MACHINE\Software\Beckhoff\TwinCAT3\3.1@InstallDir)\..\Functions\TE2000-HMI-Engineering</TcHmiDirectory>
+    <TcHmiDirectory Condition="'$(TcHmiDirectory)'==''">$(registry:HKEY_LOCAL_MACHINE\Software\Wow6432Node\Beckhoff\TwinCAT3\3.1@InstallDir)\..\Functions\TE2000-HMI-Engineering</TcHmiDirectory>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <AvailablePlatforms>TwinCAT HMI</AvailablePlatforms>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <HmiTitle>Please enter your Title...</HmiTitle>
+    <HmiVerboseLevel>2</HmiVerboseLevel>
+    <HmiVersion>1.0.0.0</HmiVersion>
+    <HmiCommunicationServerPort>3000</HmiCommunicationServerPort>
+    <HmiLogTcHmiServerMessages>false</HmiLogTcHmiServerMessages>
+    <HmiLogDesignerModeComMessages>false</HmiLogDesignerModeComMessages>
+    <HmiServerVersion>Latest</HmiServerVersion>
+    <HmiUseX64>True</HmiUseX64>
+    <HmiDefaultLanguage>client</HmiDefaultLanguage>
+    <TargetFrameworkMoniker>native,Version=v1.12.0,Profile=tchmi</TargetFrameworkMoniker>
+    <TargetFramework>native1.12-tchmi</TargetFramework>
+    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+    <Name>HMI_Dark</Name>
+    <HmiCommunicationRouterPort>10106</HmiCommunicationRouterPort>
+    <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
+    <HmiInitial>1.12.762.53</HmiInitial>
+    <HmiRecent>1.12.762.56</HmiRecent>
+    <HmiServerNodeAdvancedView>True</HmiServerNodeAdvancedView>
+    <HmiServerNodeAdvancedSettingsView>True</HmiServerNodeAdvancedSettingsView>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
+    <TwinCATHmi_Targets>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.targets</TwinCATHmi_Targets>
+  </PropertyGroup>
+  <Import Project="$(TwinCATHmi_Tasks)" />
+  <Import Project="$(TwinCATHmi_Targets)" />
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>56070fe8-a47e-4248-9784-ffdd98565dfb</ProjectGuid>
+    <RootNamespace>TwinCAT3HmiProject</RootNamespace>
+    <AssemblyName>TwinCAT3HmiProject</AssemblyName>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">TwinCAT HMI</Platform>
+  </PropertyGroup>
+  <!-- Any CPU -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|TwinCAT HMI' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>TwinCAT HMI</PlatformTarget>
+    <DefaultNamespace>HMI_Dark</DefaultNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|TwinCAT HMI' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>TwinCAT HMI</PlatformTarget>
+    <DefaultNamespace>HMI_Dark</DefaultNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" Condition="'$(RestoreProjectStyle)' == 'PackageReference'" />
+  <PropertyGroup>
+    <PreBuildEventDependsOn />
+  </PropertyGroup>
+  <Target Name="PreBuildEvent" Condition="'$(PreBuildEvent)'!=''" DependsOnTargets="$(PreBuildEventDependsOn)">
+    <Exec WorkingDirectory="$(OutDir)" Command="$(PreBuildEvent)" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEventDependsOn />
+  </PropertyGroup>
+  <Target Name="PostBuildEvent" Condition="'$(PostBuildEvent)' != '' and ('$(RunPostBuildEvent)'=='Always' or '$(RunPostBuildEvent)'=='OnOutputUpdated')" DependsOnTargets="$(PostBuildEventDependsOn)">
+    <Exec WorkingDirectory="$(OutDir)" Command="$(PostBuildEvent)" />
+  </Target>
+  <Target Name="GetFrameworkPaths" />
+  <PropertyGroup>
+    <BuiltProjectOutputGroupDependsOn>
+			PreBuildEvent;
+			CoreBuild;
+			PostBuildEvent
+		</BuiltProjectOutputGroupDependsOn>
+    <CleanDependsOn>
+			BaseClean
+		</CleanDependsOn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TcHmi_ProjectDirectory Condition="'$(TcHmi_ProjectDirectory)' == ''">$(MSBuildProjectDirectory)</TcHmi_ProjectDirectory>
+    <TcHmi_ServerAddress Condition="'$(TcHmi_ServerAddress)' == ''">127.0.0.1</TcHmi_ServerAddress>
+    <TcHmi_ServerPort Condition="'$(TcHmi_ServerPort)' == ''">1010</TcHmi_ServerPort>
+  </PropertyGroup>
+  <Target Name="CoreBuild">
+    <TcHmiMSBuild.Publish.TcHmiBuild TaskAction="Clean" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" />
+    <TcHmiMSBuild.Publish.TcHmiBuild TaskAction="Build" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" ProjectFiles="@(Content)" VirtualMappings="$(TcHmi_VirtualMappings)" />
+    <TcHmiMSBuild.Publish.TcHmiGenerator TaskAction="EntryPage" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" TcHmiServerAddress="$(TcHmi_ServerAddress)" TcHmiServerPort="$(TcHmi_ServerPort)">
+      <Output TaskParameter="Result" PropertyName="TaskResult0" />
+    </TcHmiMSBuild.Publish.TcHmiGenerator>
+    <Message Text="Generating the Default.html within OutputPath('$(OutputPath)'): $(TaskResult0)" />
+  </Target>
+  <Target Name="Build" DependsOnTargets="$(BuiltProjectOutputGroupDependsOn)" />
+  <Target Name="Clean" DependsOnTargets="$(CleanDependsOn)" />
+  <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
+  <ItemGroup>
+    <Content Include="Backups\SCU_Feed_Setpoint_bckp.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Backups\SCU_Feed_Setpoint_bckp.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Backups\SCU_Feed_Setpoint_bckp.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="Functions\BindSensorToNumericInput.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\BindSensorToNumericInput.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\BindSensorToNumericInput.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\ConvertTimeToReal.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\ConvertTimeToReal.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\ConvertTimeToReal.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\CopyNumericToUCParam.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\CopyNumericToUCParam.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\CopyNumericToUCParam.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\CopyNumericToUCParamAsync.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\CopyNumericToUCParamAsync.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\CopyNumericToUCParamAsync.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\getValueFromSymbolExpression.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\getValueFromSymbolExpression.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\getValueFromSymbolExpression.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\ImprimirValorControle.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\ImprimirValorControle.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\ImprimirValorControle.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\ReadUCParamToLog.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\ReadUCParamToLog.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\ReadUCParamToLog.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\RestoreControlColor.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\RestoreControlColor.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\RestoreControlColor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\ScuWriteStatusBar.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\ScuWriteStatusBar.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\ScuWriteStatusBar.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\SetControlBoxShadow.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\SetControlBoxShadow.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\SetControlBoxShadow.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\SetControlColor.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\SetControlColor.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\SetControlColor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\TestFuncion.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\TestFuncion.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\TestFuncion.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\WriteIntAndControlValueToSymbol.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\WriteIntAndControlValueToSymbol.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\WriteIntAndControlValueToSymbol.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\WriteRealToSymbol.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\WriteRealToSymbol.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\WriteRealToSymbol.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\__resolveControl.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\__resolveControl.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\__resolveControl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Amarelo_desligado.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Amarelo_ligado.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\botao_emergencia.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\botao_reset_azul.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Buttons\Amarelo_OFF-removebg.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Buttons\Amarelo_on-removebg.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Buttons\Azul_off-removebg.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Buttons\Azul_on-removebg-preview.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Buttons\Cinza_off-removebg.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Buttons\Cinza_On-removebg-preview.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Buttons\Verde_off-removebg.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Buttons\Verde_ON-removebg.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Buttons\VermelhoON_rong.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Buttons\Vermelho_OFF-removebg.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Debug.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\emergencia.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Keyboard.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\LEDVERDEOFF.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\LEDVERDEON.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\manual.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\offshore.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\rampa.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\senoide.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\simbolo_azul.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\simbolo_azul.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\Simeros.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\simeros_azul.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\simeros_azul.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\simeros_branco.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\simeros_slogan_ingles_branco.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\SIMEROS\WIP.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\SCU_Tela_Comando.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\0.Controle\Limites_e_Erro.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\0.Controle\Limites_e_Erro.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\0.Controle\Limites_e_Erro.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\0.Controle\SCU_Feed_Setpoint.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\0.Controle\SCU_Feed_Setpoint.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\0.Controle\SCU_Feed_Setpoint.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\0.Controle\SCU_Limites.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\0.Controle\SCU_Limites.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\0.Controle\SCU_Limites.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\0.Controle\SCU_Painel_Manifold_Completo.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\0.Controle\SCU_Painel_Manifold_Completo.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\0.Controle\SCU_Painel_Manifold_Completo.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\0.Controle\SCU_PID.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\0.Controle\SCU_PID.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\0.Controle\SCU_PID.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\0.Controle\UserControl1.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\0.Controle\UserControl1.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\0.Controle\UserControl1.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\1.Headers\SCU_select.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\1.Headers\SCU_select.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\1.Headers\SCU_select.usercontrol</DependentUpon>
+    </Content>
+    <Folder Include="Fonts\" />
+    <Folder Include="Functions\" />
+    <Folder Include="Images" />
+    <Folder Include="Images\Manifest" />
+    <Folder Include="Images\PLC\" />
+    <Folder Include="Images\SIMEROS" />
+    <Folder Include="Images\SIMEROS\Bancadas" />
+    <Folder Include="Images\SIMEROS\Buttons" />
+    <Folder Include="Images\SIMEROS\Visualizar_Bancada" />
+    <Folder Include="Images\TwinCAT\" />
+    <Folder Include="Imports" />
+    <Folder Include="Imports\Images" />
+    <Folder Include="Imports\Videos" />
+    <Folder Include="KeyboardLayouts\" />
+    <Folder Include="Localization" />
+    <Folder Include="Controle View" />
+    <Folder Include="Backups" />
+    <Folder Include="Scripts" />
+    <Folder Include="User_Contols" />
+    <Folder Include="Pages\" />
+    <Folder Include="Server\ADS\" />
+    <Folder Include="Server\TcHmiLua\" />
+    <Folder Include="Server\TcHmiScope" />
+    <Folder Include="Server\TcHmiSqliteHistorize" />
+    <Folder Include="Server\TcHmiSqliteLogger\" />
+    <Folder Include="Server\TcHmiSrv\" />
+    <Folder Include="Server\TcHmiUserManagement\" />
+    <Folder Include="Themes" />
+    <Folder Include="Themes\Base-Dark\Images\" />
+    <Folder Include="Themes\Base-Dark\Images\Flags\" />
+    <Folder Include="Themes\Base\" />
+    <Folder Include="Themes\Base-Dark\" />
+    <Folder Include="Server">
+      <WorkingDirectory>HMI_Dark</WorkingDirectory>
+    </Folder>
+    <Folder Include="Properties" />
+    <Content Include=".eslintrc.json">
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Controle View\View1.view">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\UpdateLanguageIcon.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\UpdateLanguageIcon.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\UpdateLanguageIcon.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Alarmes.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Configurações.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Contole.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\HOME.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\HostContent.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\TecladoVirtual.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Config.default.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Config.remote.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Storage.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiScope\TcHmiScope.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiScope\TcHmiScope.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiScope\TcHmiScope.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.default.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.remote.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Storage.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.default.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.remote.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Storage.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Themes\Base-Dark\Base-Dark.theme">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Base-DarkStyle.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Beckhoff_white.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Flags\cn.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Flags\de.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Flags\en_gb.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Flags\en_us.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Flags\es.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Flags\fr.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Flags\it.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Flags\jp.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\logout_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Splash-320x534.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Splash-420x200.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Splash-800x600.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\startpage_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Base.theme">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\BaseStyle.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Beckhoff_white.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Flags\cn.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Flags\de.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Flags\en_gb.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Flags\en_us.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Flags\es.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Flags\fr.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Flags\it.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Flags\jp.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\logout_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-320x534.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-420x200.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-800x600.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\startpage_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="tsconfig.tpl.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="tsconfig.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+      <DependentUpon>tsconfig.tpl.json</DependentUpon>
+    </Content>
+    <Content Include="packages.config">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="packages.xsd">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Properties\tchmiconfig.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\tchmi.framework.Schema.tpl.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\tchmi.framework.Schema.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+      <DependentUpon>Properties\tchmi.framework.Schema.tpl.json</DependentUpon>
+    </Content>
+    <Content Include="Properties\tchmi.project.Schema.tpl.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\tchmi.project.Schema.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+      <DependentUpon>Properties\tchmi.project.Schema.tpl.json</DependentUpon>
+    </Content>
+    <Content Include="Properties\tchmipublish.config.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\tchmimanifest.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\Default.tpl">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include=".tfignore">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include=".gitignore">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Fonts\Fonts.css">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Fonts\Roboto-Condensed-webfont.woff">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Localization\de.tpl.localization">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Localization\en.tpl.localization">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Localization\de.localization">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+      <DependentUpon>Localization\de.tpl.localization</DependentUpon>
+    </Content>
+    <Content Include="Localization\en.localization">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+      <DependentUpon>Localization\en.tpl.localization</DependentUpon>
+    </Content>
+    <Content Include="KeyboardLayouts\German - compact.keyboard.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="KeyboardLayouts\US - compact.keyboard.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="KeyboardLayouts\Numpad (plusminus).keyboard.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Manifest\launcher-icon-0-75x.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Manifest\launcher-icon-1-5x.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Manifest\launcher-icon-1x.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Manifest\launcher-icon-2x.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Manifest\launcher-icon-3x.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Manifest\launcher-icon-4x.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\PLC\plc-config.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\PLC\plc-exeption.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\PLC\plc-fallback.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\PLC\plc-run.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\PLC\plc-stop.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\TwinCAT\twincat-config.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\TwinCAT\twincat-exeption.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\TwinCAT\twincat-fallback.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\TwinCAT\twincat-run.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\TwinCAT\twincat-stop.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Pages\LoginPage.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Desktop.view">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Folder Include="Themes\Base\Images\" />
+    <Folder Include="Themes\Base\Images\Flags\" />
+    <Folder Include="User_Contols\0.Controle" />
+    <Folder Include="User_Contols\1.Headers" />
+  </ItemGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.props'))" />
+    <Error Condition="!Exists('$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.targets'))" />
+  </Target>
+  <Import Project="$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.targets" Condition="Exists('$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.targets')" />
+</Project>

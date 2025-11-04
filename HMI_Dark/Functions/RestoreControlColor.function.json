@@ -1,0 +1,42 @@
+{
+    "function": {
+        "name": "RestoreControlColor",
+        "namespace": "TcHmi.Functions.HMI_Dark",
+        "displayName": "RestoreControlColor",
+        "description": "Restaura a cor de fundo original do controle informado (parâmetro do tipo Control).",
+        "waitMode": "Synchronous",
+        "category": "Other",
+        "returnValue": { "type": "tchmi:general#/definitions/Boolean" },
+        "visible": true,
+        "injectContextObject": false,
+        "arguments": [
+            {
+                "name": "control",
+                "displayName": "Control",
+                "type": "tchmi:framework#/definitions/Control",
+                "description": "Selecione o controle cuja cor deve ser restaurada.",
+                "defaultValue": null,
+                "required": true,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false
+            }
+        ]
+    },
+    "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.46/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+    "apiVersion": 1,
+    "version": {
+        "full": "0.0.0.0",
+        "major": 0,
+        "minor": 0,
+        "revision": 0,
+        "build": 0
+    },
+    "dependencyFiles": [
+        {
+            "name": "RestoreControlColor.js",
+            "type": "JavaScript",
+            "description": ""
+        }
+    ]
+}

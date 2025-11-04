@@ -1,0 +1,93 @@
+{
+  "function": {
+    "name": "WriteControlValueBySelector",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "WriteControlValueBySelector",
+    "description": "Se iSelector == 0 escreve o Value do controle em symbolIfZero, senão escreve em symbolIfNotZero.",
+    "waitMode": "Asynchronous",
+    "category": "Other",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/Boolean"
+    },
+    "visible": true,
+    "injectContextObject": true,
+    "arguments": [
+      {
+        "name": "ctx",
+        "displayName": "ctx",
+        "type": "tchmi:framework#/definitions/ContextReference",
+        "description": "Context Reference",
+        "defaultValue": null,
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "iSelector",
+        "displayName": "iSelector",
+        "type": "tchmi:general#/definitions/Integer",
+        "description": "0 => escreve em symbolIfZero; !=0 => escreve em symbolIfNotZero",
+        "defaultValue": "0",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "controlId",
+        "displayName": "Control ID",
+        "type": "String",
+        "description": "ID do controle de onde ler o Value (pode ser binding: %ctrl%InputBox_SetPoint::id%/ctrl%)",
+        "defaultValue": "",
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbolIfZero",
+        "displayName": "Symbol If Zero",
+        "type": "tchmi:project#/definitions/Symbol_Of_String",
+        "description": "Símbolo de destino quando iSelector == 0",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbolIfNotZero",
+        "displayName": "Symbol If Not Zero",
+        "type": "tchmi:project#/definitions/Symbol_Of_String",
+        "description": "Símbolo de destino quando iSelector != 0",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "0.0.0.0",
+    "major": 0,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "WriteControlValueBySelector.js",
+      "type": "JavaScript",
+      "description": ""
+    }
+  ]
+}

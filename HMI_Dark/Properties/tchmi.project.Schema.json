@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "SCU_Feed_Setpoint": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\0.Controle\\SCU_Feed_Setpoint.usercontrol.json",
+      "id": "tchmi:project#/definitions/SCU_Feed_Setpoint",
+      "type": "object"
+    },
+    "Limites_e_Erro": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\0.Controle\\Limites_e_Erro.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Limites_e_Erro"
+    },
+    "SCU_Feed_Setpoint_-_Copy": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\0.Controle\\SCU_PID.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/SCU_Feed_Setpoint_-_Copy"
+    },
+    "SCU_Painel_Manifold_Completo": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\0.Controle\\SCU_Painel_Manifold_Completo.usercontrol.json",
+      "id": "tchmi:project#/definitions/SCU_Painel_Manifold_Completo",
+      "type": "object"
+    },
+    "SCU_select": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\1.Headers\\SCU_select.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/SCU_select"
+    },
+    "ScuGroup": {
+      "properties": {
+        "Group1": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "Group2": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "Group3": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "Group4": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        }
+      },
+      "type": "object",
+      "title": "Recebe as variveis para toggleGroup",
+      "id": "tchmi:project#/definitions/ScuGroup"
+    },
+    "UserControl1": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\0.Controle\\UserControl1.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControl1"
+    },
+    "stUserControlFeedBack": {
+      "properties": {
+        "fRateRamp": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "fTarget": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "pathLedStatus": {
+          "$ref": "tchmi:framework#/definitions/Path"
+        },
+        "sFeedBackValue": {
+          "$ref": "tchmi:general#/definitions/String"
+        }
+      },
+      "type": "object",
+      "id": "tchmi:project#/definitions/stUserControlFeedBack"
+    },
+    "MyType": {
+      "properties": {
+        "CONTROLLER": {
+          "additionalProperties": {},
+          "definitions": {},
+          "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-ST_ANALOGIC_CONFIG"
+        }
+      },
+      "type": "object"
+    },
+    "SCU_PID": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\0.Controle\\SCU_PID.usercontrol.json",
+      "id": "tchmi:project#/definitions/SCU_PID",
+      "type": "object"
+    },
+    "Symbol_Of_Number": {
+      "allOf": [
+        {
+          "$ref": "tchmi:framework#/definitions/Symbol"
+        },
+        {
+          "frameworkSymbolSubType": {
+            "$ref": "Number"
+          }
+        }
+      ]
+    },
+    "Symbol_Of_String": {
+      "allOf": [
+        {
+          "$ref": "tchmi:framework#/definitions/Symbol"
+        },
+        {
+          "frameworkSymbolSubType": {
+            "$ref": "String"
+          }
+        }
+      ]
+    },
+    "Symbol_Of_Any": {
+      "allOf": [
+        {
+          "$ref": "tchmi:framework#/definitions/Symbol"
+        },
+        {
+          "frameworkSymbolSubType": {
+            "$ref": "tchmi:general#/definitions/Any"
+          }
+        }
+      ]
+    },
+    "Symbol_Of_symbol": {
+      "allOf": [
+        {
+          "$ref": "tchmi:framework#/definitions/Symbol"
+        },
+        {
+          "frameworkSymbolSubType": {
+            "$ref": "tchmi:server#/definitions/symbol"
+          }
+        }
+      ]
+    },
+    "Symbol_Of_Symbol": {
+      "allOf": [
+        {
+          "$ref": "tchmi:framework#/definitions/Symbol"
+        },
+        {
+          "frameworkSymbolSubType": {
+            "$ref": "tchmi:framework#/definitions/Symbol"
+          }
+        }
+      ]
+    }
+  }
+}

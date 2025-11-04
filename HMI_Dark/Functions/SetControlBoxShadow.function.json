@@ -1,0 +1,51 @@
+{
+    "function": {
+        "name": "SetControlBoxShadow",
+        "namespace": "TcHmi.Functions.HMI_Dark",
+        "displayName": "SetControlBoxShadow",
+        "description": "Aplica uma lista de sombras (BoxShadowList do framework) ao controle informado.",
+        "waitMode": "Synchronous",
+        "category": "Other",
+        "returnValue": { "type": "tchmi:general#/definitions/Boolean" },
+        "visible": true,
+        "injectContextObject": false,
+        "arguments": [
+            {
+                "name": "control",
+                "displayName": "Control",
+                "type": "tchmi:framework#/definitions/Control",
+                "description": "Selecione o controle alvo.",
+                "required": true,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false
+            },
+            {
+                "name": "boxShadowList",
+                "displayName": "BoxShadowList",
+                "type": "tchmi:framework#/definitions/BoxShadowList",
+                "description": "Lista de sombras (offsets, blur, spread, inset, color) conforme o framework.",
+                "required": true,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false
+            }
+        ]
+    },
+    "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.46/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+    "apiVersion": 1,
+    "version": {
+        "full": "0.0.0.0",
+        "major": 0,
+        "minor": 0,
+        "revision": 0,
+        "build": 0
+    },
+    "dependencyFiles": [
+        {
+            "name": "SetControlBoxShadow.js",
+            "type": "JavaScript",
+            "description": ""
+        }
+    ]
+}
