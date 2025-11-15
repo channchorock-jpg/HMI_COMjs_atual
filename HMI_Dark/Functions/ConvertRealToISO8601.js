@@ -61,37 +61,62 @@
         // 2. CONVERSÃO REAL → COMPONENTES DE TEMPO
         // ===================================================================
 
-        var totalSeconds = seconds;
         var hours = 0;
         var minutes = 0;
         var secs = 0;
         var milliseconds = 0;
 
-        // Extrai horas
-        if (totalSeconds >= 3600) {
-            hours = Math.floor(totalSeconds / 3600);
-            totalSeconds -= hours * 3600;
-        }
-
-        // Extrai minutos
-        if (totalSeconds >= 60) {
-            minutes = Math.floor(totalSeconds / 60);
-            totalSeconds -= minutes * 60;
-        }
-
-        // Restante são segundos
         if (includeMs) {
-            // Separa segundos inteiros e milissegundos
-            secs = Math.floor(totalSeconds);
-            milliseconds = Math.round((totalSeconds - secs) * 1000);
+            // ---------------------------------------------------------------
+            // MODO COM MILISSEGUNDOS: Converte tudo para MS primeiro
+            // ---------------------------------------------------------------
 
-            // Se milissegundos arredondou para 1000, ajusta
-            if (milliseconds >= 1000) {
-                secs += 1;
-                milliseconds = 0;
+            // Converte para milissegundos totais MANTENDO precisão decimal
+            var totalMs = seconds * 1000;
+
+            // Extrai horas (1h = 3600000ms)
+            if (totalMs >= 3600000) {
+                hours = Math.floor(totalMs / 3600000);
+                totalMs -= hours * 3600000;
             }
+
+            // Extrai minutos (1m = 60000ms)
+            if (totalMs >= 60000) {
+                minutes = Math.floor(totalMs / 60000);
+                totalMs -= minutes * 60000;
+            }
+
+            // Extrai segundos (1s = 1000ms)
+            if (totalMs >= 1000) {
+                secs = Math.floor(totalMs / 1000);
+                totalMs -= secs * 1000;
+            }
+
+            // Restante são milissegundos
+            // Usa Math.ceil() para garantir que valores > 0 sempre mostrem pelo menos 1ms
+            // Exemplo: 0.3ms vira 1ms, 1.5ms vira 2ms
+            milliseconds = totalMs > 0 ? Math.ceil(totalMs) : 0;
+
         } else {
-            // Arredonda para segundos completos
+            // ---------------------------------------------------------------
+            // MODO SEM MILISSEGUNDOS: Trabalha com segundos decimais
+            // ---------------------------------------------------------------
+
+            var totalSeconds = seconds;
+
+            // Extrai horas
+            if (totalSeconds >= 3600) {
+                hours = Math.floor(totalSeconds / 3600);
+                totalSeconds -= hours * 3600;
+            }
+
+            // Extrai minutos
+            if (totalSeconds >= 60) {
+                minutes = Math.floor(totalSeconds / 60);
+                totalSeconds -= minutes * 60;
+            }
+
+            // Restante são segundos com decimais
             secs = Math.round(totalSeconds * 10) / 10; // Mantém 1 casa decimal
         }
 
@@ -123,17 +148,17 @@
             }
 
             if (includeMs) {
-                // Com milissegundos separados
+                // Com milissegundos separados - SEMPRE mostra MS quando includeMs=true
                 if (secs > 0) {
                     result += secs + 'S';
                 }
-                if (milliseconds > 0) {
-                    result += milliseconds + 'MS';
-                }
 
-                // Caso especial: se tudo for zero, retorna PT0S
+                // SEMPRE adiciona milissegundos (mesmo que seja 0MS)
+                result += milliseconds + 'MS';
+
+                // Caso especial: se for completamente zero, mostra PT0MS
                 if (hours === 0 && minutes === 0 && secs === 0 && milliseconds === 0) {
-                    result = 'PT0S';
+                    result = 'PT0MS';
                 }
             } else {
                 // Segundos com decimais
@@ -157,9 +182,8 @@
 
             if (includeMs) {
                 result += secs + 'S';
-                if (milliseconds > 0) {
-                    result += milliseconds + 'MS';
-                }
+                // SEMPRE adiciona milissegundos no formato completo
+                result += milliseconds + 'MS';
             } else {
                 var secsStr = secs.toString();
                 if (secsStr.indexOf('.') !== -1) {
