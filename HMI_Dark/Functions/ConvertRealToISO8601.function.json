@@ -1,0 +1,57 @@
+{
+    "function": {
+        "name": "ConvertRealToISO8601",
+        "namespace": "TcHmi.Functions.HMI_Dark",
+        "displayName": "Convert REAL to ISO 8601",
+        "description": "Converte um valor REAL (segundos) para formato ISO 8601 Duration (ex: PT3S, PT1M30S, PT2H).",
+        "waitMode": "Synchronous",
+        "category": "HMI_Dark|Data Conversion",
+        "returnValue": {
+            "type": "tchmi:general#/definitions/String",
+            "description": "String ISO 8601 Duration (ex: 'PT3S', 'PT1M30.5S', 'PT2H15M')"
+        },
+        "visible": true,
+        "injectContextObject": false,
+        "arguments": [
+            {
+                "name": "realValue",
+                "displayName": "REAL Value (seconds)",
+                "type": "tchmi:general#/definitions/REAL",
+                "description": "Valor REAL em segundos (pode ter decimais, ex: 3.5 para 3.5 segundos)",
+                "defaultValue": null,
+                "required": true,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false,
+                "allowControlAttributeBindingOptions": false
+            },
+            {
+                "name": "includeMilliseconds",
+                "displayName": "Include Milliseconds",
+                "type": "tchmi:general#/definitions/Boolean",
+                "description": "Se true, inclui milissegundos separados no formato (ex: PT3S500MS). Padrão: false",
+                "defaultValue": "false",
+                "required": false,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false,
+                "allowControlAttributeBindingOptions": false
+            },
+            {
+                "name": "compactFormat",
+                "displayName": "Compact Format",
+                "type": "tchmi:general#/definitions/Boolean",
+                "description": "Se true, omite componentes zero (ex: PT3S ao invés de PT0H0M3S). Padrão: true",
+                "defaultValue": "true",
+                "required": false,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false,
+                "allowControlAttributeBindingOptions": false
+            }
+        ]
+    },
+    "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+    "apiVersion": 1,
+    "dependencyFiles": []
+}
