@@ -130,6 +130,16 @@
       "name": "Functions/__resolveControl.js",
       "description": "",
       "type": "JavaScript"
+    },
+    {
+      "name": "Functions/ConvertRealToISO8601.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/ReceiveIntegralValue.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [
@@ -228,6 +238,9 @@
       "url": "Functions/BindSensorToNumericInput.js"
     },
     {
+      "url": "Functions/ConvertRealToISO8601.js"
+    },
+    {
       "url": "Functions/ConvertTimeToReal.js"
     },
     {
@@ -244,6 +257,9 @@
     },
     {
       "url": "Functions/ReadUCParamToLog.js"
+    },
+    {
+      "url": "Functions/ReceiveIntegralValue.js"
     },
     {
       "url": "Functions/RestoreControlColor.js"

@@ -518,7 +518,7 @@
 }
 </script>
 </div>
-<div id="InputBox_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="119" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="115" data-tchmi-top-unit="px" data-tchmi-width="172" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40">
+<div id="InputBox_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="119" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="115" data-tchmi-top-unit="px" data-tchmi-width="172" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.ReceiveIntegralValue(%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%)%/f%">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,

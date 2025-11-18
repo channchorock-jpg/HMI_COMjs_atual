@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>HMI_Dark</Name>
-    <HmiCommunicationRouterPort>10106</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10108</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.762.53</HmiInitial>
     <HmiRecent>1.12.762.56</HmiRecent>
@@ -120,6 +120,13 @@
     <Content Include="Functions\BindSensorToNumericInput.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Functions\ConvertRealToISO8601.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\ConvertRealToISO8601.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\ConvertRealToISO8601.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Functions\ConvertTimeToReal.function.json">
       <SubType>Content</SubType>
       <DependentUpon>Functions\ConvertTimeToReal.js</DependentUpon>
@@ -160,6 +167,13 @@
       <DependentUpon>Functions\ReadUCParamToLog.js</DependentUpon>
     </Content>
     <Content Include="Functions\ReadUCParamToLog.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\ReceiveIntegralValue.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\ReceiveIntegralValue.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\ReceiveIntegralValue.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Functions\RestoreControlColor.function.json">
