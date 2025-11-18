@@ -5,7 +5,7 @@
 // Descrição: Calcula o ganho integral (IntGain = 1/Valor) a partir de valores TIME
 // Compatível com TwinCAT HMI Framework v1.12
 // Namespace: TcHmi.Functions.HMI_Dark
-// Versão: 1.1 - Retorna 0 quando TIME = 0 (ao invés de erro de divisão por zero)
+// Versão: 1.2 - Implementa conversão TIME→REAL internamente (sem dependência)
 // ===========================================================================
 
 (function (TcHmi) {
@@ -39,46 +39,124 @@
         }
 
         // ===================================================================
-        // 2. CONVERSÃO TIME → REAL USANDO ConvertTimeToReal
+        // 2. SELEÇÃO DO SENSOR E CONVERSÃO TIME → REAL
         // ===================================================================
 
-        // Chama a função ConvertTimeToReal existente para converter o valor TIME
-        // Usa 6 casas decimais para maior precisão na conversão intermediária
-        var convertedValue = TcHmi.Functions.HMI_Dark.ConvertTimeToReal(
-            iSensorShow,
-            timeValue0,
-            timeValue1,
-            6  // Precisão intermediária de 6 casas decimais
-        );
+        // Valida iSensorShow
+        var sensorIndex = (iSensorShow !== null && iSensorShow !== undefined)
+                          ? parseInt(iSensorShow, 10)
+                          : 0;
 
-        // Verifica se a conversão foi bem-sucedida
-        if (convertedValue === null || convertedValue === undefined) {
-            console.error('[ReceiveIntegralValue] Erro: ConvertTimeToReal retornou null/undefined.');
+        if (isNaN(sensorIndex)) {
+            console.warn('[ReceiveIntegralValue] Aviso: iSensorShow inválido. Usando padrão 0.');
+            sensorIndex = 0;
+        }
+
+        // Seleciona o timeValue baseado no índice do sensor
+        var timeValue = null;
+
+        switch (sensorIndex) {
+            case 0:
+                timeValue = timeValue0;
+                console.log('[ReceiveIntegralValue] Sensor 0 selecionado (timeValue0)');
+                break;
+
+            case 1:
+                timeValue = timeValue1;
+                console.log('[ReceiveIntegralValue] Sensor 1 selecionado (timeValue1)');
+                break;
+
+            default:
+                console.warn('[ReceiveIntegralValue] Aviso: iSensorShow fora do intervalo (0-1). Usando sensor 0.');
+                timeValue = timeValue0;
+                sensorIndex = 0;
+                break;
+        }
+
+        // Verifica se timeValue foi fornecido
+        if (timeValue === null || timeValue === undefined) {
+            console.error('[ReceiveIntegralValue] Erro: timeValue do sensor', sensorIndex, 'não fornecido ou é null/undefined.');
             return null;
         }
+
+        var timeMs = 0; // Valor em milissegundos (será calculado)
+
+        // Detecção e conversão de formato
+        if (typeof timeValue === 'string') {
+            // FORMATO ISO 8601 DURATION (ex: "PT3S", "PT1M30S", "PT500MS")
+            console.log('[ReceiveIntegralValue] Detectado formato STRING:', timeValue);
+
+            // Regex para parse ISO 8601 Duration
+            var iso8601Regex = /^PT(?:(\d+(?:\.\d+)?)H)?(?:(\d+(?:\.\d+)?)M)?(?:(\d+(?:\.\d+)?)S)?(?:(\d+(?:\.\d+)?)MS)?$/i;
+            var match = timeValue.match(iso8601Regex);
+
+            if (match) {
+                var hours = parseFloat(match[1]) || 0;
+                var minutes = parseFloat(match[2]) || 0;
+                var seconds = parseFloat(match[3]) || 0;
+                var milliseconds = parseFloat(match[4]) || 0;
+
+                // Converte tudo para milissegundos
+                timeMs = (hours * 3600000) +      // 1h = 3600000ms
+                         (minutes * 60000) +       // 1m = 60000ms
+                         (seconds * 1000) +        // 1s = 1000ms
+                         milliseconds;             // já em ms
+
+                console.log('[ReceiveIntegralValue] Parse ISO 8601:', {
+                    original: timeValue,
+                    h: hours,
+                    m: minutes,
+                    s: seconds,
+                    ms: milliseconds,
+                    total_ms: timeMs
+                });
+
+            } else {
+                // Tenta interpretar como string numérica (fallback)
+                timeMs = parseFloat(timeValue);
+
+                if (isNaN(timeMs)) {
+                    console.error('[ReceiveIntegralValue] Erro: Formato de string inválido. Recebido:', timeValue);
+                    console.error('[ReceiveIntegralValue] Formatos aceitos: PT3S, PT5M, PT1H30M, PT500MS, ou número');
+                    return null;
+                }
+            }
+
+        } else if (typeof timeValue === 'number') {
+            // FORMATO NUMÉRICO (milissegundos diretos)
+            timeMs = timeValue;
+            console.log('[ReceiveIntegralValue] Detectado formato NUMBER:', timeMs, 'ms');
+
+        } else {
+            console.error('[ReceiveIntegralValue] Erro: Tipo de dado não suportado:', typeof timeValue);
+            return null;
+        }
+
+        // Valida se é um número válido após conversão
+        if (isNaN(timeMs)) {
+            console.error('[ReceiveIntegralValue] Erro: Conversão resultou em NaN. Valor original:', timeValue);
+            return null;
+        }
+
+        // Valida se é valor não-negativo (TIME no PLC é sempre >= 0)
+        if (timeMs < 0) {
+            console.warn('[ReceiveIntegralValue] Aviso: timeValue negativo detectado. Usando valor absoluto.');
+            timeMs = Math.abs(timeMs);
+        }
+
+        // Conversão TIME → REAL (milissegundos → segundos)
+        var convertedValue = timeMs / 1000.0;
 
         console.log('[ReceiveIntegralValue] Valor convertido (segundos):', convertedValue);
 
         // ===================================================================
-        // 3. VALIDAÇÃO DO VALOR CONVERTIDO
+        // 3. VALIDAÇÃO ANTES DO CÁLCULO
         // ===================================================================
-
-        // Verifica se o valor convertido é um número válido
-        if (isNaN(convertedValue)) {
-            console.error('[ReceiveIntegralValue] Erro: Valor convertido é NaN.');
-            return null;
-        }
 
         // Verifica divisão por zero - retorna 0 quando TIME = 0
         if (convertedValue === 0) {
             console.log('[ReceiveIntegralValue] Valor convertido é zero. Retornando IntGain = 0.');
             return 0;
-        }
-
-        // Valida se o valor é positivo (TIME deve ser sempre positivo)
-        if (convertedValue < 0) {
-            console.warn('[ReceiveIntegralValue] Aviso: Valor convertido é negativo. Usando valor absoluto.');
-            convertedValue = Math.abs(convertedValue);
         }
 
         // ===================================================================
@@ -114,9 +192,9 @@
         // ===================================================================
 
         console.log('[ReceiveIntegralValue] ✓ Cálculo bem-sucedido:', {
-            sensor: iSensorShow,
-            timeValue0: timeValue0,
-            timeValue1: timeValue1,
+            sensorIndex: sensorIndex,
+            timeValue_usado: timeValue,
+            timeMs: timeMs,
             valorConvertido_s: convertedValue,
             intGain_bruto: intGain,
             intGain_final: result,

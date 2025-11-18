@@ -518,7 +518,7 @@
 }
 </script>
 </div>
-<div id="InputBox_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="119" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="115" data-tchmi-top-unit="px" data-tchmi-width="172" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.ReceiveIntegralValue(%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%)%/f%">
+<div id="InputBox_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="119" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="115" data-tchmi-top-unit="px" data-tchmi-width="172" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.ConvertTimeToReal(%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTv_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTv_heating%/pp%)%/f%">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -579,47 +579,7 @@
 ]
 </script>
 </div>
-<div id="Label_Actual_I" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="301" data-tchmi-left-unit="px" data-tchmi-top="66" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="200" data-tchmi-text="%f%(function() {
-    var timespanString =%pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%;
-    // Verifica se a string é válida e começa com 'PT'
-    if (!timespanString || typeof timespanString !== 'string') {
-        return 0;
-    }
-    
-    // Remove espaços e converte para maiúsculas
-    const timespan = timespanString.trim().toUpperCase();
-    
-    // Verifica o formato PT (Period Time)
-    if (!timespan.startsWith('PT')) {
-        return 0;
-    }
-    
-    // Remove o prefixo 'PT'
-    let remaining = timespan.substring(2);
-    
-    let totalSeconds = 0;
-    
-    // Regex para extrair horas, minutos e segundos
-    const hoursMatch = remaining.match(/(\d+\.?\d*)H/);
-    const minutesMatch = remaining.match(/(\d+\.?\d*)M/);
-    const secondsMatch = remaining.match(/(\d+\.?\d*)S/);
-    
-    // Converte cada componente para segundos
-    if (hoursMatch) {
-        totalSeconds += parseFloat(hoursMatch[1]) * 3600;
-    }
-    
-    if (minutesMatch) {
-        totalSeconds += parseFloat(minutesMatch[1]) * 60;
-    }
-    
-    if (secondsMatch) {
-        totalSeconds += parseFloat(secondsMatch[1]);
-    }
-    var tGain = 1/totalSeconds;
-    return tGain.toFixed(4);
-})();
-
+<div id="Label_Actual_I" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="301" data-tchmi-left-unit="px" data-tchmi-top="66" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="200" data-tchmi-text="%f%TcHmi.Functions.HMI_Dark.ReceiveIntegralValue(%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%)
     %/f%">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
@@ -735,7 +695,7 @@
   }
 ]
 </script>
-<div id="InputBox_I" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="5" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="119" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="66" data-tchmi-top-unit="px" data-tchmi-width="172" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.ConvertTimeToReal(%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%, 3)%/f%">
+<div id="InputBox_I" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="5" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="119" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="66" data-tchmi-top-unit="px" data-tchmi-width="172" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.ReceiveIntegralValue(%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%)%/f%">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -758,47 +718,7 @@
 }
 </script>
 </div>
-<div id="Label_Actual_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="301" data-tchmi-left-unit="px" data-tchmi-text="%f%(function() {
-    var timespanString =%pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%;
-    // Verifica se a string é válida e começa com 'PT'
-    if (!timespanString || typeof timespanString !== 'string') {
-        return 0;
-    }
-    
-    // Remove espaços e converte para maiúsculas
-    const timespan = timespanString.trim().toUpperCase();
-    
-    // Verifica o formato PT (Period Time)
-    if (!timespan.startsWith('PT')) {
-        return 0;
-    }
-    
-    // Remove o prefixo 'PT'
-    let remaining = timespan.substring(2);
-    
-    let totalSeconds = 0;
-    
-    // Regex para extrair horas, minutos e segundos
-    const hoursMatch = remaining.match(/(\d+\.?\d*)H/);
-    const minutesMatch = remaining.match(/(\d+\.?\d*)M/);
-    const secondsMatch = remaining.match(/(\d+\.?\d*)S/);
-    
-    // Converte cada componente para segundos
-    if (hoursMatch) {
-        totalSeconds += parseFloat(hoursMatch[1]) * 3600;
-    }
-    
-    if (minutesMatch) {
-        totalSeconds += parseFloat(minutesMatch[1]) * 60;
-    }
-    
-    if (secondsMatch) {
-        totalSeconds += parseFloat(secondsMatch[1]);
-    }
-    var tGain = 1/totalSeconds;
-    return tGain;
-})();
-%/f%" data-tchmi-top="115" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="35">
+<div id="Label_Actual_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="301" data-tchmi-left-unit="px" data-tchmi-text="%f%TcHmi.Functions.HMI_Dark.ConvertTimeToReal(%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTv_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTv_heating%/pp%)%/f%" data-tchmi-top="115" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="35">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
