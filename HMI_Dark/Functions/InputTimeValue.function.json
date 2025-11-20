@@ -1,0 +1,81 @@
+{
+  "function": {
+    "name": "InputTimeValue",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "Input Time Value",
+    "description": "Converte valor REAL (segundos) diretamente para TIME ISO 8601 e escreve no símbolo selecionado usando symbol reference (compatível com PLC, UserControl, Control, etc.).",
+    "waitMode": "Synchronous",
+    "category": "HMI_Dark|PID Control",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String",
+      "description": "Valor TIME no formato ISO 8601 que foi escrito (ex: PT3S)"
+    },
+    "visible": true,
+    "injectContextObject": true,
+    "arguments": [
+      {
+        "name": "ctx",
+        "displayName": "ctx",
+        "type": "tchmi:framework#/definitions/ContextReference",
+        "description": "Context Reference",
+        "defaultValue": null,
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "iSensorShow",
+        "displayName": "Sensor Show Index",
+        "type": "tchmi:general#/definitions/INT",
+        "description": "Índice do sensor a exibir (0 = sensor 0, 1 = sensor 1)",
+        "defaultValue": "0",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "tRealValue",
+        "displayName": "Time Value (Seconds)",
+        "type": "tchmi:general#/definitions/REAL",
+        "description": "Valor de tempo em segundos (REAL). Será convertido diretamente para TIME ISO 8601",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbolObj0",
+        "displayName": "Symbol Object 0 (Reference)",
+        "type": "tchmi:project#/definitions/Symbol_Of_Object",
+        "description": "Objeto de símbolo para sensor 0. IMPORTANTE: No editor HMI, marque 'Yes, pass symbol reference'. Aceita qualquer tipo de símbolo: PLC, UserControl (%pp%), Control (%ctrl%), etc.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbolObj1",
+        "displayName": "Symbol Object 1 (Reference)",
+        "type": "tchmi:project#/definitions/Symbol_Of_Object",
+        "description": "Objeto de símbolo para sensor 1. IMPORTANTE: No editor HMI, marque 'Yes, pass symbol reference'. Aceita qualquer tipo de símbolo: PLC, UserControl (%pp%), Control (%ctrl%), etc.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "dependencyFiles": []
+}
