@@ -2,22 +2,22 @@
     "function": {
         "name": "ConvertRealToISO8601",
         "namespace": "TcHmi.Functions.HMI_Dark",
-        "displayName": "Convert REAL to ISO 8601",
-        "description": "Converte um valor REAL (segundos) para formato ISO 8601 Duration (ex: PT3S, PT1M30S, PT2H).",
+        "displayName": "Convert REAL to ISO 8601 TIME",
+        "description": "Converte um valor REAL (segundos) para formato TIME ISO 8601 Duration (ex: PT3S, PT1H30M45.5S).",
         "waitMode": "Synchronous",
         "category": "HMI_Dark|Data Conversion",
         "returnValue": {
             "type": "tchmi:general#/definitions/String",
-            "description": "String ISO 8601 Duration (ex: 'PT3S', 'PT1M30.5S', 'PT2H15M')"
+            "description": "Valor convertido no formato ISO 8601 Duration (ex: PT3S)"
         },
         "visible": true,
         "injectContextObject": false,
         "arguments": [
             {
-                "name": "realValue",
+                "name": "fRealValue",
                 "displayName": "REAL Value (seconds)",
                 "type": "tchmi:general#/definitions/REAL",
-                "description": "Valor REAL em segundos (pode ter decimais, ex: 3.5 para 3.5 segundos)",
+                "description": "Valor em segundos (ponto flutuante) a ser convertido",
                 "defaultValue": null,
                 "required": true,
                 "bindable": true,
@@ -26,22 +26,10 @@
                 "allowControlAttributeBindingOptions": false
             },
             {
-                "name": "includeMilliseconds",
+                "name": "bIncludeMilliseconds",
                 "displayName": "Include Milliseconds",
                 "type": "tchmi:general#/definitions/Boolean",
-                "description": "Se true, inclui milissegundos separados no formato (ex: PT3S500MS). Padrão: false",
-                "defaultValue": "false",
-                "required": false,
-                "bindable": true,
-                "restParameter": false,
-                "asReference": false,
-                "allowControlAttributeBindingOptions": false
-            },
-            {
-                "name": "compactFormat",
-                "displayName": "Compact Format",
-                "type": "tchmi:general#/definitions/Boolean",
-                "description": "Se true, omite componentes zero (ex: PT3S ao invés de PT0H0M3S). Padrão: true",
+                "description": "Incluir milissegundos no resultado (padrão: true)",
                 "defaultValue": "true",
                 "required": false,
                 "bindable": true,

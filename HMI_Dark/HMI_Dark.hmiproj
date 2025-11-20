@@ -162,6 +162,13 @@
     <Content Include="Functions\ImprimirValorControle.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Functions\InputIntegralValue.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\InputIntegralValue.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\InputIntegralValue.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Functions\ReadUCParamToLog.function.json">
       <SubType>Content</SubType>
       <DependentUpon>Functions\ReadUCParamToLog.js</DependentUpon>

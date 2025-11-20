@@ -163,6 +163,18 @@
           }
         }
       ]
+    },
+    "Symbol_Of_Object": {
+      "allOf": [
+        {
+          "$ref": "tchmi:framework#/definitions/Symbol"
+        },
+        {
+          "frameworkSymbolSubType": {
+            "$ref": "tchmi:general#/definitions/Object"
+          }
+        }
+      ]
     }
   }
 }

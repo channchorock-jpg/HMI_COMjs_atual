@@ -342,13 +342,80 @@
       },
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%InputBox_D::Value%/ctrl%",
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
           "symbolExpression": "%f%TcHmi.Functions.HMI_Dark.getValueFromSymbolExpression(%pp%stControle[0]::stPIDRampParams::fKp_heating%/pp%)%/f%"
         },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": false,
+        "symbolExpression": "%ctrl%InputBox_D::Value%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%f%TcHmi.Functions.HMI_Dark.InputIntegralValue(%pp%iSensorBind%/pp%, %ctrl%InputBox_I::Value%/ctrl%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%)%/f%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": false,
+        "fn": "TcHmi.Functions.HMI_Dark.InputIntegralValue",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%iSensorBind%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%ctrl%InputBox_I::Value%/ctrl%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.HMI_Dark.InputIntegralValue",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/INT",
+            "symbolExpression": "%pp%iSensorBind%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/REAL",
+            "symbolExpression": "%ctrl%InputBox_I::Value%/ctrl%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%"
+          }
+        ],
         "asyncWait": true
       }
     ]

@@ -137,6 +137,11 @@
       "type": "JavaScript"
     },
     {
+      "name": "Functions/InputIntegralValue.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
       "name": "Functions/ReceiveIntegralValue.js",
       "description": "",
       "type": "JavaScript"
@@ -254,6 +259,9 @@
     },
     {
       "url": "Functions/ImprimirValorControle.js"
+    },
+    {
+      "url": "Functions/InputIntegralValue.js"
     },
     {
       "url": "Functions/ReadUCParamToLog.js"
