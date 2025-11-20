@@ -145,6 +145,11 @@
       "name": "Functions/ReceiveIntegralValue.js",
       "description": "",
       "type": "JavaScript"
+    },
+    {
+      "name": "Functions/InputTimeValue.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [
@@ -262,6 +267,9 @@
     },
     {
       "url": "Functions/InputIntegralValue.js"
+    },
+    {
+      "url": "Functions/InputTimeValue.js"
     },
     {
       "url": "Functions/ReadUCParamToLog.js"

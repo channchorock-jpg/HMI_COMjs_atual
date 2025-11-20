@@ -1,69 +1,69 @@
 {
-    "function": {
-        "name": "ReceiveIntegralValue",
-        "namespace": "TcHmi.Functions.HMI_Dark",
-        "displayName": "Receive Integral Value",
-        "description": "Calcula o ganho integral (IntGain = 1/Valor) a partir de valores TIME de sensores com seleção por índice.",
-        "waitMode": "Synchronous",
-        "category": "HMI_Dark|PID Control",
-        "returnValue": {
-            "type": "tchmi:general#/definitions/REAL",
-            "description": "Ganho integral calculado (IntGain = 1/Valor convertido)"
-        },
-        "visible": true,
-        "injectContextObject": false,
-        "arguments": [
-            {
-                "name": "iSensorShow",
-                "displayName": "Sensor Show Index",
-                "type": "tchmi:general#/definitions/INT",
-                "description": "Índice do sensor a exibir (0 = timeValue0, 1 = timeValue1)",
-                "defaultValue": "0",
-                "required": false,
-                "bindable": true,
-                "restParameter": false,
-                "asReference": false,
-                "allowControlAttributeBindingOptions": false
-            },
-            {
-                "name": "timeValue0",
-                "displayName": "TIME Value 0 (ms)",
-                "type": "tchmi:general#/definitions/TIME",
-                "description": "Valor TIME do sensor 0 em milissegundos ou ISO 8601 (ex: 5000 para T#5s ou 'PT5S')",
-                "defaultValue": null,
-                "required": false,
-                "bindable": true,
-                "restParameter": false,
-                "asReference": false,
-                "allowControlAttributeBindingOptions": false
-            },
-            {
-                "name": "timeValue1",
-                "displayName": "TIME Value 1 (ms)",
-                "type": "tchmi:general#/definitions/TIME",
-                "description": "Valor TIME do sensor 1 em milissegundos ou ISO 8601 (ex: 5000 para T#5s ou 'PT5S')",
-                "defaultValue": null,
-                "required": false,
-                "bindable": true,
-                "restParameter": false,
-                "asReference": false,
-                "allowControlAttributeBindingOptions": false
-            },
-            {
-                "name": "decimalPlaces",
-                "displayName": "Decimal Places",
-                "type": "tchmi:general#/definitions/INT",
-                "description": "Número de casas decimais no resultado do IntGain (0-10)",
-                "defaultValue": "6",
-                "required": false,
-                "bindable": true,
-                "restParameter": false,
-                "asReference": false,
-                "allowControlAttributeBindingOptions": false
-            }
-        ]
+  "function": {
+    "name": "ReceiveIntegralValue",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "Receive Integral Value",
+    "description": "Calcula o ganho integral (IntGain = 1/Valor) a partir de valores TIME de sensores com seleção por índice.",
+    "waitMode": "Synchronous",
+    "category": "HMI_Dark|PID Control",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/REAL",
+      "description": "Ganho integral calculado (IntGain = 1/Valor convertido)"
     },
-    "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
-    "apiVersion": 1,
-    "dependencyFiles": []
+    "visible": true,
+    "injectContextObject": false,
+    "arguments": [
+      {
+        "name": "iSensorShow",
+        "displayName": "Sensor Show Index",
+        "type": "tchmi:general#/definitions/INT",
+        "description": "Índice do sensor a exibir (0 = timeValue0, 1 = timeValue1)",
+        "defaultValue": "0",
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "timeValue0",
+        "displayName": "TIME Value 0 (ms)",
+        "type": "tchmi:general#/definitions/TIME",
+        "description": "Valor TIME do sensor 0 em milissegundos ou ISO 8601 (ex: 5000 para T#5s ou 'PT5S')",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "timeValue1",
+        "displayName": "TIME Value 1 (ms)",
+        "type": "tchmi:general#/definitions/TIME",
+        "description": "Valor TIME do sensor 1 em milissegundos ou ISO 8601 (ex: 5000 para T#5s ou 'PT5S')",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "decimalPlaces",
+        "displayName": "Decimal Places",
+        "type": "tchmi:general#/definitions/INT",
+        "description": "Número de casas decimais no resultado do IntGain (0-10)",
+        "defaultValue": 4,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "dependencyFiles": []
 }

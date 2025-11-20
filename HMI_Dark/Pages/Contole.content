@@ -71,13 +71,6 @@
         "asyncWait": true
       },
       {
-        "objectType": "ActionTemplate",
-        "active": false,
-        "templateName": "BindControlSCU1",
-        "fnParams": [],
-        "asyncWait": true
-      },
-      {
         "objectType": "Function",
         "active": true,
         "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
@@ -165,28 +158,6 @@
             "objectType": "Symbol",
             "valueType": "tchmi:general#/definitions/String",
             "symbolExpression": "%s%PLC1.SCU1.eCurrentState%/s%"
-          }
-        ],
-        "asyncWait": true
-      },
-      {
-        "objectType": "Function",
-        "active": false,
-        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
-        "fnParams": [
-          {
-            "objectType": "Symbol",
-            "valueType": "tchmi:framework#/definitions/Control",
-            "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
-          },
-          {
-            "objectType": "StaticValue",
-            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
-            "value": "Scu_Ramp_fTarget"
-          },
-          {
-            "objectType": "Symbol",
-            "symbolExpression": "%s%PLC1.SCU1.Sensors.0.stRampInput.fTargetValue%/s%"
           }
         ],
         "asyncWait": true

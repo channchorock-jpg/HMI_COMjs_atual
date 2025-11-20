@@ -18,7 +18,7 @@
      * @param {object} __context - Contexto de execução fornecido pelo framework
      * @returns {number|null} Valor em segundos (REAL) ou null em caso de erro
      */
-    function ConvertTimeToReal(iSensorShow, timeValue0, timeValue1, decimalPlaces, __context) {
+    function ConvertTimeToReal(iSensorShow, timeValue0, timeValue1, decimalPlaces) {
 
         // ===================================================================
         // 1. VALIDAÇÃO DE PARÂMETROS - SELEÇÃO DE SENSOR

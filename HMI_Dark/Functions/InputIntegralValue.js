@@ -3,9 +3,10 @@
 // ===========================================================================
 // Função: InputIntegralValue
 // Descrição: Calcula tempo integral (1/IntGain) e escreve no sensor selecionado
+//            Caso especial: IntGain = 0 resulta em tRealValue = 0 (PT0S)
 // Compatível com TwinCAT HMI Framework v1.12
 // Namespace: TcHmi.Functions.HMI_Dark
-// Versão: 3.0 - Uso de objetos de símbolo (symbol reference) para compatibilidade universal
+// Versão: 3.1 - Suporte para IntGain = 0 (retorna tempo zero)
 // ===========================================================================
 
 (function (TcHmi) {
@@ -43,9 +44,11 @@
 
     /**
      * Calcula o tempo integral baseado no ganho (1/IntGain), converte para TIME e escreve no símbolo
+     * Fórmula: tRealValue = 1 / IntGain (se IntGain != 0)
+     *          tRealValue = 0 (se IntGain = 0)
      * @param {object} ctx - Contexto de execução do TwinCAT HMI (obrigatório para registerFunctionEx)
      * @param {number} iSensorShow - Índice do sensor a exibir (0 ou 1)
-     * @param {number} fIntGain - Valor do ganho integral (REAL)
+     * @param {number} fIntGain - Valor do ganho integral (REAL). Se 0, retorna PT0S (tempo zero)
      * @param {object} symbolObj0 - Objeto de símbolo (reference) para sensor 0
      *                              Marque "Yes, pass symbol reference" no editor HMI
      *                              Aceita qualquer tipo: PLC (%s%), UserControl (%pp%), Control (%ctrl%), etc.
@@ -92,12 +95,10 @@
             return null;
         }
 
-        if (intGain === 0) {
-            console.error('[InputIntegralValue] Erro: fIntGain não pode ser zero (divisão por zero).');
-            if (ctx && typeof ctx.error === 'function') {
-                ctx.error('fIntGain não pode ser zero');
-            }
-            return null;
+        // Valida se é valor não-negativo
+        if (intGain < 0) {
+            console.warn('[InputIntegralValue] Aviso: fIntGain negativo detectado. Usando valor absoluto.');
+            intGain = Math.abs(intGain);
         }
 
         // ===================================================================
@@ -131,13 +132,22 @@
         // 4. CÁLCULO DO TEMPO INTEGRAL
         // ===================================================================
 
-        // Fórmula: tRealValue = 1 / IntGain
-        var tRealValue = 1.0 / intGain;
+        var tRealValue;
+
+        // Caso especial: IntGain = 0 → tRealValue = 0 (tempo zero)
+        if (intGain === 0) {
+            tRealValue = 0;
+            console.log('[InputIntegralValue] IntGain = 0 detectado. Tempo integral = 0 (PT0S)');
+        } else {
+            // Fórmula padrão: tRealValue = 1 / IntGain
+            tRealValue = 1.0 / intGain;
+        }
 
         console.log('[InputIntegralValue] Cálculo realizado:', {
             intGain: intGain,
             tRealValue: tRealValue,
-            unidade: 'segundos'
+            unidade: 'segundos',
+            formula: intGain === 0 ? 'IntGain = 0 → tRealValue = 0' : 'tRealValue = 1 / IntGain'
         });
 
         // ===================================================================

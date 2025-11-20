@@ -41,7 +41,7 @@
         "name": "fIntGain",
         "displayName": "Integral Gain",
         "type": "tchmi:general#/definitions/REAL",
-        "description": "Valor do ganho integral (REAL). Será calculado 1/IntGain",
+        "description": "Valor do ganho integral (REAL). Fórmula: tRealValue = 1/IntGain. Caso especial: IntGain = 0 resulta em PT0S (tempo zero).",
         "defaultValue": null,
         "required": true,
         "bindable": true,

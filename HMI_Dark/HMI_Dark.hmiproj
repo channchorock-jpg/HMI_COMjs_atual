@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>HMI_Dark</Name>
-    <HmiCommunicationRouterPort>10108</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10109</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.762.53</HmiInitial>
     <HmiRecent>1.12.762.56</HmiRecent>
@@ -167,6 +167,13 @@
       <DependentUpon>Functions\InputIntegralValue.js</DependentUpon>
     </Content>
     <Content Include="Functions\InputIntegralValue.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\InputTimeValue.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\InputTimeValue.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\InputTimeValue.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Functions\ReadUCParamToLog.function.json">

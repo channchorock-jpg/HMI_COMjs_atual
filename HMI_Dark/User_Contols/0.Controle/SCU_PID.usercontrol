@@ -143,7 +143,7 @@
             text = 'Erro';
     }
     return text;
-})()%/f%" data-tchmi-top="17" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="35">
+})()%/f%" data-tchmi-top="17" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="200">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
@@ -302,95 +302,6 @@
     "event": "Button_apply_PID.onPressed",
     "actions": [
       {
-        "objectType": "JavaScript",
-        "active": false,
-        "sourceLines": [
-          "TcHmi.Symbol.writeEx('%pp%isense%/pp%', 10, function (data) {",
-          "    if (data.error === TcHmi.Errors.NONE) {",
-          "        // Handle success... ",
-          "    } else {",
-          "       ",
-          "    }",
-          "});"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": false,
-        "symbolExpression": "%ctrl%TcHmiTextblock_13574::Text%/ctrl%",
-        "value": {
-          "objectType": "FunctionExpression",
-          "functionExpression": "TcHmi.Functions.HMI_Dark.__resolveControl('%ctrl%InputBox_I::id%/ctrl%')\r"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "Function",
-        "active": false,
-        "fn": "TcHmi.Functions.HMI_Dark.__resolveControl",
-        "fnParams": [
-          {
-            "objectType": "Symbol",
-            "valueType": "tchmi:framework#/definitions/Control",
-            "symbolExpression": "%ctrl%InputBox_I%/ctrl%"
-          }
-        ],
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": false,
-        "symbolExpression": "%ctrl%InputBox_D::Value%/ctrl%",
-        "value": {
-          "objectType": "Symbol",
-          "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%f%TcHmi.Functions.HMI_Dark.getValueFromSymbolExpression(%pp%stControle[0]::stPIDRampParams::fKp_heating%/pp%)%/f%"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": false,
-        "symbolExpression": "%ctrl%InputBox_D::Value%/ctrl%",
-        "value": {
-          "objectType": "Symbol",
-          "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%f%TcHmi.Functions.HMI_Dark.InputIntegralValue(%pp%iSensorBind%/pp%, %ctrl%InputBox_I::Value%/ctrl%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%)%/f%"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "Function",
-        "active": false,
-        "fn": "TcHmi.Functions.HMI_Dark.InputIntegralValue",
-        "fnParams": [
-          {
-            "objectType": "Symbol",
-            "valueType": "tchmi:general#/definitions/String",
-            "symbolExpression": "%pp%iSensorBind%/pp%"
-          },
-          {
-            "objectType": "Symbol",
-            "valueType": "tchmi:general#/definitions/String",
-            "symbolExpression": "%ctrl%InputBox_I::Value%/ctrl%"
-          },
-          {
-            "objectType": "Symbol",
-            "valueType": "tchmi:general#/definitions/String",
-            "symbolExpression": "%pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%"
-          },
-          {
-            "objectType": "Symbol",
-            "valueType": "tchmi:general#/definitions/String",
-            "symbolExpression": "%pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%"
-          }
-        ],
-        "asyncWait": true
-      },
-      {
         "objectType": "Function",
         "active": true,
         "fn": "TcHmi.Functions.HMI_Dark.InputIntegralValue",
@@ -414,6 +325,34 @@
             "objectType": "Symbol",
             "valueType": "tchmi:general#/definitions/String",
             "symbolExpression": "%pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.HMI_Dark.InputTimeValue",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/INT",
+            "symbolExpression": "%pp%iSensorBind%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/REAL",
+            "symbolExpression": "%ctrl%InputBox_D::Value%/ctrl%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stControle[0]::stPIDRampParams::tTv_heating%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stControle[1]::stPIDRampParams::tTv_heating%/pp%"
           }
         ],
         "asyncWait": true
@@ -608,43 +547,7 @@
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "InputBox_D.onUserInteractionFinished",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": false,
-        "sourceLines": [
-          "var symbol = new TcHmi.Symbol(\"%pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%\");",
-          "symbol.write(35, function (data) {",
-          "    if (data.error === TcHmi.Errors.NONE) {",
-          "        // Handle success... ",
-          "    } else {",
-          "        // Handle error... ",
-          "    }",
-          "});"
-        ],
-        "injectContextObject": true,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": false,
-        "symbolExpression": "%pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:general#/definitions/TIME",
-          "value": null
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
+
 </div>
 <div id="Label_Actual_I" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="301" data-tchmi-left-unit="px" data-tchmi-top="66" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="200" data-tchmi-text="%f%TcHmi.Functions.HMI_Dark.ReceiveIntegralValue(%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%)
     %/f%">
@@ -722,26 +625,7 @@
 
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "Label_Actual_I.onMouseClick",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": false,
-        "symbolExpression": "%ctrl%Label_Actual_I::Text%/ctrl%",
-        "value": {
-          "objectType": "Symbol",
-          "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%f%TcHmi.Functions.Beckhoff.ToTimeString(%pp%stControle[0]::stPIDRampParams::tTd_cooling%/pp%, 'af-ZA')%/f%"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
+
 </div>
 
 <script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
@@ -762,7 +646,7 @@
   }
 ]
 </script>
-<div id="InputBox_I" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="5" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="119" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="66" data-tchmi-top-unit="px" data-tchmi-width="172" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.ReceiveIntegralValue(%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%)%/f%">
+<div id="InputBox_I" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="4" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="119" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="66" data-tchmi-top-unit="px" data-tchmi-width="172" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.ReceiveIntegralValue(%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%)%/f%">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -785,7 +669,7 @@
 }
 </script>
 </div>
-<div id="Label_Actual_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="301" data-tchmi-left-unit="px" data-tchmi-text="%f%TcHmi.Functions.HMI_Dark.ConvertTimeToReal(%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTv_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTv_heating%/pp%)%/f%" data-tchmi-top="115" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="35">
+<div id="Label_Actual_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="301" data-tchmi-left-unit="px" data-tchmi-text="%f%TcHmi.Functions.HMI_Dark.ConvertTimeToReal(%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTv_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTv_heating%/pp%)%/f%" data-tchmi-top="115" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="200">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,

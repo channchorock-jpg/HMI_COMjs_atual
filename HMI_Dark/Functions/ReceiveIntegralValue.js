@@ -18,7 +18,7 @@
      * @param {object} __context - Contexto de execução fornecido pelo framework
      * @returns {number|null} Ganho integral (IntGain), 0 quando TIME=0, ou null em caso de erro
      */
-    function ReceiveIntegralValue(iSensorShow, timeValue0, timeValue1, decimalPlaces, __context) {
+    function ReceiveIntegralValue(iSensorShow, timeValue0, timeValue1, decimalPlaces) {
 
         // ===================================================================
         // 1. VALIDAÇÃO DE PARÂMETROS
