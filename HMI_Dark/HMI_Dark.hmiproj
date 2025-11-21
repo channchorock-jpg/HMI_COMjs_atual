@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>HMI_Dark</Name>
-    <HmiCommunicationRouterPort>10109</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10110</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.762.53</HmiInitial>
     <HmiRecent>1.12.762.56</HmiRecent>
@@ -202,6 +202,13 @@
       <DependentUpon>Functions\ScuWriteStatusBar.js</DependentUpon>
     </Content>
     <Content Include="Functions\ScuWriteStatusBar.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\SelectValueByIndex.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\SelectValueByIndex.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\SelectValueByIndex.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Functions\SetControlBoxShadow.function.json">

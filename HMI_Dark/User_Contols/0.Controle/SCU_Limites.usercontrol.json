@@ -1,5 +1,59 @@
 {
+    "parameters": [
+        {
+            "name": "data-tchmi-isenselimit",
+            "displayName": "iSenseLimit",
+            "allowSymbolExpressionsInObject": false,
+            "visible": true,
+            "type": "tchmi:general#/definitions/INT",
+            "category": "",
+            "description": "i=0 mostra limites par sensor 1 i=1 limites para o sesnor 2...",
+            "defaultValue": 0,
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "propertyName": "iSenseLimit",
+            "propertySetterName": "setISenseLimit",
+            "propertyGetterName": "getISenseLimit",
+            "refTo": ""
+        },
+        {
+            "name": "data-tchmi-stcontrole",
+            "displayName": "stControle",
+            "allowSymbolExpressionsInObject": false,
+            "visible": true,
+            "type": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-ST_CONTROLE",
+            "category": "",
+            "description": "",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "propertyName": "stControle",
+            "propertySetterName": "setStControle",
+            "propertyGetterName": "getStControle",
+            "refTo": ""
+        },
+        {
+            "name": "data-tchmi-stfeedback",
+            "displayName": "stFeedback",
+            "allowSymbolExpressionsInObject": false,
+            "visible": true,
+            "type": "tchmi:server#/definitions/PLC1.ST_FEEDBACK",
+            "category": "",
+            "description": "",
+            "requiredOnCompile": false,
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "propertyName": "stFeedback",
+            "propertySetterName": "setStFeedback",
+            "propertyGetterName": "getStFeedback",
+            "refTo": ""
+        }
+    ],
+  "virtualRights": [],
   "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
-  "parameters": [
-  ]
+  "description": ""
 }

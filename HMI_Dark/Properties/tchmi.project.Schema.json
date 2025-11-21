@@ -175,6 +175,14 @@
           }
         }
       ]
+    },
+    "SCU_Limites": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\0.Controle\\SCU_Limites.usercontrol.json",
+      "id": "tchmi:project#/definitions/SCU_Limites",
+      "type": "object"
     }
   }
 }

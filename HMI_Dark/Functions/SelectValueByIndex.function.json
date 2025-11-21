@@ -1,74 +1,118 @@
 {
-  "$schema": "../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
-  "name": "SelectValueByIndex",
-  "displayName": "Select Value By Index",
-  "visible": true,
-  "description": "Seleciona e retorna o valor de um símbolo baseado em um índice numérico. Substitui expressões IIFE com switch-case para seleção dinâmica de símbolos PLC.",
-  "category": "HMI_Dark",
-  "params": [
-    {
-      "name": "indexSource",
-      "displayName": "Index Source",
-      "type": "tchmi:general#/definitions/Any",
-      "description": "Origem do índice (pode ser symbol object, controle ou valor numérico). Se symbol object, marcar 'Yes, pass symbol reference'.",
-      "bindable": true,
-      "visible": true,
-      "defaultValue": null
-    },
-    {
-      "name": "symbol0",
-      "displayName": "Symbol 0",
-      "type": "tchmi:general#/definitions/Any",
-      "description": "Symbol object para o valor do índice 0 (ex.: %pp%stControle[0]::stSafeGuardSensor::fValueMax%/pp%). Usar 'Yes, pass symbol reference'.",
-      "bindable": true,
-      "visible": true,
-      "defaultValue": null
-    },
-    {
-      "name": "symbol1",
-      "displayName": "Symbol 1",
-      "type": "tchmi:general#/definitions/Any",
-      "description": "Symbol object para o valor do índice 1 (ex.: %pp%stControle[1]::stSafeGuardSensor::fValueMax%/pp%). Usar 'Yes, pass symbol reference'.",
-      "bindable": true,
-      "visible": true,
-      "defaultValue": null
-    },
-    {
-      "name": "symbol2",
-      "displayName": "Symbol 2",
-      "type": "tchmi:general#/definitions/Any",
-      "description": "Symbol object para o valor do índice 2 (opcional). Usar 'Yes, pass symbol reference'.",
-      "bindable": true,
-      "visible": true,
-      "defaultValue": null
-    },
-    {
-      "name": "symbol3",
-      "displayName": "Symbol 3",
-      "type": "tchmi:general#/definitions/Any",
-      "description": "Symbol object para o valor do índice 3 (opcional). Usar 'Yes, pass symbol reference'.",
-      "bindable": true,
-      "visible": true,
-      "defaultValue": null
-    },
-    {
-      "name": "defaultValue",
-      "displayName": "Default Value",
+  "function": {
+    "name": "SelectValueByIndex",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "Select Value By Index",
+    "description": "Seleciona e retorna o valor de um símbolo baseado em um índice numérico. Substitui expressões IIFE com switch-case para seleção dinâmica de símbolos PLC.",
+    "waitMode": "Asynchronous",
+    "category": "HMI_Dark",
+    "returnValue": {
       "type": "tchmi:general#/definitions/Number",
-      "description": "Valor de fallback se o índice não corresponder a nenhum símbolo configurado ou se a leitura falhar.",
-      "bindable": true,
-      "visible": true,
-      "defaultValue": 0
-    }
-  ],
-  "returnType": "tchmi:general#/definitions/Number",
-  "asyncWait": true,
-  "heritable": true,
+      "description": "Valor numérico lido do símbolo correspondente ao índice, ou defaultValue."
+    },
+    "visible": true,
+    "injectContextObject": true,
+    "arguments": [
+      {
+        "name": "ctx",
+        "displayName": "ctx",
+        "type": "tchmi:framework#/definitions/ContextReference",
+        "description": "Context Reference",
+        "defaultValue": null,
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "indexSource",
+        "displayName": "Index Source",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Origem do índice (symbol object, controle ou número). Se symbol object, marcar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol0",
+        "displayName": "Symbol 0",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object para o valor do índice 0 (ex.: %pp%stControle[0]::stSafeGuardSensor::fValueMax%/pp%). Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol1",
+        "displayName": "Symbol 1",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object para o valor do índice 1 (ex.: %pp%stControle[1]::stSafeGuardSensor::fValueMax%/pp%). Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol2",
+        "displayName": "Symbol 2",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object para o valor do índice 2 (opcional). Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol3",
+        "displayName": "Symbol 3",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object para o valor do índice 3 (opcional). Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "defaultValue",
+        "displayName": "Default Value",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "Valor de fallback se o índice não corresponder a nenhum símbolo configurado ou se a leitura falhar.",
+        "defaultValue": "0",
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
   "version": {
     "full": "1.0.0.0",
     "major": 1,
     "minor": 0,
-    "build": 0,
-    "revision": 0
-  }
+    "revision": 0,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "SelectValueByIndex.js",
+      "type": "JavaScript",
+      "description": "Implementação da função SelectValueByIndex"
+    }
+  ]
 }

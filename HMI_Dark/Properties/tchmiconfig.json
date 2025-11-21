@@ -150,6 +150,11 @@
       "name": "Functions/InputTimeValue.js",
       "description": "",
       "type": "JavaScript"
+    },
+    {
+      "name": "Functions/SelectValueByIndex.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [
@@ -282,6 +287,9 @@
     },
     {
       "url": "Functions/ScuWriteStatusBar.js"
+    },
+    {
+      "url": "Functions/SelectValueByIndex.js"
     },
     {
       "url": "Functions/SetControlBoxShadow.js"
