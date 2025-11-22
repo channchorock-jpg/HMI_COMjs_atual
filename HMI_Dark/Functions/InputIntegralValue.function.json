@@ -1,118 +1,81 @@
 {
-    "function": {
-        "name": "SelectValueByIndex",
-        "namespace": "TcHmi.Functions.HMI_Dark",
-        "displayName": "Select Value By Index",
-        "description": "Seleciona e retorna o valor de um símbolo baseado em um índice numérico. Substitui expressões IIFE com switch-case para seleção dinâmica de símbolos PLC.",
-        "waitMode": "Asynchronous",
-        "category": "HMI_Dark",
-        "returnValue": {
-            "type": "tchmi:general#/definitions/Number",
-            "description": "Valor numérico lido do símbolo correspondente ao índice, ou defaultValue."
-        },
-        "visible": true,
-        "injectContextObject": true,
-        "arguments": [
-            {
-                "name": "ctx",
-                "displayName": "ctx",
-                "type": "tchmi:framework#/definitions/ContextReference",
-                "description": "Context Reference",
-                "defaultValue": null,
-                "required": true,
-                "bindable": false,
-                "restParameter": false,
-                "asReference": false,
-                "allowControlAttributeBindingOptions": false
-            },
-            {
-                "name": "indexSource",
-                "displayName": "Index Source",
-                "type": "tchmi:project#/definitions/Symbol_Of_symbol",
-                "description": "Origem do índice (symbol object, controle ou número). Se symbol object, marcar 'Yes, pass symbol reference'.",
-                "defaultValue": null,
-                "required": true,
-                "bindable": true,
-                "restParameter": false,
-                "asReference": true,
-                "allowControlAttributeBindingOptions": false
-            },
-            {
-                "name": "symbol0",
-                "displayName": "Symbol 0",
-                "type": "tchmi:project#/definitions/Symbol_Of_symbol",
-                "description": "Symbol object para o valor do índice 0 (ex.: %pp%stControle[0]::stSafeGuardSensor::fValueMax%/pp%). Usar 'Yes, pass symbol reference'.",
-                "defaultValue": null,
-                "required": true,
-                "bindable": true,
-                "restParameter": false,
-                "asReference": true,
-                "allowControlAttributeBindingOptions": false
-            },
-            {
-                "name": "symbol1",
-                "displayName": "Symbol 1",
-                "type": "tchmi:project#/definitions/Symbol_Of_symbol",
-                "description": "Symbol object para o valor do índice 1 (ex.: %pp%stControle[1]::stSafeGuardSensor::fValueMax%/pp%). Usar 'Yes, pass symbol reference'.",
-                "defaultValue": null,
-                "required": true,
-                "bindable": true,
-                "restParameter": false,
-                "asReference": true,
-                "allowControlAttributeBindingOptions": false
-            },
-            {
-                "name": "symbol2",
-                "displayName": "Symbol 2",
-                "type": "tchmi:project#/definitions/Symbol_Of_symbol",
-                "description": "Symbol object para o valor do índice 2 (opcional). Usar 'Yes, pass symbol reference'.",
-                "defaultValue": null,
-                "required": false,
-                "bindable": true,
-                "restParameter": false,
-                "asReference": true,
-                "allowControlAttributeBindingOptions": false
-            },
-            {
-                "name": "symbol3",
-                "displayName": "Symbol 3",
-                "type": "tchmi:project#/definitions/Symbol_Of_symbol",
-                "description": "Symbol object para o valor do índice 3 (opcional). Usar 'Yes, pass symbol reference'.",
-                "defaultValue": null,
-                "required": false,
-                "bindable": true,
-                "restParameter": false,
-                "asReference": true,
-                "allowControlAttributeBindingOptions": false
-            },
-            {
-                "name": "defaultValue",
-                "displayName": "Default Value",
-                "type": "tchmi:general#/definitions/Number",
-                "description": "Valor de fallback se o índice não corresponder a nenhum símbolo configurado ou se a leitura falhar.",
-                "defaultValue": 0,
-                "required": false,
-                "bindable": true,
-                "restParameter": false,
-                "asReference": false,
-                "allowControlAttributeBindingOptions": false
-            }
-        ]
+  "function": {
+    "name": "InputIntegralValue",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "Input Integral Value",
+    "description": "Calcula o tempo integral baseado no ganho (1/IntGain), converte para TIME ISO 8601 e escreve no símbolo selecionado usando symbol reference (compatível com PLC, UserControl, Control, etc.).",
+    "waitMode": "Synchronous",
+    "category": "HMI_Dark|PID Control",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String",
+      "description": "Valor TIME no formato ISO 8601 que foi escrito (ex: PT3S)"
     },
-    "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
-    "apiVersion": 1,
-    "version": {
-        "full": "1.0.0.0",
-        "major": 1,
-        "minor": 0,
-        "build": 0,
-        "revision": 0
-    },
-    "dependencyFiles": [
-        {
-            "name": "SelectValueByIndex.js",
-            "type": "JavaScript",
-            "description": "Implementação da função SelectValueByIndex"
-        }
+    "visible": true,
+    "injectContextObject": true,
+    "arguments": [
+      {
+        "name": "ctx",
+        "displayName": "ctx",
+        "type": "tchmi:framework#/definitions/ContextReference",
+        "description": "Context Reference",
+        "defaultValue": null,
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "iSensorShow",
+        "displayName": "Sensor Show Index",
+        "type": "tchmi:general#/definitions/INT",
+        "description": "Índice do sensor a exibir (0 = sensor 0, 1 = sensor 1)",
+        "defaultValue": "0",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "fIntGain",
+        "displayName": "Integral Gain",
+        "type": "tchmi:general#/definitions/REAL",
+        "description": "Valor do ganho integral (REAL). Será calculado 1/IntGain",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbolObj0",
+        "displayName": "Symbol Object 0 (Reference)",
+        "type": "tchmi:project#/definitions/Symbol_Of_Object",
+        "description": "Objeto de símbolo para sensor 0. IMPORTANTE: No editor HMI, marque 'Yes, pass symbol reference'. Aceita qualquer tipo de símbolo: PLC, UserControl (%pp%), Control (%ctrl%), etc.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbolObj1",
+        "displayName": "Symbol Object 1 (Reference)",
+        "type": "tchmi:project#/definitions/Symbol_Of_Object",
+        "description": "Objeto de símbolo para sensor 1. IMPORTANTE: No editor HMI, marque 'Yes, pass symbol reference'. Aceita qualquer tipo de símbolo: PLC, UserControl (%pp%), Control (%ctrl%), etc.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      }
     ]
+  },
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "dependencyFiles": []
 }

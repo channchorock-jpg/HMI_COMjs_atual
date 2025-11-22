@@ -90,7 +90,7 @@
 </script>
 
 
-<div id="InputBox_Limit_Max" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="2" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="184" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="76" data-tchmi-top-unit="px" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.SelectValueByIndex(%pp%iSenseLimit%/pp%, %pp%stControle[0]::stSafeGuardSensor::fValueMax%/pp%, %pp%stControle[1]::stSafeGuardSensor::fValueMax%/pp%)%/f%" data-tchmi-width="159" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40">
+<div id="InputBox_Limit_Max" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="2" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="184" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="76" data-tchmi-top-unit="px" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.SelectValueByIndex(%pp%iSenseLimit%/pp%, %pp%stControle[0]::stSafeGuardSensor::fValueMax%/pp%, %pp%stControle[1]::stSafeGuardSensor::fValueMax%/pp%)%/f%" data-tchmi-width="159" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -426,7 +426,7 @@
 }
 </script>
 </div>
-<div id="InputBox_Erro" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="184" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-value="0" data-tchmi-width="159" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40">
+<div id="InputBox_Erro" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="184" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.SelectValueByIndex(%pp%iSenseLimit%/pp%, %pp%stControle[0]::stSafeGuardSensor::fMaxError%/pp%, %pp%stControle[1]::stSafeGuardSensor::fMaxError%/pp%)%/f%" data-tchmi-width="159" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -541,7 +541,7 @@
   }
 ]
 </script>
-<div id="InputBox_Limit_min" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="2" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="184" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="121" data-tchmi-top-unit="px" data-tchmi-value="0" data-tchmi-width="159" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40">
+<div id="InputBox_Limit_min" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="2" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="184" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="121" data-tchmi-top-unit="px" data-tchmi-width="159" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="40" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.SelectValueByIndex(%pp%iSenseLimit%/pp%, %pp%stControle[0]::stSafeGuardSensor::fvalueMin%/pp%, %pp%stControle[1]::stSafeGuardSensor::fvalueMin%/pp%)%/f%">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -564,7 +564,7 @@
 }
 </script>
 </div>
-<div id="Label_feedBack_Error_value" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="347" data-tchmi-left-unit="px" data-tchmi-text="%f%&quot;0.000&quot; + &quot; mm&quot;%/f%" data-tchmi-top="166" data-tchmi-top-unit="px" data-tchmi-width="129" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+<div id="Label_feedBack_Error_value" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="347" data-tchmi-left-unit="px" data-tchmi-text="%f%&quot;0.00&quot; + &quot; mm&quot;%/f%" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
   "color": "rgba(105, 104, 104, 1)"
@@ -699,122 +699,12 @@
 [
   {
     "event": "Label_Estatic_Sensor_1.onAttached",
-    "actions": [
-      {
-        "objectType": "SwitchCase",
-        "active": false,
-        "compare": {
-          "objectType": "Symbol",
-          "valueType": "tchmi:general#/definitions/INT",
-          "symbolExpression": "%pp%iSensorBind%/pp%"
-        },
-        "cases": [
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:general#/definitions/INT",
-              "value": 0
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Label_Estatic_Sensor::Text%/ctrl%",
-                "value": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "symbolExpression": "%f%%pp%stFeedback::sModeNameSensor1UpperCase%/pp%+\" \" + \"ESTÁTICO\"%/f%"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:general#/definitions/INT",
-              "value": 1
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Label_Estatic_Sensor::Text%/ctrl%",
-                "value": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "symbolExpression": "%f%%pp%stFeedback::sModeNameSensor2UpperCase%/pp%+\" \" + \"ESTÁTICO\"%/f%"
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
-  },
-  {
-    "event": "%pp%iSensorBind%/pp%",
-    "actions": [
-      {
-        "objectType": "SwitchCase",
-        "active": false,
-        "compare": {
-          "objectType": "Symbol",
-          "valueType": "tchmi:general#/definitions/INT",
-          "symbolExpression": "%pp%iSensorBind%/pp%"
-        },
-        "cases": [
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:general#/definitions/INT",
-              "value": 0
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Label_Estatic_Sensor::Text%/ctrl%",
-                "value": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "symbolExpression": "%f%%pp%stFeedback::sModeNameSensor1UpperCase%/pp%+\" \" + \"ESTÁTICO\"%/f%"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:general#/definitions/INT",
-              "value": 1
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%Label_Estatic_Sensor::Text%/ctrl%",
-                "value": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "symbolExpression": "%f%%pp%stFeedback::sModeNameSensor2UpperCase%/pp%+\" \" + \"ESTÁTICO\"%/f%"
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
+    "actions": []
   }
 ]
 </script>
 </div>
-<div id="Button_Next_Sensor" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="px" data-tchmi-left="485" data-tchmi-left-unit="px" data-tchmi-text="%pp%stFeedback::sModeNameSensor1UpperCase%/pp%" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="180" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="2" data-tchmi-visibility="Visible" data-tchmi-right="15" data-tchmi-bottom="260" data-tchmi-text-font-size-unit="%">
+<div id="Button_Next_Sensor" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="px" data-tchmi-left="485" data-tchmi-left-unit="px" data-tchmi-text="%pp%stFeedback::sModeNameSensor2UpperCase%/pp%" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="85" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="2" data-tchmi-visibility="Visible" data-tchmi-right="15" data-tchmi-bottom="260" data-tchmi-text-font-size-unit="%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "angle": 0.0,
@@ -1099,7 +989,7 @@
 ]
 </script>
 </div>
-<div id="Button_Prev_Sensor" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="px" data-tchmi-left="15" data-tchmi-left-unit="px" data-tchmi-text="%pp%stFeedback::sModeNameSensor2UpperCase%/pp%" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="180" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="2" data-tchmi-visibility="Visible" data-tchmi-right="484" data-tchmi-bottom="260" data-tchmi-text-font-size-unit="%">
+<div id="Button_Prev_Sensor" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="px" data-tchmi-left="15" data-tchmi-left-unit="px" data-tchmi-text="%pp%stFeedback::sModeNameSensor1UpperCase%/pp%" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="80" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="2" data-tchmi-visibility="Visible" data-tchmi-right="484" data-tchmi-bottom="260" data-tchmi-text-font-size-unit="%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "angle": 0.0,
