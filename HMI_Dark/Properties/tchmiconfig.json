@@ -155,6 +155,16 @@
       "name": "Functions/SelectValueByIndex.js",
       "description": "",
       "type": "JavaScript"
+    },
+    {
+      "name": "Functions/SelectAndFormatValue.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/WriteValueByIndex.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [
@@ -289,6 +299,9 @@
       "url": "Functions/ScuWriteStatusBar.js"
     },
     {
+      "url": "Functions/SelectAndFormatValue.js"
+    },
+    {
       "url": "Functions/SelectValueByIndex.js"
     },
     {
@@ -308,6 +321,9 @@
     },
     {
       "url": "Functions/WriteRealToSymbol.js"
+    },
+    {
+      "url": "Functions/WriteValueByIndex.js"
     },
     {
       "url": "Functions/__resolveControl.js"
@@ -352,6 +368,29 @@
       },
       "stFeedBack": {
         "type": "tchmi:project#/definitions/stUserControlFeedBack",
+        "persist": false,
+        "readonly": false
+      },
+      "bLimitChosSens": {
+        "type": "tchmi:project#/definitions/ScuGroup",
+        "persist": false,
+        "readonly": false
+      },
+      "iLimitChosSense": {
+        "value": 1,
+        "type": "tchmi:general#/definitions/INT",
+        "persist": false,
+        "readonly": false
+      },
+      "blimitSens2": {
+        "value": false,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "blimitSesns1": {
+        "value": true,
+        "type": "tchmi:general#/definitions/BOOL",
         "persist": false,
         "readonly": false
       }

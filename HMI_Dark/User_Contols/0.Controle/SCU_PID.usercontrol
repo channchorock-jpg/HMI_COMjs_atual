@@ -216,7 +216,7 @@
 }
 </script>
 </div>
-<div id="Button_apply_PID" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="439" data-tchmi-left-unit="px" data-tchmi-text="Aplicar PID" data-tchmi-top="66" data-tchmi-top-unit="px" data-tchmi-width="117" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold">
+<div id="Button_apply_PID" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="445" data-tchmi-left-unit="px" data-tchmi-text="Aplicar PID" data-tchmi-top="66" data-tchmi-top-unit="px" data-tchmi-width="115" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold">
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {

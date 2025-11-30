@@ -1,0 +1,238 @@
+{
+  "function": {
+    "name": "SelectAndFormatValue",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "Select And Format Value",
+    "description": "Função genérica para selecionar e formatar valores concatenados (valor + prefixo + unidade + sufixo). VERSÃO REORGANIZADA: parâmetros opcionais (índices 2 e 3) estão NO FINAL para permitir omissão.",
+    "waitMode": "Asynchronous",
+    "category": "HMI_Dark",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String",
+      "description": "String formatada: 'valor.toFixed(decimals) prefixo unidade sufixo' ou defaultValue."
+    },
+    "visible": true,
+    "injectContextObject": true,
+    "arguments": [
+      {
+        "name": "ctx",
+        "displayName": "ctx",
+        "type": "tchmi:framework#/definitions/ContextReference",
+        "description": "Context Reference",
+        "defaultValue": null,
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "indexSource",
+        "displayName": "Index Source",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Origem do índice (0-3). Se symbol, marcar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "valueSymbol0",
+        "displayName": "Value Symbol 0",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol de valor numérico (REAL) para índice 0. Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "valueSymbol1",
+        "displayName": "Value Symbol 1",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol de valor numérico (REAL) para índice 1. Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "prefixSymbol0",
+        "displayName": "Prefix Symbol 0",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol de prefixo (STRING) para índice 0. Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "prefixSymbol1",
+        "displayName": "Prefix Symbol 1",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol de prefixo (STRING) para índice 1. Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "unitSymbol0",
+        "displayName": "Unit Symbol 0",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol de unidade (STRING) para índice 0. Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "unitSymbol1",
+        "displayName": "Unit Symbol 1",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol de unidade (STRING) para índice 1. Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "decimalPlaces",
+        "displayName": "Decimal Places",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "Número de casas decimais (toFixed). Pode ser omitido.",
+        "defaultValue": "3",
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "suffix",
+        "displayName": "Suffix",
+        "type": "tchmi:general#/definitions/String",
+        "description": "Sufixo adicional (ex.: '/s', '/min'). Pode ser omitido.",
+        "defaultValue": "",
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "defaultValue",
+        "displayName": "Default Value",
+        "type": "tchmi:general#/definitions/String",
+        "description": "Valor padrão em caso de erro. Pode ser omitido.",
+        "defaultValue": "Erro",
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "valueSymbol2",
+        "displayName": "Value Symbol 2",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol de valor (REAL) para índice 2. OPCIONAL - pode ser omitido. Usar 'Yes, pass symbol reference' se fornecido.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "valueSymbol3",
+        "displayName": "Value Symbol 3",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol de valor (REAL) para índice 3. OPCIONAL - pode ser omitido. Usar 'Yes, pass symbol reference' se fornecido.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "prefixSymbol2",
+        "displayName": "Prefix Symbol 2",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol de prefixo (STRING) para índice 2. OPCIONAL - pode ser omitido. Usar 'Yes, pass symbol reference' se fornecido.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "prefixSymbol3",
+        "displayName": "Prefix Symbol 3",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol de prefixo (STRING) para índice 3. OPCIONAL - pode ser omitido. Usar 'Yes, pass symbol reference' se fornecido.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "unitSymbol2",
+        "displayName": "Unit Symbol 2",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol de unidade (STRING) para índice 2. OPCIONAL - pode ser omitido. Usar 'Yes, pass symbol reference' se fornecido.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "unitSymbol3",
+        "displayName": "Unit Symbol 3",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol de unidade (STRING) para índice 3. OPCIONAL - pode ser omitido. Usar 'Yes, pass symbol reference' se fornecido.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "1.0.1.0",
+    "major": 1,
+    "minor": 0,
+    "revision": 1,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "SelectAndFormatValue.js",
+      "type": "JavaScript",
+      "description": "Versão reorganizada - Parâmetros opcionais no final"
+    }
+  ]
+}

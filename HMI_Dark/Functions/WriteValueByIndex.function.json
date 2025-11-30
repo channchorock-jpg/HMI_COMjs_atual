@@ -1,0 +1,118 @@
+{
+  "function": {
+    "name": "WriteValueByIndex",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "Write Value By Index",
+    "description": "Escreve um valor em um símbolo PLC selecionado por índice. Função inversa de SelectValueByIndex - ao invés de ler, escreve valores.",
+    "waitMode": "Asynchronous",
+    "category": "HMI_Dark",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/Boolean",
+      "description": "true se escreveu com sucesso, false em caso de erro."
+    },
+    "visible": true,
+    "injectContextObject": true,
+    "arguments": [
+      {
+        "name": "ctx",
+        "displayName": "ctx",
+        "type": "tchmi:framework#/definitions/ContextReference",
+        "description": "Context Reference",
+        "defaultValue": null,
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "indexSource",
+        "displayName": "Index Source",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Origem do índice (symbol object, controle ou número). Se symbol object, marcar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "value",
+        "displayName": "Value",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "Valor a ser escrito no símbolo selecionado (pode vir de controle ou número literal).",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol0",
+        "displayName": "Symbol 0",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object de destino para índice 0. Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol1",
+        "displayName": "Symbol 1",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object de destino para índice 1. Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol2",
+        "displayName": "Symbol 2",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object de destino para índice 2 (opcional). Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol3",
+        "displayName": "Symbol 3",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object de destino para índice 3 (opcional). Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "1.0.0.0",
+    "major": 1,
+    "minor": 0,
+    "build": 0,
+    "revision": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "WriteValueByIndex.js",
+      "type": "JavaScript",
+      "description": "Implementação da função WriteValueByIndex"
+    }
+  ]
+}

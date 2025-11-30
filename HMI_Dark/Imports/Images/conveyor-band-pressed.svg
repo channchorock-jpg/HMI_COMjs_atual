@@ -1,0 +1,18 @@
+<svg id="pfade" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="18.5728" y="55.6719" width="43" height="5.8086"/>
+  <polyline class="cls-1" points="48.318 18.52 61.561 32.12 48.318 45.722"/>
+  <line class="cls-1" x1="35.5728" y1="32.1211" x2="61.5728" y2="32.1211"/>
+  <line class="cls-1" x1="18.5753" y1="32.1211" x2="22.9122" y2="32.1211"/>
+  <line class="cls-1" x1="27.0709" y1="32.1543" x2="31.4078" y2="32.1543"/>
+</svg>
