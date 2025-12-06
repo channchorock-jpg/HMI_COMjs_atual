@@ -43,6 +43,7 @@
       "category": "",
       "description": "",
       "defaultValue": 0,
+      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
@@ -67,6 +68,25 @@
       "propertyName": "isense",
       "propertySetterName": "setIsense",
       "propertyGetterName": "getIsense",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-estatebind",
+      "displayName": "eStateBind",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.EStateMachine",
+      "category": "",
+      "description": "",
+      "defaultValue": 3,
+      "defaultValueInternal": 3,
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "eStateBind",
+      "propertySetterName": "setEStateBind",
+      "propertyGetterName": "getEStateBind",
       "refTo": ""
     }
   ],

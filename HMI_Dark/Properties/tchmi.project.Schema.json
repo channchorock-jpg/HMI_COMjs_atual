@@ -183,6 +183,38 @@
       "frameworkUserControlConfig": "User_Contols\\0.Controle\\SCU_Limites.usercontrol.json",
       "id": "tchmi:project#/definitions/SCU_Limites",
       "type": "object"
+    },
+    "SCU_Feed_Setpoint_0": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\0.Controle\\SCU_Feed_Dynamic.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/SCU_Feed_Setpoint_0"
+    },
+    "SCU_Config_input": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\2.Configuracoes\\SCU_Config_input.usercontrol.json",
+      "id": "tchmi:project#/definitions/SCU_Config_input",
+      "type": "object"
+    },
+    "SCU_Cycle_Control": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\2.Configuracoes\\SCU_Config_Cycle_Control.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/SCU_Cycle_Control"
+    },
+    "SCU_Config_Calibration": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\2.Configuracoes\\SCU_Config_Calibration.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/SCU_Config_Calibration"
     }
   }
 }

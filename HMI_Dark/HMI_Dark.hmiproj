@@ -190,6 +190,13 @@
     <Content Include="Functions\ReceiveIntegralValue.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Functions\ReceiveIntegralValueWithMode.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\ReceiveIntegralValueWithMode.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\ReceiveIntegralValueWithMode.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Functions\RestoreControlColor.function.json">
       <SubType>Content</SubType>
       <DependentUpon>Functions\RestoreControlColor.js</DependentUpon>
@@ -230,6 +237,13 @@
       <DependentUpon>Functions\SetControlColor.js</DependentUpon>
     </Content>
     <Content Include="Functions\SetControlColor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\SwitchBoolByIndex.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\SwitchBoolByIndex.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\SwitchBoolByIndex.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Functions\TestFuncion.function.json">
@@ -372,12 +386,22 @@
     <Content Include="Pages\SCU_Tela_Comando.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Pages\Test_Comtent.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="User_Contols\0.Controle\Limites_e_Erro.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="User_Contols\0.Controle\Limites_e_Erro.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>User_Contols\0.Controle\Limites_e_Erro.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\0.Controle\SCU_Feed_Dynamic.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\0.Controle\SCU_Feed_Dynamic.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\0.Controle\SCU_Feed_Dynamic.usercontrol</DependentUpon>
     </Content>
     <Content Include="User_Contols\0.Controle\SCU_Feed_Setpoint.usercontrol">
       <SubType>Content</SubType>
@@ -420,6 +444,27 @@
     <Content Include="User_Contols\1.Headers\SCU_select.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>User_Contols\1.Headers\SCU_select.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\2.Configuracoes\SCU_Config_Calibration.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\2.Configuracoes\SCU_Config_Calibration.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\2.Configuracoes\SCU_Config_Calibration.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\2.Configuracoes\SCU_Config_input.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\2.Configuracoes\SCU_Config_input.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\2.Configuracoes\SCU_Config_input.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\2.Configuracoes\SCU_Config_Cycle_Control.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\2.Configuracoes\SCU_Config_Cycle_Control.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\2.Configuracoes\SCU_Config_Cycle_Control.usercontrol</DependentUpon>
     </Content>
     <Folder Include="Fonts\" />
     <Folder Include="Functions\" />
@@ -828,6 +873,7 @@
     <Folder Include="Themes\Base\Images\Flags\" />
     <Folder Include="User_Contols\0.Controle" />
     <Folder Include="User_Contols\1.Headers" />
+    <Folder Include="User_Contols\2.Configuracoes" />
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

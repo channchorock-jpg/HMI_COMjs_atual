@@ -55,10 +55,11 @@
 
                 case 2: // STOPPED
                     // Regra: "Modo '[estado]' em '[modo]'"
-                    resultado = "Modo '" + sEstado + "' em '" + sModo + "'";
+                    resultado = "MANIFOLD LOW";
                     break;
 
                 case 3: // STATIC_MODE
+                    resultado =  sModo + " " + sEstado + " ";
                 case 4: // DYNAMIC_MODE
                 case 5: // TRANSITION_CHANGE
                     // Regra: "'[modo]' '[estado]'"

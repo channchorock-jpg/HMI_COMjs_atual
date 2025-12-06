@@ -162,7 +162,17 @@
       "type": "JavaScript"
     },
     {
+      "name": "Functions/SwitchBoolByIndex.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
       "name": "Functions/WriteValueByIndex.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/ReceiveIntegralValueWithMode.js",
       "description": "",
       "type": "JavaScript"
     }
@@ -173,6 +183,9 @@
     },
     {
       "url": "User_Contols/0.Controle/Limites_e_Erro.usercontrol"
+    },
+    {
+      "url": "User_Contols/0.Controle/SCU_Feed_Dynamic.usercontrol"
     },
     {
       "url": "User_Contols/0.Controle/SCU_Feed_Setpoint.usercontrol"
@@ -191,11 +204,27 @@
     },
     {
       "url": "User_Contols/1.Headers/SCU_select.usercontrol"
+    },
+    {
+      "url": "User_Contols/2.Configuracoes/SCU_Config_input.usercontrol"
+    },
+    {
+      "url": "User_Contols/2.Configuracoes/SCU_Config_Cycle_Control.usercontrol"
+    },
+    {
+      "url": "User_Contols/2.Configuracoes/SCU_Config_Calibration.usercontrol"
     }
   ],
   "content": [
     {
       "url": "Pages/SCU_Tela_Comando.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Test_Comtent.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
@@ -293,6 +322,9 @@
       "url": "Functions/ReceiveIntegralValue.js"
     },
     {
+      "url": "Functions/ReceiveIntegralValueWithMode.js"
+    },
+    {
       "url": "Functions/RestoreControlColor.js"
     },
     {
@@ -309,6 +341,9 @@
     },
     {
       "url": "Functions/SetControlColor.js"
+    },
+    {
+      "url": "Functions/SwitchBoolByIndex.js"
     },
     {
       "url": "Functions/TestFuncion.js"
@@ -391,6 +426,17 @@
       "blimitSesns1": {
         "value": true,
         "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "bActiveLimSelect": {
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "eStateMachine": {
+        "value": 0,
+        "type": "tchmi:server#/definitions/PLC1.EStateMachine",
         "persist": false,
         "readonly": false
       }

@@ -1,0 +1,118 @@
+{
+  "function": {
+    "name": "SwitchBoolByIndex",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "Switch Bool By Index",
+    "description": "Seleciona e lê/escreve em uma variável booleana baseado em um índice. MODO LEITURA: Retorna o valor do símbolo selecionado. MODO ESCRITA: Escreve newValue no símbolo selecionado. Ideal para ToggleButton ou Checkbox com múltiplos alvos.",
+    "waitMode": "Synchronous",
+    "category": "HMI_Dark",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/Boolean",
+      "description": "MODO LEITURA: Valor booleano do símbolo selecionado. MODO ESCRITA: true se escrita bem-sucedida."
+    },
+    "visible": true,
+    "injectContextObject": true,
+    "arguments": [
+      {
+        "name": "ctx",
+        "displayName": "ctx",
+        "type": "tchmi:framework#/definitions/ContextReference",
+        "description": "Context Reference (injetado automaticamente pelo framework)",
+        "defaultValue": null,
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "index",
+        "displayName": "Index",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "Índice para selecionar o símbolo booleano: 0=bool1, 1=bool2, 2=bool3, 3=bool4. Pode ser valor literal, símbolo ou controle.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "bool1",
+        "displayName": "Bool 1",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Símbolo booleano para índice 0 (obrigatório). Usar 'Yes, pass symbol reference'. Pode ser %s% (PLC) ou %pp% (propriedade).",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "bool2",
+        "displayName": "Bool 2",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Símbolo booleano para índice 1 (obrigatório). Usar 'Yes, pass symbol reference'. Pode ser %s% (PLC) ou %pp% (propriedade).",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "bool3",
+        "displayName": "Bool 3",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Símbolo booleano para índice 2 (opcional). Usar 'Yes, pass symbol reference' se fornecido. Pode ser omitido.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "bool4",
+        "displayName": "Bool 4",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Símbolo booleano para índice 3 (opcional). Usar 'Yes, pass symbol reference' se fornecido. Pode ser omitido.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "newValue",
+        "displayName": "New Value",
+        "type": "tchmi:general#/definitions/Boolean",
+        "description": "MODO ESCRITA: Novo valor booleano a ser escrito no símbolo. Se omitido, função opera em MODO LEITURA. Use em Actions (ex: onToggleStateChanged).",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "1.0.0.0",
+    "major": 1,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "SwitchBoolByIndex.js",
+      "type": "JavaScript",
+      "description": "Implementação da função SwitchBoolByIndex - Leitura/escrita de booleanos por índice"
+    }
+  ]
+}

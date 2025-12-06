@@ -414,20 +414,135 @@
           }
         ],
         "asyncWait": true
+      },
+      {
+        "objectType": "Comment",
+        "comment": "Modo Dinâmico"
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%SCU_Feed_Dynamic_UC%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "iSensorBind"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%s%PLC1.HMI_SCU1.stFeedback::iIndiceSensor[0]%/s%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%SCU_Feed_Dynamic_UC%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "stControle"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%s%PLC1.HMI_SCU1.stControle%/s%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%SCU_Feed_Dynamic_UC%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "stSensors"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%s%PLC1.SCU1.Sensors%/s%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%SCU_Feed_Dynamic_UC%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "stFeedback"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%s%PLC1.HMI_SCU1.stFeedback%/s%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%SCU_Feed_Dynamic_UC%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "stAxisCommandImput"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%s%PLC1.SCU1.AxisCommandInput%/s%"
+          }
+        ],
+        "asyncWait": true
       }
     ]
   }
 ]
 </script>
-<div id="SCU_Feed_Setpoint_UC" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="px" data-tchmi-left="0.3" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Feed_Setpoint.usercontrol" data-tchmi-top="31.7" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-bottom-unit="%" data-tchmi-right="81.7" data-tchmi-right-unit="%" data-tchmi-height="274">
-</div>
 <div id="SCU_PID_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="177" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_PID.usercontrol" data-tchmi-top="634" data-tchmi-top-unit="px" data-tchmi-width="573" data-tchmi-width-unit="px">
 </div>
-<div id="SCU_Limites_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="322" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Limites.usercontrol" data-tchmi-top="815" data-tchmi-top-unit="px" data-tchmi-width="573" data-tchmi-width-unit="px">
+<div id="SCU_Limites_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="28.8" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Limites.usercontrol" data-tchmi-top="71.4" data-tchmi-top-unit="%" data-tchmi-width="17.9" data-tchmi-width-unit="%">
 </div>
-<div id="TcHmiRegion_2" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="284" data-tchmi-height-unit="px" data-tchmi-left="602" data-tchmi-left-unit="px" data-tchmi-top="360" data-tchmi-top-unit="px" data-tchmi-width="712" data-tchmi-width-unit="px">
-</div>
-<div id="TcHmiButton_979983" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="88" data-tchmi-height-unit="px" data-tchmi-left="708" data-tchmi-left-unit="px" data-tchmi-text="S1" data-tchmi-top="722" data-tchmi-top-unit="px" data-tchmi-width="183" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="300" data-tchmi-text-font-size-unit="%">
+<div id="TcHmiButton_979983" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="88" data-tchmi-height-unit="px" data-tchmi-left="669" data-tchmi-left-unit="px" data-tchmi-text="S1" data-tchmi-top="982" data-tchmi-top-unit="px" data-tchmi-width="183" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="300" data-tchmi-text-font-size-unit="%">
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -505,7 +620,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiButton_979984" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="88" data-tchmi-height-unit="px" data-tchmi-left="992" data-tchmi-left-unit="px" data-tchmi-text="S2" data-tchmi-top="721" data-tchmi-top-unit="px" data-tchmi-width="183" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="300" data-tchmi-text-font-size-unit="%">
+<div id="TcHmiButton_979984" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="88" data-tchmi-height-unit="px" data-tchmi-left="941" data-tchmi-left-unit="px" data-tchmi-text="S2" data-tchmi-top="982" data-tchmi-top-unit="px" data-tchmi-width="183" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="300" data-tchmi-text-font-size-unit="%">
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -594,5 +709,45 @@
   "chart": "Sensor 1"
 }
 </script>
+</div>
+<div id="TcHmiGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="274" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="360" data-tchmi-top-unit="px" data-tchmi-width="1148" data-tchmi-width-unit="px" data-tchmi-height-mode="Value" data-tchmi-width-mode="Content">
+
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false,
+    "width": 0.5,
+    "widthMode": "Content",
+    "widthUnit": "factor"
+  },
+  {
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false,
+    "width": 0.5,
+    "widthMode": "Content",
+    "widthUnit": "factor"
+  }
+]
+</script>
+<div id="SCU_Feed_Setpoint_UC" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Feed_Setpoint.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom="0" data-tchmi-width="573" data-tchmi-visibility="Visible">
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1,
+    "heightMode": "Value",
+    "heightUnit": "factor",
+    "maxHeightUnit": "px",
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div id="SCU_Feed_Dynamic_UC" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Feed_Dynamic.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="573" data-tchmi-width-unit="px" data-tchmi-bottom="0" data-tchmi-bottom-unit="%" data-tchmi-visibility="Visible">
+</div>
 </div>
 </div>
