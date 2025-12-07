@@ -1,0 +1,117 @@
+{
+  "function": {
+    "name": "InputTimeValueWithMode",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "Input Time Value With Mode",
+    "description": "Converte valor REAL (segundos) para TIME ISO 8601 e escreve no símbolo selecionado com suporte a enum eStateBind (STATIC_MODE=3, DYNAMIC_MODE=4).",
+    "waitMode": "Synchronous",
+    "category": "HMI_Dark|PID Control",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String",
+      "description": "Valor TIME no formato ISO 8601 que foi escrito (ex: PT3S)"
+    },
+    "visible": true,
+    "injectContextObject": true,
+    "arguments": [
+      {
+        "name": "ctx",
+        "displayName": "ctx",
+        "type": "tchmi:framework#/definitions/ContextReference",
+        "description": "Context Reference",
+        "defaultValue": null,
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "eStateBind",
+        "displayName": "State Bind Mode",
+        "type": "tchmi:general#/definitions/INT",
+        "description": "Modo de operação: 3 = STATIC_MODE, 4 = DYNAMIC_MODE",
+        "defaultValue": "3",
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "iSensorShow",
+        "displayName": "Sensor Show Index",
+        "type": "tchmi:general#/definitions/INT",
+        "description": "Índice do sensor a exibir (0 = sensor 0, 1 = sensor 1)",
+        "defaultValue": "0",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "tRealValue",
+        "displayName": "Time Value (Seconds)",
+        "type": "tchmi:general#/definitions/REAL",
+        "description": "Valor de tempo em segundos (REAL) a ser convertido para TIME",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbolObjStatic0",
+        "displayName": "Static Symbol Object 0",
+        "type": "tchmi:project#/definitions/Symbol_Of_Object",
+        "description": "Symbol object STATIC para sensor 0. Marcar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbolObjStatic1",
+        "displayName": "Static Symbol Object 1",
+        "type": "tchmi:project#/definitions/Symbol_Of_Object",
+        "description": "Symbol object STATIC para sensor 1. Marcar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbolObjDyn0",
+        "displayName": "Dynamic Symbol Object 0",
+        "type": "tchmi:project#/definitions/Symbol_Of_Object",
+        "description": "Symbol object DYNAMIC para sensor 0. Marcar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbolObjDyn1",
+        "displayName": "Dynamic Symbol Object 1",
+        "type": "tchmi:project#/definitions/Symbol_Of_Object",
+        "description": "Symbol object DYNAMIC para sensor 1. Marcar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "dependencyFiles": []
+}

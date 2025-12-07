@@ -176,11 +176,25 @@
     <Content Include="Functions\InputIntegralValue.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Functions\InputIntegralValueWithMode.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\InputIntegralValueWithMode.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\InputIntegralValueWithMode.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Functions\InputTimeValue.function.json">
       <SubType>Content</SubType>
       <DependentUpon>Functions\InputTimeValue.js</DependentUpon>
     </Content>
     <Content Include="Functions\InputTimeValue.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\InputTimeValueWithMode.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\InputTimeValueWithMode.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\InputTimeValueWithMode.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Functions\ReadUCParamToLog.function.json">

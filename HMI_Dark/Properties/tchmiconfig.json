@@ -182,6 +182,16 @@
       "type": "JavaScript"
     },
     {
+      "name": "Functions/InputIntegralValueWithMode.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/InputTimeValueWithMode.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
       "name": "Functions/SelectAndFormatValueWithMode.js",
       "description": "",
       "type": "JavaScript"
@@ -331,7 +341,13 @@
       "url": "Functions/InputIntegralValue.js"
     },
     {
+      "url": "Functions/InputIntegralValueWithMode.js"
+    },
+    {
       "url": "Functions/InputTimeValue.js"
+    },
+    {
+      "url": "Functions/InputTimeValueWithMode.js"
     },
     {
       "url": "Functions/ReadUCParamToLog.js"

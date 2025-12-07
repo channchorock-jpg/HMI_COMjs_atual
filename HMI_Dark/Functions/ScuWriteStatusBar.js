@@ -63,7 +63,7 @@
                 case 4: // DYNAMIC_MODE
                 case 5: // TRANSITION_CHANGE
                     // Regra: "'[modo]' '[estado]'"
-                    resultado = "'" + sModo + "' '" + sEstado + "'";
+                    resultado = " " + sModo + " " + sEstado + " ";
                     break;
 
                 default:

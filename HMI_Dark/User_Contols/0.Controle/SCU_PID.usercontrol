@@ -719,8 +719,13 @@
       {
         "objectType": "Function",
         "active": true,
-        "fn": "TcHmi.Functions.HMI_Dark.InputIntegralValue",
+        "fn": "TcHmi.Functions.HMI_Dark.InputIntegralValueWithMode",
         "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/INT",
+            "symbolExpression": "%pp%eStateBind%/pp%"
+          },
           {
             "objectType": "Symbol",
             "valueType": "tchmi:general#/definitions/INT",
@@ -740,6 +745,16 @@
             "objectType": "Symbol",
             "valueType": "tchmi:general#/definitions/String",
             "symbolExpression": "%pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:project#/definitions/Symbol_Of_Object",
+            "symbolExpression": "%pp%stControle[0]::stPIDSignalParams::tTn_cooling%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stControle[1]::stPIDSignalParams::tTn_cooling%/pp%"
           }
         ],
         "asyncWait": true
@@ -747,8 +762,13 @@
       {
         "objectType": "Function",
         "active": true,
-        "fn": "TcHmi.Functions.HMI_Dark.InputTimeValue",
+        "fn": "TcHmi.Functions.HMI_Dark.InputTimeValueWithMode",
         "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/INT",
+            "symbolExpression": "%pp%eStateBind%/pp%"
+          },
           {
             "objectType": "Symbol",
             "valueType": "tchmi:general#/definitions/INT",
@@ -756,7 +776,7 @@
           },
           {
             "objectType": "Symbol",
-            "valueType": "tchmi:general#/definitions/REAL",
+            "valueType": "tchmi:general#/definitions/String",
             "symbolExpression": "%ctrl%InputBox_D::Value%/ctrl%"
           },
           {
@@ -768,6 +788,16 @@
             "objectType": "Symbol",
             "valueType": "tchmi:general#/definitions/String",
             "symbolExpression": "%pp%stControle[1]::stPIDRampParams::tTv_heating%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stControle[0]::stPIDSignalParams::tTv_cooling%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stControle[1]::stPIDSignalParams::tTv_cooling%/pp%"
           }
         ],
         "asyncWait": true
