@@ -192,12 +192,22 @@
       "type": "JavaScript"
     },
     {
+      "name": "Functions/ScuWriteStatusWithMode.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
       "name": "Functions/SelectAndFormatValueWithMode.js",
       "description": "",
       "type": "JavaScript"
     },
     {
       "name": "Functions/SelectValueByIndexWithMode.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/WriteValueByIndexWithMode.js",
       "description": "",
       "type": "JavaScript"
     }
@@ -365,6 +375,9 @@
       "url": "Functions/ScuWriteStatusBar.js"
     },
     {
+      "url": "Functions/ScuWriteStatusWithMode.js"
+    },
+    {
       "url": "Functions/SelectAndFormatValue.js"
     },
     {
@@ -399,6 +412,9 @@
     },
     {
       "url": "Functions/WriteValueByIndex.js"
+    },
+    {
+      "url": "Functions/WriteValueByIndexWithMode.js"
     },
     {
       "url": "Functions/__resolveControl.js"

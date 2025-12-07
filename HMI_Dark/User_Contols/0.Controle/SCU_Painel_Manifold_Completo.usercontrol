@@ -2013,7 +2013,7 @@
 }
 </script>
 </div>
-<div id="Label_feedBack_Status" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="281" data-tchmi-left-unit="px" data-tchmi-top="6" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="5" data-tchmi-right="9" data-tchmi-text="%f%TcHmi.Functions.HMI_Dark.ScuWriteStatusBar(%pp%eCurrentState%/pp%, %pp%stFeedback::sTypeModeNameActiveSensor%/pp%, %pp%stFeedback::sModeNameSensor1UpperCase%/pp%)%/f%">
+<div id="Label_feedBack_Status" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="281" data-tchmi-left-unit="px" data-tchmi-top="6" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="5" data-tchmi-right="9" data-tchmi-text="%f%TcHmi.Functions.HMI_Dark.ScuWriteStatusWithMode(%pp%eCurrentState%/pp%, %pp%iActiveSensor%/pp%, %pp%stFeedback::sModeNameSensor1UpperCase%/pp%, %pp%stFeedback::sModeNameSensor2UpperCase%/pp%, null, null)%/f%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
   "color": "rgba(252, 250, 250, 1)"

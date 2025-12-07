@@ -232,6 +232,13 @@
     <Content Include="Functions\ScuWriteStatusBar.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Functions\ScuWriteStatusWithMode.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\ScuWriteStatusWithMode.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\ScuWriteStatusWithMode.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Functions\SelectAndFormatValue.function.json">
       <SubType>Content</SubType>
       <DependentUpon>Functions\SelectAndFormatValue.js</DependentUpon>
@@ -307,6 +314,13 @@
       <DependentUpon>Functions\WriteValueByIndex.js</DependentUpon>
     </Content>
     <Content Include="Functions\WriteValueByIndex.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\WriteValueByIndexWithMode.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\WriteValueByIndexWithMode.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\WriteValueByIndexWithMode.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Functions\__resolveControl.function.json">

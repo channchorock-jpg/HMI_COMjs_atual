@@ -170,6 +170,29 @@
           {
             "objectType": "Symbol",
             "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%SCU_Painel_Manifold_Completo_1%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "iActiveSensor"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%s%PLC1.SCU1.ActiveSensor%/s%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
             "symbolExpression": "%ctrl%SCU_Feed_Setpoint_UC%/ctrl%"
           },
           {

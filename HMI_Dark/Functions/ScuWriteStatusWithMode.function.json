@@ -1,0 +1,105 @@
+{
+    "function": {
+        "name": "ScuWriteStatusWithMode",
+        "namespace": "TcHmi.Functions.HMI_Dark",
+        "displayName": "ScuWriteStatusWithMode",
+        "description": "Compõe texto de status bar baseado no estado da máquina (enum 0-5) e sensor ativo (0-3), usando nomes dos sensores fornecidos",
+        "waitMode": "Synchronous",
+        "category": "HMI_Dark",
+        "returnValue": {
+            "type": "tchmi:general#/definitions/String"
+        },
+        "visible": true,
+        "injectContextObject": false,
+        "arguments": [
+            {
+                "name": "eEstateMachine",
+                "displayName": "Estado da Máquina",
+                "type": "tchmi:general#/definitions/Integer",
+                "description": "Enum do estado: 0=EMERGENCY_ALERT, 1=MANIFOLD_OFF, 2=STOPPED, 3=STATIC_MODE, 4=DYNAMIC_MODE, 5=TRANSITION_CHANGE",
+                "defaultValue": null,
+                "required": true,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false,
+                "allowControlAttributeBindingOptions": false
+            },
+            {
+                "name": "iSensorActive",
+                "displayName": "Sensor Ativo",
+                "type": "tchmi:general#/definitions/Integer",
+                "description": "Índice do sensor ativo (1-4): 1=primeiro sensor, 2=segundo, 3=terceiro, 4=quarto",
+                "defaultValue": null,
+                "required": true,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false,
+                "allowControlAttributeBindingOptions": false
+            },
+            {
+                "name": "sSensorName0",
+                "displayName": "Nome do Sensor 0",
+                "type": "tchmi:general#/definitions/String",
+                "description": "Nome do primeiro sensor (ex: DESLOCAMENTO)",
+                "defaultValue": null,
+                "required": true,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false,
+                "allowControlAttributeBindingOptions": false
+            },
+            {
+                "name": "sSensorName1",
+                "displayName": "Nome do Sensor 1",
+                "type": "tchmi:general#/definitions/String",
+                "description": "Nome do segundo sensor (ex: FORÇA)",
+                "defaultValue": null,
+                "required": true,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false,
+                "allowControlAttributeBindingOptions": false
+            },
+            {
+                "name": "sSensorName2",
+                "displayName": "Nome do Sensor 2",
+                "type": "tchmi:general#/definitions/String",
+                "description": "Nome do terceiro sensor (opcional)",
+                "defaultValue": null,
+                "required": false,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false,
+                "allowControlAttributeBindingOptions": false
+            },
+            {
+                "name": "sSensorName3",
+                "displayName": "Nome do Sensor 3",
+                "type": "tchmi:general#/definitions/String",
+                "description": "Nome do quarto sensor (opcional)",
+                "defaultValue": null,
+                "required": false,
+                "bindable": true,
+                "restParameter": false,
+                "asReference": false,
+                "allowControlAttributeBindingOptions": false
+            }
+        ]
+    },
+    "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+    "apiVersion": 1,
+    "version": {
+        "full": "1.0.0.0",
+        "major": 1,
+        "minor": 0,
+        "revision": 0,
+        "build": 0
+    },
+    "dependencyFiles": [
+        {
+            "name": "ScuWriteStatusWithMode.js",
+            "type": "JavaScript",
+            "description": ""
+        }
+    ]
+}

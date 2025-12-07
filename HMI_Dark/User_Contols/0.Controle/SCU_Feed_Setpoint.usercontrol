@@ -81,7 +81,288 @@
             "color": "rgba(0, 0, 0, 1)"
             }
         </script>
-    </div>
+    
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%iSensorBind%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%pp%iSensorBind%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/INT",
+                  "value": 0
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Setpoint%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Setpoint%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "angle": 0.0,
+                      "stopPoints": [
+                        {
+                          "color": "rgba(124, 252, 113, 1)",
+                          "stop": "3.56%"
+                        },
+                        {
+                          "color": "rgba(75, 255, 77, 1)",
+                          "stop": "47.59%"
+                        },
+                        {
+                          "color": "rgba(113, 252, 127, 1)",
+                          "stop": "97.48%"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": false,
+        "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Label_Setpoint%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/Color",
+            "value": {
+              "angle": 0.0,
+              "stopPoints": [
+                {
+                  "color": "rgba(124, 252, 113, 1)",
+                  "stop": "3.56%"
+                },
+                {
+                  "color": "rgba(75, 255, 77, 1)",
+                  "stop": "47.59%"
+                },
+                {
+                  "color": "rgba(113, 252, 127, 1)",
+                  "stop": "97.48%"
+                }
+              ]
+            }
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/Color",
+            "value": null
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "SwitchCase",
+        "active": false,
+        "compare": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%iSenseBind%/pp%"
+        },
+        "cases": [
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 0
+            },
+            "actions": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Setpoint%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": false,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_rate%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": false,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_FeedBack%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 1
+            },
+            "actions": [
+              {
+                "objectType": "Function",
+                "active": false,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_FeedBack%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "angle": 0.0,
+                      "stopPoints": [
+                        {
+                          "color": "rgba(124, 252, 113, 1)",
+                          "stop": "3.56%"
+                        },
+                        {
+                          "color": "rgba(75, 255, 77, 1)",
+                          "stop": "47.59%"
+                        },
+                        {
+                          "color": "rgba(113, 252, 127, 1)",
+                          "stop": "97.48%"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": false,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_rate%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "angle": 0.0,
+                      "stopPoints": [
+                        {
+                          "color": "rgba(124, 252, 113, 1)",
+                          "stop": "3.56%"
+                        },
+                        {
+                          "color": "rgba(75, 255, 77, 1)",
+                          "stop": "47.59%"
+                        },
+                        {
+                          "color": "rgba(113, 252, 127, 1)",
+                          "stop": "97.48%"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
 
     <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
         {
@@ -1986,6 +2267,10 @@
         "asyncWait": true
       }
     ]
+  },
+  {
+    "event": "%pp%iSensorBind%/pp%",
+    "actions": []
   }
 ]
 </script>

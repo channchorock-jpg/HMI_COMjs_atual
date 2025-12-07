@@ -84,6 +84,25 @@
       "propertySetterName": "setStAxisOutput",
       "propertyGetterName": "getStAxisOutput",
       "refTo": ""
+    },
+    {
+      "name": "data-tchmi-iactivesensor",
+      "displayName": "iActiveSensor",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:general#/definitions/INT",
+      "category": "",
+      "description": "",
+      "defaultValue": 0,
+      "defaultValueInternal": 0,
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "iActiveSensor",
+      "propertySetterName": "setIActiveSensor",
+      "propertyGetterName": "getIActiveSensor",
+      "refTo": ""
     }
   ],
   "virtualRights": [],

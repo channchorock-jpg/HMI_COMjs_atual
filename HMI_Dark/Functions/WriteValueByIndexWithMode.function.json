@@ -1,0 +1,178 @@
+{
+  "function": {
+    "name": "WriteValueByIndexWithMode",
+    "namespace": "TcHmi.Functions.HMI_Dark",
+    "displayName": "Write Value By Index With Mode",
+    "description": "Escreve um valor em um símbolo PLC selecionado por índice com suporte ao enum eStateBind (STATIC_MODE=3, DYNAMIC_MODE=4). Versão estendida de WriteValueByIndex que permite selecionar entre dois conjuntos de símbolos.",
+    "waitMode": "Asynchronous",
+    "category": "HMI_Dark",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/Boolean",
+      "description": "true se escreveu com sucesso, false em caso de erro."
+    },
+    "visible": true,
+    "injectContextObject": true,
+    "arguments": [
+      {
+        "name": "ctx",
+        "displayName": "ctx",
+        "type": "tchmi:framework#/definitions/ContextReference",
+        "description": "Context Reference",
+        "defaultValue": null,
+        "required": true,
+        "bindable": false,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "eStateBind",
+        "displayName": "State Bind Mode",
+        "type": "tchmi:general#/definitions/INT",
+        "description": "Modo de operação: 3 = STATIC_MODE, 4 = DYNAMIC_MODE",
+        "defaultValue": "3",
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "indexSource",
+        "displayName": "Index Source",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Origem do índice (symbol object, controle ou número). Se symbol object, marcar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "value",
+        "displayName": "Value",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "Valor a ser escrito no símbolo selecionado (pode vir de controle ou número literal).",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol0Static",
+        "displayName": "Static Symbol 0",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object STATIC para índice 0. Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol1Static",
+        "displayName": "Static Symbol 1",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object STATIC para índice 1. Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol2Static",
+        "displayName": "Static Symbol 2",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object STATIC para índice 2 (opcional). Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol3Static",
+        "displayName": "Static Symbol 3",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object STATIC para índice 3 (opcional). Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol0Dyn",
+        "displayName": "Dynamic Symbol 0",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object DYNAMIC para índice 0. Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol1Dyn",
+        "displayName": "Dynamic Symbol 1",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object DYNAMIC para índice 1. Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol2Dyn",
+        "displayName": "Dynamic Symbol 2",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object DYNAMIC para índice 2 (opcional). Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "symbol3Dyn",
+        "displayName": "Dynamic Symbol 3",
+        "type": "tchmi:project#/definitions/Symbol_Of_symbol",
+        "description": "Symbol object DYNAMIC para índice 3 (opcional). Usar 'Yes, pass symbol reference'.",
+        "defaultValue": null,
+        "required": false,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": true,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "1.0.0.0",
+    "major": 1,
+    "minor": 0,
+    "build": 0,
+    "revision": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "WriteValueByIndexWithMode.js",
+      "type": "JavaScript",
+      "description": "Implementação da função WriteValueByIndexWithMode"
+    }
+  ]
+}
