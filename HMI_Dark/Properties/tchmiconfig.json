@@ -175,6 +175,21 @@
       "name": "Functions/ReceiveIntegralValueWithMode.js",
       "description": "",
       "type": "JavaScript"
+    },
+    {
+      "name": "Functions/ConvertTimeToRealWithMode.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/SelectAndFormatValueWithMode.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Functions/SelectValueByIndexWithMode.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [
@@ -298,6 +313,9 @@
       "url": "Functions/ConvertTimeToReal.js"
     },
     {
+      "url": "Functions/ConvertTimeToRealWithMode.js"
+    },
+    {
       "url": "Functions/CopyNumericToUCParam.js"
     },
     {
@@ -334,7 +352,13 @@
       "url": "Functions/SelectAndFormatValue.js"
     },
     {
+      "url": "Functions/SelectAndFormatValueWithMode.js"
+    },
+    {
       "url": "Functions/SelectValueByIndex.js"
+    },
+    {
+      "url": "Functions/SelectValueByIndexWithMode.js"
     },
     {
       "url": "Functions/SetControlBoxShadow.js"
@@ -436,6 +460,12 @@
       },
       "eStateMachine": {
         "value": 0,
+        "type": "tchmi:server#/definitions/PLC1.EStateMachine",
+        "persist": false,
+        "readonly": false
+      },
+      "eStateToShow": {
+        "value": 3,
         "type": "tchmi:server#/definitions/PLC1.EStateMachine",
         "persist": false,
         "readonly": false

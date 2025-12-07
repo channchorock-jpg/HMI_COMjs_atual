@@ -134,6 +134,13 @@
     <Content Include="Functions\ConvertTimeToReal.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Functions\ConvertTimeToRealWithMode.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\ConvertTimeToRealWithMode.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\ConvertTimeToRealWithMode.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Functions\CopyNumericToUCParam.function.json">
       <SubType>Content</SubType>
       <DependentUpon>Functions\CopyNumericToUCParam.js</DependentUpon>
@@ -218,11 +225,25 @@
     <Content Include="Functions\SelectAndFormatValue.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Functions\SelectAndFormatValueWithMode.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\SelectAndFormatValueWithMode.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\SelectAndFormatValueWithMode.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Functions\SelectValueByIndex.function.json">
       <SubType>Content</SubType>
       <DependentUpon>Functions\SelectValueByIndex.js</DependentUpon>
     </Content>
     <Content Include="Functions\SelectValueByIndex.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Functions\SelectValueByIndexWithMode.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Functions\SelectValueByIndexWithMode.js</DependentUpon>
+    </Content>
+    <Content Include="Functions\SelectValueByIndexWithMode.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Functions\SetControlBoxShadow.function.json">
