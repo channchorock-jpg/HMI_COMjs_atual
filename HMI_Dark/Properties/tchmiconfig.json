@@ -206,13 +206,13 @@
       "url": "User_Contols/1.Headers/SCU_select.usercontrol"
     },
     {
+      "url": "User_Contols/2.Configuracoes/SCU_Config_Calibration.usercontrol"
+    },
+    {
       "url": "User_Contols/2.Configuracoes/SCU_Config_input.usercontrol"
     },
     {
       "url": "User_Contols/2.Configuracoes/SCU_Config_Cycle_Control.usercontrol"
-    },
-    {
-      "url": "User_Contols/2.Configuracoes/SCU_Config_Calibration.usercontrol"
     }
   ],
   "content": [
