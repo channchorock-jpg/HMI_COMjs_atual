@@ -12,7 +12,7 @@
     "color": "rgba(84, 82, 82, 1)"
     }
 </script>
-<div id="Button_SCU_1_SELECT" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="SCU 1" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="40" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="11" data-tchmi-bottom-unit="%" data-tchmi-bottom="5" data-tchmi-right-unit="%" data-tchmi-right="70" data-tchmi-text-font-size-unit="px" data-tchmi-toggle-group="%i%iScuSelct%/i%" data-tchmi-toggle-state="Normal" data-tchmi-state-symbol="%i%ScuActualView::Group1%/i%">
+<div id="Button_SCU_1_SELECT" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="SCU 1" data-tchmi-top="20" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="150" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="11" data-tchmi-bottom-unit="%" data-tchmi-bottom="20" data-tchmi-right-unit="%" data-tchmi-right="70" data-tchmi-text-font-size-unit="%" data-tchmi-toggle-group="%i%iScuSelct%/i%" data-tchmi-toggle-state="Normal" data-tchmi-state-symbol="%i%ScuActualView::Group1%/i%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
   "angle": 0.0,
@@ -463,7 +463,7 @@
 ]
 </script>
 </div>
-<div id="Button_SCU_2_SELECT" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="px" data-tchmi-left="36" data-tchmi-left-unit="%" data-tchmi-text="SCU 2" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="40" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="11" data-tchmi-bottom-unit="%" data-tchmi-bottom="5" data-tchmi-right-unit="%" data-tchmi-right="38" data-tchmi-toggle-group="%i%iScuSelct%/i%" data-tchmi-state-symbol="%i%ScuActualView::Group2%/i%">
+<div id="Button_SCU_2_SELECT" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="px" data-tchmi-left="36" data-tchmi-left-unit="%" data-tchmi-text="SCU 2" data-tchmi-top="20" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="150" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="11" data-tchmi-bottom-unit="%" data-tchmi-bottom="20" data-tchmi-right-unit="%" data-tchmi-right="38" data-tchmi-toggle-group="%i%iScuSelct%/i%" data-tchmi-state-symbol="%i%ScuActualView::Group2%/i%" data-tchmi-text-font-size-unit="%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
   "angle": 0.0,
@@ -634,7 +634,7 @@
 ]
 </script>
 </div>
-<div id="Button_SCU_3_SELECT" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="px" data-tchmi-left="68" data-tchmi-left-unit="%" data-tchmi-text="SCU 3" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="40" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="11" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-toggle-group="%i%iScuSelct%/i%" data-tchmi-state-symbol="%i%ScuActualView::Group3%/i%">
+<div id="Button_SCU_3_SELECT" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="px" data-tchmi-left="68" data-tchmi-left-unit="%" data-tchmi-text="SCU 3" data-tchmi-top="20" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="150" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="11" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="5" data-tchmi-bottom="20" data-tchmi-toggle-group="%i%iScuSelct%/i%" data-tchmi-state-symbol="%i%ScuActualView::Group3%/i%" data-tchmi-text-font-size-unit="%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
   "angle": 0.0,

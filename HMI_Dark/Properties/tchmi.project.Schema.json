@@ -215,6 +215,14 @@
       "frameworkUserControlConfig": "User_Contols\\2.Configuracoes\\SCU_Config_Calibration.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/SCU_Config_Calibration"
+    },
+    "SCU_Painel_Manifold_Completo_0": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "Backups\\SCU_Painel_Manifold_Completo_copy.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/SCU_Painel_Manifold_Completo_0"
     }
   }
 }
