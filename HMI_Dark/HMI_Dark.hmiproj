@@ -106,6 +106,13 @@
   <Target Name="Clean" DependsOnTargets="$(CleanDependsOn)" />
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <ItemGroup>
+    <Content Include="Backups\SCU_Feed_Setpoint_bkp2.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Backups\SCU_Feed_Setpoint_bkp2.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Backups\SCU_Feed_Setpoint_bkp2.usercontrol</DependentUpon>
+    </Content>
     <Content Include="Backups\SCU_Feed_Setpoint_bckp.usercontrol">
       <SubType>Content</SubType>
     </Content>

@@ -532,9 +532,9 @@
   }
 ]
 </script>
-<div id="SCU_PID_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="165" data-tchmi-height-unit="px" data-tchmi-left="0.5" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_PID.usercontrol" data-tchmi-top="76.5" data-tchmi-top-unit="%" data-tchmi-width="21.9" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-height-mode="Value" data-tchmi-zindex="1">
+<div id="SCU_PID_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="15" data-tchmi-height-unit="%" data-tchmi-left="0.1" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_PID.usercontrol" data-tchmi-top="55.1" data-tchmi-top-unit="%" data-tchmi-width="25" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-height-mode="Value" data-tchmi-zindex="1">
 </div>
-<div id="SCU_Limites_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="28.8" data-tchmi-height-unit="%" data-tchmi-left="62.3" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Limites.usercontrol" data-tchmi-top="70.1" data-tchmi-top-unit="%" data-tchmi-width="29.4" data-tchmi-width-unit="%" data-tchmi-zindex="1">
+<div id="SCU_Limites_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="29.4" data-tchmi-height-unit="%" data-tchmi-left="0.1" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Limites.usercontrol" data-tchmi-top="70.4" data-tchmi-top-unit="%" data-tchmi-width="25.1" data-tchmi-width-unit="%" data-tchmi-zindex="1">
 </div>
 <div id="TcHmiScopeControl" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiScopeControl.TcHmiScopeControl" data-tchmi-height-unit="%" data-tchmi-left="50" data-tchmi-left-unit="%" data-tchmi-top="0.0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right="0.4" data-tchmi-bottom="50.2" data-tchmi-enable-record-controls="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-server-interval="100" data-tchmi-zindex="1">
 
@@ -545,7 +545,7 @@
 }
 </script>
 </div>
-<div id="TcHmiGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="275" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="40" data-tchmi-top-unit="%" data-tchmi-width="1148" data-tchmi-width-unit="px" data-tchmi-height-mode="Value" data-tchmi-width-mode="Content" data-tchmi-zindex="1">
+<div id="TcHmiGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-left="0.1" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-width="50" data-tchmi-width-unit="%" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-zindex="1">
 
 <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
 [
@@ -554,7 +554,7 @@
     "minWidthUnit": "px",
     "overflow": false,
     "width": 0.5,
-    "widthMode": "Content",
+    "widthMode": "Value",
     "widthUnit": "factor"
   },
   {
@@ -562,12 +562,12 @@
     "minWidthUnit": "px",
     "overflow": false,
     "width": 0.5,
-    "widthMode": "Content",
+    "widthMode": "Value",
     "widthUnit": "factor"
   }
 ]
 </script>
-<div id="SCU_Feed_Setpoint_UC" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Feed_Setpoint.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom="0" data-tchmi-width="573" data-tchmi-visibility="Visible" data-tchmi-zindex="1">
+<div id="SCU_Feed_Setpoint_UC" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Feed_Setpoint.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-visibility="Visible" data-tchmi-zindex="1" data-tchmi-right="0" data-tchmi-bottom="0">
 </div>
 
 <script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
@@ -582,10 +582,10 @@
   }
 ]
 </script>
-<div id="SCU_Feed_Dynamic_UC" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Feed_Dynamic.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="573" data-tchmi-width-unit="px" data-tchmi-bottom="0" data-tchmi-bottom-unit="%" data-tchmi-visibility="Visible" data-tchmi-zindex="3">
+<div id="SCU_Feed_Dynamic_UC" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Feed_Dynamic.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-bottom="0" data-tchmi-bottom-unit="%" data-tchmi-visibility="Visible" data-tchmi-zindex="3" data-tchmi-right-unit="%" data-tchmi-right="0">
 </div>
 </div>
-<div id="TcHmiContainer_6" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="%" data-tchmi-left="0.1" data-tchmi-left-unit="%" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-zindex="-1" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-width="50" data-tchmi-height="25">
+<div id="TcHmiContainer_6" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="%" data-tchmi-left="0.1" data-tchmi-left-unit="%" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-bottom-unit="px" data-tchmi-right-unit="px" data-tchmi-zindex="-1" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-width="50" data-tchmi-height="25.0">
 <div id="SCU_Painel_Manifold_Completo_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Painel_Manifold_Completo.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-width-mode="Content" data-tchmi-bottom="0" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-right="0" data-tchmi-zindex="0" data-tchmi-creator-locked="True">
 </div>
 </div>
