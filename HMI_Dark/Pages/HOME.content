@@ -1,6 +1,6 @@
-<div id="HOME" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value">
+<div id="HOME" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-creator-viewport-height="770">
 
-<div id="TcHmiRectangle_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height-unit="px" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="13.2" data-tchmi-height="89.8">
+<div id="TcHmiRectangle_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="7.5">
 
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {

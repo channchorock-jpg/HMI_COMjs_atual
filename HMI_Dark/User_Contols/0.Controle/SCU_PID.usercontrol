@@ -1,4 +1,4 @@
-<div id="SCU_PID" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="1920" data-tchmi-creator-viewport-height="1080" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-max-width-unit="%" data-tchmi-max-height-unit="%" data-tchmi-min-width-unit="%" data-tchmi-min-height-unit="%">
+<div id="SCU_PID" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="1920" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-max-width-unit="%" data-tchmi-max-height-unit="%" data-tchmi-min-width-unit="%" data-tchmi-min-height-unit="%" data-tchmi-creator-viewport-height="480">
 
 <script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
 [
@@ -24,7 +24,7 @@
   "color": "rgba(84, 82, 82, 1)"
 }
 </script>
-<div id="TcHmiGrid_5" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top="3.2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right="2" data-tchmi-bottom="3.2" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-max-width-unit="%" data-tchmi-max-height-unit="%" data-tchmi-min-width-unit="%" data-tchmi-min-height-unit="%">
+<div id="TcHmiGrid_5" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top="4" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right="2" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-max-width-unit="%" data-tchmi-max-height-unit="%" data-tchmi-min-width-unit="%" data-tchmi-min-height-unit="%" data-tchmi-bottom="5.5" data-tchmi-creator-locked="True">
 
 <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
 [
@@ -40,7 +40,7 @@
     "maxWidthUnit": "%",
     "minWidthUnit": "%",
     "overflow": false,
-    "width": 1,
+    "width": 0.9,
     "widthMode": "Value",
     "widthUnit": "factor"
   },
@@ -48,7 +48,7 @@
     "maxWidthUnit": "%",
     "minWidthUnit": "%",
     "overflow": false,
-    "width": 0.7,
+    "width": 0.8,
     "widthMode": "Value",
     "widthUnit": "factor"
   },
@@ -91,7 +91,7 @@
   }
 ]
 </script>
-<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="0" id="Label_F_I" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="I" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="200" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="0" data-tchmi-bottom="5">
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="0" id="Label_F_I" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="2.5" data-tchmi-left-unit="%" data-tchmi-text="I" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="20" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2.5" data-tchmi-bottom="5">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -117,8 +117,8 @@
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 0.0,
-  "topRight": 30.0,
-  "bottomLeft": 30.0,
+  "topRight": 15.0,
+  "bottomLeft": 15.0,
   "bottomRight": 0.0,
   "topLeftUnit": "px",
   "topRightUnit": "px",
@@ -172,7 +172,7 @@
 }
 </script>
 </div>
-<div data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="0" id="Label_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="D" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="200" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="0" data-tchmi-bottom="5">
+<div data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="0" id="Label_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="2.5" data-tchmi-left-unit="%" data-tchmi-text="D" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="20" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2.5" data-tchmi-bottom="5">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -198,8 +198,8 @@
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 0.0,
-  "topRight": 30.0,
-  "bottomLeft": 30.0,
+  "topRight": 15.0,
+  "bottomLeft": 15.0,
   "bottomRight": 0.0,
   "topLeftUnit": "px",
   "topRightUnit": "px",
@@ -253,7 +253,7 @@
 }
 </script>
 </div>
-<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="1" id="InputBox_P" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="300" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.SelectValueByIndexWithMode(%pp%eStateBind%/pp%, %pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::fKp_heating%/pp%, %pp%stControle[1]::stPIDRampParams::fKp_heating%/pp%, null, null, %pp%stControle[0]::stPIDSignalParams::fKp_heating%/pp%, %pp%stControle[1]::stPIDSignalParams::fKp_heating%/pp%, null, null, 0)%/f%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="0" data-tchmi-bottom="5" data-tchmi-value-font-size-unit="%" data-tchmi-max-width-unit="%" data-tchmi-max-height-unit="%" data-tchmi-min-width-unit="%" data-tchmi-min-height-unit="%">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="1" id="InputBox_P" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="20" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.SelectValueByIndexWithMode(%pp%eStateBind%/pp%, %pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::fKp_heating%/pp%, %pp%stControle[1]::stPIDRampParams::fKp_heating%/pp%, null, null, %pp%stControle[0]::stPIDSignalParams::fKp_heating%/pp%, %pp%stControle[1]::stPIDSignalParams::fKp_heating%/pp%, null, null, 0)%/f%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="10" data-tchmi-bottom="5" data-tchmi-value-font-size-unit="px" data-tchmi-max-width-unit="%" data-tchmi-max-height-unit="%" data-tchmi-min-width-unit="%" data-tchmi-min-height-unit="%">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "left": 3,
@@ -279,8 +279,36 @@
   "color": "rgba(0, 0, 0, 1)"
 }
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
 </div>
-<div data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="1" id="InputBox_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="300" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.ConvertTimeToRealWithMode(%pp%eStateBind%/pp%, %pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTv_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTv_heating%/pp%, %pp%stControle[0]::stPIDSignalParams::tTv_cooling%/pp%, %pp%stControle[1]::stPIDSignalParams::tTv_cooling%/pp%, null)%/f%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="0" data-tchmi-bottom="5" data-tchmi-value-font-size-unit="%">
+<div data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="1" id="InputBox_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="20" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.ConvertTimeToRealWithMode(%pp%eStateBind%/pp%, %pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTv_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTv_heating%/pp%, %pp%stControle[0]::stPIDSignalParams::tTv_cooling%/pp%, %pp%stControle[1]::stPIDSignalParams::tTv_cooling%/pp%, null)%/f%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="10" data-tchmi-bottom="5" data-tchmi-value-font-size-unit="px">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -304,8 +332,36 @@
 </script>
 
 
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
 </div>
-<div id="Label_P" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="P" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="200" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="0" data-tchmi-bottom="5">
+<div id="Label_P" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="2.5" data-tchmi-left-unit="%" data-tchmi-text="P" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="20" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2.5" data-tchmi-bottom="5">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -331,8 +387,8 @@
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 0.0,
-  "topRight": 30.0,
-  "bottomLeft": 30.0,
+  "topRight": 15.0,
+  "bottomLeft": 15.0,
   "bottomRight": 0.0,
   "topLeftUnit": "px",
   "topRightUnit": "px",
@@ -386,13 +442,13 @@
 }
 </script>
 </div>
-<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="2" id="Label_Actual_P" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="%f%TcHmi.Functions.HMI_Dark.SelectValueByIndexWithMode(%pp%eStateBind%/pp%, %pp%iSensorBind%/pp%,  %pp%stSensors[0]::stPIDRampParams::fKp_heating%/pp%, %pp%stSensors[1]::stPIDRampParams::fKp_heating%/pp%, null, null, %pp%stSensors[0]::stPIDSignalParams::fKp_heating%/pp%, %pp%stSensors[1]::stPIDSignalParams::fKp_heating%/pp%, null, null, 0)%/f%" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="200" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="5" data-tchmi-bottom="5">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="2" id="Label_Actual_P" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="%f%TcHmi.Functions.HMI_Dark.SelectValueByIndexWithMode(%pp%eStateBind%/pp%, %pp%iSensorBind%/pp%,  %pp%stSensors[0]::stPIDRampParams::fKp_heating%/pp%, %pp%stSensors[1]::stPIDRampParams::fKp_heating%/pp%, null, null, %pp%stSensors[0]::stPIDSignalParams::fKp_heating%/pp%, %pp%stSensors[1]::stPIDSignalParams::fKp_heating%/pp%, null, null, 0)%/f%" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="20" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="5" data-tchmi-bottom="5">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
-  "left": 0,
-  "right": 0,
-  "top": 0,
-  "bottom": 0,
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -449,7 +505,7 @@
 
 <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
 {
-  "color": "rgba(143, 140, 140, 1)"
+  "color": "rgba(0, 0, 0, 1)"
 }
 </script>
 
@@ -459,13 +515,13 @@
 }
 </script>
 </div>
-<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="2" id="Label_Actual_I" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="200" data-tchmi-text="%f%TcHmi.Functions.HMI_Dark.ReceiveIntegralValueWithMode(%pp%eStateBind%/pp%,%pp%iSensorBind%/pp%, %pp%stSensors[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stSensors[1]::stPIDRampParams::tTn_heating%/pp%, %pp%stSensors[0]::stPIDSignalParams::tTn_cooling%/pp%, %pp%stSensors[1]::stPIDSignalParams::tTn_cooling%/pp%, null)%/f%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="5" data-tchmi-bottom="5">
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="2" id="Label_Actual_I" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="20" data-tchmi-text="%f%TcHmi.Functions.HMI_Dark.ReceiveIntegralValueWithMode(%pp%eStateBind%/pp%,%pp%iSensorBind%/pp%, %pp%stSensors[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stSensors[1]::stPIDRampParams::tTn_heating%/pp%, %pp%stSensors[0]::stPIDSignalParams::tTn_cooling%/pp%, %pp%stSensors[1]::stPIDSignalParams::tTn_cooling%/pp%, null)%/f%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="5" data-tchmi-bottom="5">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
-  "left": 0,
-  "right": 0,
-  "top": 0,
-  "bottom": 0,
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -522,7 +578,7 @@
 
 <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
 {
-  "color": "rgba(143, 140, 140, 1)"
+  "color": "rgba(0, 0, 0, 1)"
 }
 </script>
 
@@ -536,13 +592,13 @@
 
 
 </div>
-<div data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="2" id="Label_Actual_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="%f%TcHmi.Functions.HMI_Dark.ConvertTimeToRealWithMode(%pp%eStateBind%/pp%, %pp%iSensorBind%/pp%, %pp%stSensors[0]::stPIDRampParams::tTv_heating%/pp%, %pp%stSensors[1]::stPIDRampParams::tTv_heating%/pp%, %pp%stSensors[0]::stPIDSignalParams::tTv_cooling%/pp%, %pp%stSensors[1]::stPIDSignalParams::tTv_cooling%/pp%, null)%/f%" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="200" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="5" data-tchmi-bottom="5">
+<div data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="2" id="Label_Actual_D" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="%f%TcHmi.Functions.HMI_Dark.ConvertTimeToRealWithMode(%pp%eStateBind%/pp%, %pp%iSensorBind%/pp%, %pp%stSensors[0]::stPIDRampParams::tTv_heating%/pp%, %pp%stSensors[1]::stPIDRampParams::tTv_heating%/pp%, %pp%stSensors[0]::stPIDSignalParams::tTv_cooling%/pp%, %pp%stSensors[1]::stPIDSignalParams::tTv_cooling%/pp%, null)%/f%" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Normal" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="20" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="5" data-tchmi-bottom="5">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
-  "left": 0,
-  "right": 0,
-  "top": 0,
-  "bottom": 0,
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -599,7 +655,7 @@
 
 <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
 {
-  "color": "rgba(143, 140, 140, 1)"
+  "color": "rgba(0, 0, 0, 1)"
 }
 </script>
 
@@ -609,7 +665,7 @@
 }
 </script>
 </div>
-<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="1" id="InputBox_I" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="4" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="300" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.ReceiveIntegralValueWithMode(%pp%eStateBind%/pp%,%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[0]::stPIDSignalParams::tTn_cooling%/pp%, %pp%stControle[1]::stPIDSignalParams::tTn_cooling%/pp%, null)%/f%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="0" data-tchmi-bottom="5" data-tchmi-value-font-size-unit="%">
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="1" id="InputBox_I" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="4" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="20" data-tchmi-value="%f%TcHmi.Functions.HMI_Dark.ReceiveIntegralValueWithMode(%pp%eStateBind%/pp%,%pp%iSensorBind%/pp%, %pp%stControle[0]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[1]::stPIDRampParams::tTn_heating%/pp%, %pp%stControle[0]::stPIDSignalParams::tTn_cooling%/pp%, %pp%stControle[1]::stPIDSignalParams::tTn_cooling%/pp%, null)%/f%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="10" data-tchmi-bottom="5" data-tchmi-value-font-size-unit="px">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -631,8 +687,36 @@
   "color": "rgba(0, 0, 0, 1)"
 }
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
 </div>
-<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="3" id="Button_apply_PID" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="Aplicar PID" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="5" data-tchmi-bottom="5">
+<div data-tchmi-grid-row-index="1" data-tchmi-grid-column-index="3" id="Button_apply_PID" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-left="3" data-tchmi-left-unit="%" data-tchmi-text="Aplicar PID" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size="15" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="3" data-tchmi-bottom="5">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
   "angle": 0.0,
@@ -674,10 +758,10 @@
 
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
-  "topLeft": 10.0,
-  "topRight": 10.0,
-  "bottomLeft": 10.0,
-  "bottomRight": 10.0,
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 5.0,
+  "bottomRight": 5.0,
   "topLeftUnit": "px",
   "topRightUnit": "px",
   "bottomLeftUnit": "px",
@@ -801,6 +885,69 @@
           }
         ],
         "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.HMI_Dark.WriteValueByIndexWithMode",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/INT",
+            "symbolExpression": "%pp%eStateBind%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%iSensorBind%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/Number",
+            "symbolExpression": "%ctrl%InputBox_P::Value%/ctrl%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:project#/definitions/Symbol_Of_symbol",
+            "symbolExpression": "%pp%stControle[0]::stPIDRampParams::fKp_heating%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stControle[1]::stPIDRampParams::fKp_heating%/pp%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:project#/definitions/Symbol_Of_symbol",
+            "value": "null"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:project#/definitions/Symbol_Of_symbol",
+            "value": "null"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:project#/definitions/Symbol_Of_symbol",
+            "symbolExpression": "%pp%stControle[0]::stPIDSignalParams::fKp_heating%/pp%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:project#/definitions/Symbol_Of_symbol",
+            "symbolExpression": "%pp%stControle[1]::stPIDSignalParams::fKp_heating%/pp%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:project#/definitions/Symbol_Of_symbol",
+            "value": "null"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:project#/definitions/Symbol_Of_symbol",
+            "value": "null"
+          }
+        ],
+        "asyncWait": true
       }
     ]
   }
@@ -808,4 +955,32 @@
 </script>
 </div>
 </div>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
 </div>
