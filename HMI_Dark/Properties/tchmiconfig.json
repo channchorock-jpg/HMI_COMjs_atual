@@ -254,6 +254,9 @@
     },
     {
       "url": "User_Contols/2.Configuracoes/SCU_Config_Cycle_Control.usercontrol"
+    },
+    {
+      "url": "User_Contols/2.Configuracoes/UserControl_Auxiliares/Analogic_channel_table.usercontrol"
     }
   ],
   "content": [
@@ -266,6 +269,13 @@
     },
     {
       "url": "Pages/Test_Comtent.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "SubContents/Bind_prinncipal_Screen.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,

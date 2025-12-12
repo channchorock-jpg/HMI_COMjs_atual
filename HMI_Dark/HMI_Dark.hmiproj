@@ -452,6 +452,9 @@
     <Content Include="Pages\Test_Comtent.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="SubContents\Bind_prinncipal_Screen.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="User_Contols\0.Controle\Limites_e_Erro.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -529,6 +532,13 @@
       <SubType>Content</SubType>
       <DependentUpon>User_Contols\2.Configuracoes\SCU_Config_Cycle_Control.usercontrol</DependentUpon>
     </Content>
+    <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table.usercontrol</DependentUpon>
+    </Content>
     <Folder Include="Fonts\" />
     <Folder Include="Functions\" />
     <Folder Include="Images" />
@@ -546,6 +556,7 @@
     <Folder Include="Localization" />
     <Folder Include="Controle View" />
     <Folder Include="Backups" />
+    <Folder Include="SubContents" />
     <Folder Include="Scripts" />
     <Folder Include="User_Contols" />
     <Folder Include="Pages\" />
@@ -937,6 +948,7 @@
     <Folder Include="User_Contols\0.Controle" />
     <Folder Include="User_Contols\1.Headers" />
     <Folder Include="User_Contols\2.Configuracoes" />
+    <Folder Include="User_Contols\2.Configuracoes\UserControl_Auxiliares" />
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

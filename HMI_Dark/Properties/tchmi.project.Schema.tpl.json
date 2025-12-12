@@ -223,6 +223,14 @@
       "frameworkUserControlConfig": "Backups\\SCU_Painel_Manifold_Completo_copy.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/SCU_Painel_Manifold_Completo_0"
+    },
+    "Analogic_channel_table": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\2.Configuracoes\\UserControl_Auxiliares\\Analogic_channel_table.usercontrol.json",
+      "id": "tchmi:project#/definitions/Analogic_channel_table",
+      "type": "object"
     }
   }
 }
