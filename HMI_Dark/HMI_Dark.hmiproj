@@ -127,6 +127,9 @@
       <SubType>Content</SubType>
       <DependentUpon>Backups\SCU_Painel_Manifold_Completo_copy.usercontrol</DependentUpon>
     </Content>
+    <Content Include="Fonts\Mulish-VariableFont_wght.ttf">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Functions\BindSensorToNumericInput.function.json">
       <SubType>Content</SubType>
       <DependentUpon>Functions\BindSensorToNumericInput.js</DependentUpon>
@@ -455,6 +458,9 @@
     <Content Include="SubContents\Bind_prinncipal_Screen.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="SubContents\Config_Analogic_table_Content.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="User_Contols\0.Controle\Limites_e_Erro.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -496,13 +502,6 @@
     <Content Include="User_Contols\0.Controle\SCU_PID.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>User_Contols\0.Controle\SCU_PID.usercontrol</DependentUpon>
-    </Content>
-    <Content Include="User_Contols\0.Controle\UserControl1.usercontrol">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="User_Contols\0.Controle\UserControl1.usercontrol.json">
-      <SubType>Content</SubType>
-      <DependentUpon>User_Contols\0.Controle\UserControl1.usercontrol</DependentUpon>
     </Content>
     <Content Include="User_Contols\1.Headers\SCU_select.usercontrol">
       <SubType>Content</SubType>

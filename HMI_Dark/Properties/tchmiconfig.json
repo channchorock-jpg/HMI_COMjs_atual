@@ -241,9 +241,6 @@
       "url": "User_Contols/0.Controle/SCU_PID.usercontrol"
     },
     {
-      "url": "User_Contols/0.Controle/UserControl1.usercontrol"
-    },
-    {
       "url": "User_Contols/1.Headers/SCU_select.usercontrol"
     },
     {
@@ -276,6 +273,13 @@
     },
     {
       "url": "SubContents/Bind_prinncipal_Screen.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "SubContents/Config_Analogic_table_Content.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
@@ -1238,6 +1242,36 @@
           "description": ""
         }
       ]
+    },
+    {
+      "displayname": "Action_bind_Analogic_in_out",
+      "name": "Action_bind_Analogic_in_out",
+      "category": "Action Templates",
+      "actions": [
+        {
+          "objectType": "Function",
+          "active": true,
+          "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+          "fnParams": [
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:framework#/definitions/Control",
+              "symbolExpression": "%ctrl%Analogic_channel_table_1%/ctrl%"
+            },
+            {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+              "value": "stAnalogicArray"
+            },
+            {
+              "objectType": "Symbol",
+              "symbolExpression": "%s%PLC1.IOs.ANALOGIC.OUT%/s%"
+            }
+          ],
+          "asyncWait": true
+        }
+      ],
+      "parameters": []
     }
   ],
   "languages": {

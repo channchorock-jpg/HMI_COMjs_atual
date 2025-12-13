@@ -60,14 +60,6 @@
       "title": "Recebe as variveis para toggleGroup",
       "id": "tchmi:project#/definitions/ScuGroup"
     },
-    "UserControl1": {
-      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
-      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
-      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "User_Contols\\0.Controle\\UserControl1.usercontrol.json",
-      "type": "object",
-      "id": "tchmi:project#/definitions/UserControl1"
-    },
     "stUserControlFeedBack": {
       "properties": {
         "fRateRamp": {

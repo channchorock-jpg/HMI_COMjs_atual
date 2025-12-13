@@ -1,5 +1,5 @@
 <div id="Analogic_channel_table" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="1920" data-tchmi-creator-viewport-height="1080">
-<div id="TcHmiDatagrid_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiDatagrid" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-data-symbol="%pp%stAnalogicArray%/pp%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-indirect-write="false" data-tchmi-zindex="1" data-tchmi-grid-font-size-unit="px" data-tchmi-grid-font-size="25" data-tchmi-header-height="30" data-tchmi-row-numbers-width="25">
+<div id="TcHmiDatagrid_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiDatagrid" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-data-symbol="%pp%stAnalogicArray%/pp%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-indirect-write="false" data-tchmi-zindex="1" data-tchmi-grid-font-size-unit="px" data-tchmi-grid-font-size="25" data-tchmi-header-height="30" data-tchmi-row-numbers-width="30" data-tchmi-row-numbers-font-size="15" data-tchmi-header-font-size="20" data-tchmi-row-numbers-font-weight="Bold" data-tchmi-row-numbers-font-style="Normal" data-tchmi-header-font-weight="Bold">
 
 
 <script data-tchmi-target-attribute="data-tchmi-cell-content-padding" type="application/json">
@@ -64,7 +64,7 @@
   },
   {
     "name": "fMinValue",
-    "label": "Valor Max",
+    "label": "Valor Min",
     "control": "NumericInput",
     "width": 1,
     "widthUnit": "factor",
@@ -108,7 +108,7 @@
   },
   {
     "name": "iBitMin",
-    "label": "Bit Max",
+    "label": "Bit Min",
     "control": "NumericInput",
     "width": 1,
     "widthUnit": "factor",
@@ -130,7 +130,7 @@
   },
   {
     "name": "sTAG",
-    "label": "Bit Max",
+    "label": "Função",
     "control": "TextBox",
     "width": 1,
     "widthUnit": "factor",
@@ -199,6 +199,122 @@
         "source": "Images/SIMEROS/Amarelo_desligado.png",
         "value": "false",
         "width": 10.0
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-header-background-color" type="application/json">
+{
+  "angle": 0.0,
+  "stopPoints": [
+    {
+      "color": "rgba(86, 175, 78, 1)",
+      "stop": "3.56%"
+    },
+    {
+      "color": "rgba(42, 159, 42, 1)",
+      "stop": "47.59%"
+    },
+    {
+      "color": "rgba(56, 141, 65, 1)",
+      "stop": "97.48%"
+    }
+  ]
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%stAnalogicArray[0]::eTypeChannel%/pp%",
+    "actions": [
+      {
+        "objectType": "SwitchCase",
+        "active": true,
+        "compare": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:server#/definitions/PLC1.E_TYPE_CHANNEL",
+          "symbolExpression": "%pp%stAnalogicArray[0]::eTypeChannel%/pp%"
+        },
+        "cases": [
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.E_TYPE_CHANNEL",
+              "value": 3
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiDatagrid_1::HeaderBackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "angle": 0.0,
+                    "stopPoints": [
+                      {
+                        "color": "rgba(74, 169, 222, 1)",
+                        "stop": "3.56%"
+                      },
+                      {
+                        "color": "rgba(79, 158, 200, 1)",
+                        "stop": "47.01%"
+                      },
+                      {
+                        "color": "rgba(19, 155, 226, 1)",
+                        "stop": "97.48%"
+                      }
+                    ]
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.E_TYPE_CHANNEL",
+              "value": 2
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiDatagrid_1::HeaderBackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "angle": 0.0,
+                    "stopPoints": [
+                      {
+                        "color": "rgba(86, 175, 78, 1)",
+                        "stop": "3.56%"
+                      },
+                      {
+                        "color": "rgba(42, 159, 42, 1)",
+                        "stop": "47.59%"
+                      },
+                      {
+                        "color": "rgba(56, 141, 65, 1)",
+                        "stop": "97.48%"
+                      }
+                    ]
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
       }
     ]
   }

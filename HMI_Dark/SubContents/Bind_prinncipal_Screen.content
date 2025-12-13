@@ -318,18 +318,6 @@
 
     </div>
 
-    <div id="TcHmiContainer_Bind_prinncipal_Screen_5" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="7.5" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
-
-
-      <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
-        [
-        "background-container"
-        ]
-      </script>
-<div id="Analogic_channel_table_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/2.Configuracoes/UserControl_Auxiliares/Analogic_channel_table.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-zindex="1">
-</div>
-</div>
-
   <div id="TcHmiButton_979983" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="43" data-tchmi-left-unit="px" data-tchmi-text="Entradas Analogicas" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="138" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -357,7 +345,7 @@
             "symbolExpression": "%s%PLC1.IOs.ANALOGIC.IN%/s%"
           }
         ],
-        "asyncWait": true
+        "asyncWait": false
       }
     ]
   }
@@ -371,8 +359,26 @@
     "event": "TcHmiButton_979984.onPressed",
     "actions": [
       {
-        "objectType": "Function",
+        "objectType": "WriteToSymbol",
         "active": true,
+        "symbolExpression": "%ctrl%TcHmiRegion_IO_Table::TargetContent%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": "SubContents/Config_Analogic_table_Content.content"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "ActionTemplate",
+        "active": true,
+        "templateName": "Action_bind_Analogic_in_out",
+        "fnParams": [],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": false,
         "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
         "fnParams": [
           {
@@ -387,16 +393,22 @@
           },
           {
             "objectType": "Symbol",
-            "valueType": "tchmi:general#/definitions/String",
             "symbolExpression": "%s%PLC1.IOs.ANALOGIC.OUT%/s%"
           }
         ],
-        "asyncWait": true
+        "asyncWait": true,
+        "showSuccessActions": true
       }
     ]
+  },
+  {
+    "event": "TcHmiButton_979984.onStateReleased",
+    "actions": []
   }
 ]
 </script>
+</div>
+<div id="TcHmiRegion_IO_Table" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="7.2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-scale-mode="ScaleToFill" data-tchmi-right="0" data-tchmi-bottom="0">
 </div>
 </div>
 </div>
