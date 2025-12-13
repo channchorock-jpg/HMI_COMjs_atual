@@ -220,9 +220,17 @@
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "User_Contols\\2.Configuracoes\\UserControl_Auxiliares\\Analogic_channel_table.usercontrol.json",
+      "frameworkUserControlConfig": "User_Contols\\2.Configuracoes\\UserControl_Auxiliares\\Analogic_channel_table_UserControl.usercontrol.json",
       "id": "tchmi:project#/definitions/Analogic_channel_table",
       "type": "object"
+    },
+    "Analogic_channel_table_UserControl": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\2.Configuracoes\\UserControl_Auxiliares\\Analogic_channel_table_UserControl.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Analogic_channel_table_UserControl"
     }
   }
 }

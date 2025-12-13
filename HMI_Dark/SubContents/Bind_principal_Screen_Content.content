@@ -1,6 +1,6 @@
-<div id="Bind_prinncipal_Screen" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-height-mode="Value">
+<div id="Bind_principal_Screen" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-height-mode="Value">
 
-  <div id="TcHmiTextblock_Bind_prinncipal_Screen_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="32" data-tchmi-left-unit="px" data-tchmi-text="Bind_prinncipal_Screen" data-tchmi-top="16" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="16">
+  <div id="TcHmiTextblock_Bind_principal_Screen_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="540" data-tchmi-left-unit="px" data-tchmi-text="" data-tchmi-top="16" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="16">
     <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
       [
       "headline-2"
@@ -8,7 +8,7 @@
     </script>
   </div>
 
-  <div id="TcHmiGrid_Bind_prinncipal_Screen_1" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-height-mode="Value" data-tchmi-height-unit="px" data-tchmi-right="0" data-tchmi-width-unit="px" data-tchmi-bottom="0">
+  <div id="TcHmiGrid_Bind_principal_Screen_1" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-height-mode="Value" data-tchmi-height-unit="px" data-tchmi-right="0" data-tchmi-width-unit="px" data-tchmi-bottom="0">
     <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
       [
       {
@@ -68,7 +68,7 @@
       ]
     </script>
 
-    <div data-tchmi-grid-column-index="1" id="TcHmiGrid_Bind_prinncipal_Screen_2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Value" data-tchmi-right="0">
+    <div data-tchmi-grid-column-index="1" id="TcHmiGrid_Bind_principal_Screen_2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Value" data-tchmi-right="0">
       <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
         [
         {
@@ -273,7 +273,7 @@
         ]
       </script>
 
-      <div id="TcHmiContainer_Bind_prinncipal_Screen_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
+      <div id="TcHmiContainer_Bind_principal_Screen_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
 
 
         <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
@@ -283,7 +283,7 @@
         </script>
 </div>
 
-      <div data-tchmi-grid-column-index="1" id="TcHmiContainer_Bind_prinncipal_Screen_2" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
+      <div data-tchmi-grid-column-index="1" id="TcHmiContainer_Bind_principal_Screen_2" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
 
 
         <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
@@ -294,7 +294,7 @@
 
       </div>
 
-      <div data-tchmi-grid-column-index="2" id="TcHmiContainer_Bind_prinncipal_Screen_3" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
+      <div data-tchmi-grid-column-index="2" id="TcHmiContainer_Bind_principal_Screen_3" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
 
 
         <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
@@ -305,7 +305,7 @@
 
       </div>
 
-      <div data-tchmi-grid-column-index="3" id="TcHmiContainer_Bind_prinncipal_Screen_4" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
+      <div data-tchmi-grid-column-index="3" id="TcHmiContainer_Bind_principal_Screen_4" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
 
 
         <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
@@ -317,9 +317,10 @@
       </div>
 
     </div>
-
-  <div id="TcHmiButton_979983" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="43" data-tchmi-left-unit="px" data-tchmi-text="Entradas Analogicas" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="138" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
-
+<div id="TcHmiRegion_IO_Table" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-scale-mode="ScaleToFill" data-tchmi-right="0" data-tchmi-bottom="0">
+</div>
+</div>
+<div id="TcHmiButton_979983" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="38" data-tchmi-height-unit="px" data-tchmi-left="21" data-tchmi-left-unit="px" data-tchmi-text="Canais Digitais" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="138" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -333,7 +334,7 @@
           {
             "objectType": "Symbol",
             "valueType": "tchmi:framework#/definitions/Control",
-            "symbolExpression": "%ctrl%Analogic_channel_table_1%/ctrl%"
+            "symbolExpression": "%ctrl%Analogic_channel_table_Usercontrol_1%/ctrl%"
           },
           {
             "objectType": "StaticValue",
@@ -352,7 +353,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiButton_979984" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="216" data-tchmi-left-unit="px" data-tchmi-text="Saidas Analogicas" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="138" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
+<div id="TcHmiButton_979984" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="38" data-tchmi-height-unit="px" data-tchmi-left="172" data-tchmi-left-unit="px" data-tchmi-text="Canais Analógicos" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="138" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -384,7 +385,7 @@
           {
             "objectType": "Symbol",
             "valueType": "tchmi:framework#/definitions/Control",
-            "symbolExpression": "%ctrl%Analogic_channel_table_1%/ctrl%"
+            "symbolExpression": "%ctrl%Analogic_channel_table_Usercontrol_1%/ctrl%"
           },
           {
             "objectType": "StaticValue",
@@ -407,8 +408,5 @@
   }
 ]
 </script>
-</div>
-<div id="TcHmiRegion_IO_Table" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="7.2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-scale-mode="ScaleToFill" data-tchmi-right="0" data-tchmi-bottom="0">
-</div>
 </div>
 </div>

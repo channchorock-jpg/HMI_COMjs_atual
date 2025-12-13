@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>HMI_Dark</Name>
-    <HmiCommunicationRouterPort>10111</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10112</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.762.53</HmiInitial>
     <HmiRecent>1.12.762.56</HmiRecent>
@@ -440,6 +440,12 @@
     <Content Include="Images\SIMEROS\WIP.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Imports\Images\background_green_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\background_red_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\conveyor-band-pressed.svg">
       <SubType>Content</SubType>
     </Content>
@@ -455,7 +461,7 @@
     <Content Include="Pages\Test_Comtent.content">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="SubContents\Bind_prinncipal_Screen.content">
+    <Content Include="SubContents\Bind_principal_Screen_Content.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="SubContents\Config_Analogic_table_Content.content">
@@ -531,12 +537,12 @@
       <SubType>Content</SubType>
       <DependentUpon>User_Contols\2.Configuracoes\SCU_Config_Cycle_Control.usercontrol</DependentUpon>
     </Content>
-    <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table.usercontrol">
+    <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table_UserControl.usercontrol">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table.usercontrol.json">
+    <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table_UserControl.usercontrol.json">
       <SubType>Content</SubType>
-      <DependentUpon>User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table.usercontrol</DependentUpon>
+      <DependentUpon>User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table_UserControl.usercontrol</DependentUpon>
     </Content>
     <Folder Include="Fonts\" />
     <Folder Include="Functions\" />

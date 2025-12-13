@@ -1,4 +1,4 @@
-<div id="Analogic_channel_table" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="1920" data-tchmi-creator-viewport-height="1080">
+<div id="Analogic_channel_table_Usercontrol" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="1920" data-tchmi-creator-viewport-height="1080">
 <div id="TcHmiDatagrid_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiDatagrid" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-data-symbol="%pp%stAnalogicArray%/pp%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-indirect-write="false" data-tchmi-zindex="1" data-tchmi-grid-font-size-unit="px" data-tchmi-grid-font-size="25" data-tchmi-header-height="30" data-tchmi-row-numbers-width="30" data-tchmi-row-numbers-font-size="15" data-tchmi-header-font-size="20" data-tchmi-row-numbers-font-weight="Bold" data-tchmi-row-numbers-font-style="Normal" data-tchmi-header-font-weight="Bold">
 
 
@@ -25,10 +25,10 @@
     "width": 1,
     "widthUnit": "factor",
     "resize": true,
-    "sortable": false,
+    "sortable": true,
     "minWidth": 10,
     "minWidthUnit": "%",
-    "editable": false,
+    "editable": true,
     "horizontalAlignment": "Center",
     "verticalAlignment": "Center",
     "headerHorizontalAlignment": "Center",
@@ -46,7 +46,7 @@
     "control": "NumericInput",
     "width": 1,
     "widthUnit": "factor",
-    "resize": false,
+    "resize": true,
     "sortable": false,
     "minWidth": 10,
     "minWidthUnit": "%",
@@ -55,7 +55,7 @@
     "verticalAlignment": "Center",
     "headerHorizontalAlignment": "Center",
     "headerVerticalAlignment": "Center",
-    "ignoreEscapeSequences": false,
+    "ignoreEscapeSequences": true,
     "autoFocusOut": true,
     "autoSelectText": false,
     "dataDefinitions": {
@@ -68,8 +68,8 @@
     "control": "NumericInput",
     "width": 1,
     "widthUnit": "factor",
-    "resize": false,
-    "sortable": false,
+    "resize": true,
+    "sortable": true,
     "minWidth": 10,
     "minWidthUnit": "%",
     "editable": true,
@@ -131,7 +131,7 @@
   {
     "name": "sTAG",
     "label": "Função",
-    "control": "TextBox",
+    "control": "Image",
     "width": 1,
     "widthUnit": "factor",
     "resize": true,
@@ -146,9 +146,22 @@
     "ignoreEscapeSequences": false,
     "autoFocusOut": true,
     "autoSelectText": false,
-    "dataDefinitions": {
-      "decimalDigits": 2.0
-    }
+    "dataDefinitions": [
+      {
+        "height": 100.0,
+        "source": "Imports/Images/background_green_normal.svg",
+        "text": "Image",
+        "value": "0",
+        "width": 200.0
+      },
+      {
+        "height": 100.0,
+        "source": "Imports/Images/background_green_normal.svg",
+        "text": "Image2",
+        "value": "1",
+        "width": 100.0
+      }
+    ]
   },
   {
     "name": "iScuIndx",
@@ -157,7 +170,7 @@
     "width": 1,
     "widthUnit": "factor",
     "resize": true,
-    "sortable": false,
+    "sortable": true,
     "minWidth": 10,
     "minWidthUnit": "%",
     "editable": true,
@@ -172,11 +185,11 @@
   {
     "name": "bAllocated",
     "label": "Uso",
-    "control": "CheckBox",
+    "control": "Image",
     "width": 1,
     "widthUnit": "factor",
-    "resize": false,
-    "sortable": false,
+    "resize": true,
+    "sortable": true,
     "minWidth": 10,
     "minWidthUnit": "%",
     "editable": true,
@@ -184,21 +197,23 @@
     "verticalAlignment": "Center",
     "headerHorizontalAlignment": "Center",
     "headerVerticalAlignment": "Center",
-    "ignoreEscapeSequences": false,
+    "ignoreEscapeSequences": true,
     "autoFocusOut": true,
     "autoSelectText": false,
     "dataDefinitions": [
       {
-        "height": 1.0,
-        "source": "Images/SIMEROS/Amarelo_ligado.png",
-        "value": "true",
-        "width": 1.0
+        "height": 100.0,
+        "source": "Imports/Images/background_green_normal.svg",
+        "text": "Aberto",
+        "value": "false",
+        "width": 100.0
       },
       {
-        "height": 10.0,
-        "source": "Images/SIMEROS/Amarelo_desligado.png",
-        "value": "false",
-        "width": 10.0
+        "height": 100.0,
+        "source": "Imports/Images/conveyor-band-pressed.svg",
+        "text": "Fechado",
+        "value": "true",
+        "width": 0
       }
     ]
   }

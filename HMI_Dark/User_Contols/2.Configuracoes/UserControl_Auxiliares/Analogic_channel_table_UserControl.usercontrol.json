@@ -16,23 +16,6 @@
       "propertySetterName": "setStAnalogicArray",
       "propertyGetterName": "getStAnalogicArray",
       "refTo": ""
-    },
-    {
-      "name": "data-tchmi-st_info",
-      "displayName": "st_info",
-      "allowSymbolExpressionsInObject": false,
-      "visible": true,
-      "type": "tchmi:server#/definitions/PLC1.ST_INFO_CARDS",
-      "category": "",
-      "description": "",
-      "requiredOnCompile": false,
-      "readOnly": false,
-      "bindable": true,
-      "heritable": true,
-      "propertyName": "st_info",
-      "propertySetterName": "setSt_info",
-      "propertyGetterName": "getSt_info",
-      "refTo": ""
     }
   ],
   "virtualRights": [],
