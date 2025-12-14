@@ -327,26 +327,15 @@
     "event": "TcHmiButton_979983.onPressed",
     "actions": [
       {
-        "objectType": "Function",
+        "objectType": "WriteToSymbol",
         "active": true,
-        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
-        "fnParams": [
-          {
-            "objectType": "Symbol",
-            "valueType": "tchmi:framework#/definitions/Control",
-            "symbolExpression": "%ctrl%Analogic_channel_table_Usercontrol_1%/ctrl%"
-          },
-          {
-            "objectType": "StaticValue",
-            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
-            "value": "stAnalogicArray"
-          },
-          {
-            "objectType": "Symbol",
-            "symbolExpression": "%s%PLC1.IOs.ANALOGIC.IN%/s%"
-          }
-        ],
-        "asyncWait": false
+        "symbolExpression": "%ctrl%TcHmiRegion_IO_Table::TargetContent%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": "SubContents/Config_Digital_table_Content.content"
+        },
+        "asyncWait": true
       }
     ]
   }

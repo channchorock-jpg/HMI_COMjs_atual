@@ -1,7 +1,6 @@
-<div id="Analogic_channel_table_Usercontrol" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="1920" data-tchmi-creator-viewport-height="1080">
-<div id="TcHmiDatagrid_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiDatagrid" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-data-symbol="%pp%stAnalogicArray%/pp%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-indirect-write="false" data-tchmi-zindex="1" data-tchmi-grid-font-size-unit="px" data-tchmi-grid-font-size="25" data-tchmi-header-height="30" data-tchmi-row-numbers-width="30" data-tchmi-row-numbers-font-size="15" data-tchmi-header-font-size="20" data-tchmi-row-numbers-font-weight="Bold" data-tchmi-row-numbers-font-style="Normal" data-tchmi-header-font-weight="Bold">
+<div id="Digital_Channel_table_UserControl" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="1920" data-tchmi-creator-viewport-height="1080">
 
-
+<div id="TcHmiDatagrid_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiDatagrid" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-data-symbol="%pp%stDigitalArray%/pp%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-indirect-write="false" data-tchmi-zindex="1" data-tchmi-grid-font-size-unit="%" data-tchmi-grid-font-size="%f%%ctrl%TcHmiDatagrid_2::RenderedHeight%/ctrl%/6%/f%" data-tchmi-header-height="5" data-tchmi-row-numbers-width="30" data-tchmi-row-numbers-font-size="15" data-tchmi-header-font-size="%f%%ctrl%TcHmiDatagrid_2::RenderedHeight%/ctrl%/30%/f%" data-tchmi-row-numbers-font-weight="Bold" data-tchmi-row-numbers-font-style="Normal" data-tchmi-header-font-weight="Bold" data-tchmi-header-height-unit="%">
 <script data-tchmi-target-attribute="data-tchmi-cell-content-padding" type="application/json">
 {
   "left": 3,
@@ -19,14 +18,14 @@
 <script data-tchmi-target-attribute="data-tchmi-src-column" type="application/json">
 [
   {
-    "name": "fValue",
+    "name": "bValue",
     "label": "LiveView",
-    "control": "NumericInput",
-    "width": 1,
-    "widthUnit": "factor",
+    "control": "Image",
+    "width": 15,
+    "widthUnit": "%",
     "resize": true,
     "sortable": true,
-    "minWidth": 10,
+    "minWidth": 0,
     "minWidthUnit": "%",
     "editable": true,
     "horizontalAlignment": "Center",
@@ -36,107 +35,32 @@
     "ignoreEscapeSequences": false,
     "autoFocusOut": true,
     "autoSelectText": false,
-    "dataDefinitions": {
-      "decimalDigits": 2.0
-    }
-  },
-  {
-    "name": "fMaxValue",
-    "label": "Valor Max",
-    "control": "NumericInput",
-    "width": 1,
-    "widthUnit": "factor",
-    "resize": true,
-    "sortable": false,
-    "minWidth": 10,
-    "minWidthUnit": "%",
-    "editable": true,
-    "horizontalAlignment": "Center",
-    "verticalAlignment": "Center",
-    "headerHorizontalAlignment": "Center",
-    "headerVerticalAlignment": "Center",
-    "ignoreEscapeSequences": true,
-    "autoFocusOut": true,
-    "autoSelectText": false,
-    "dataDefinitions": {
-      "decimalDigits": 2.0
-    }
-  },
-  {
-    "name": "fMinValue",
-    "label": "Valor Min",
-    "control": "NumericInput",
-    "width": 1,
-    "widthUnit": "factor",
-    "resize": true,
-    "sortable": true,
-    "minWidth": 10,
-    "minWidthUnit": "%",
-    "editable": true,
-    "horizontalAlignment": "Center",
-    "verticalAlignment": "Center",
-    "headerHorizontalAlignment": "Center",
-    "headerVerticalAlignment": "Center",
-    "ignoreEscapeSequences": false,
-    "autoFocusOut": true,
-    "autoSelectText": false,
-    "dataDefinitions": {
-      "decimalDigits": 2.0
-    }
-  },
-  {
-    "name": "iBitMax",
-    "label": "Bit Max",
-    "control": "NumericInput",
-    "width": 1,
-    "widthUnit": "factor",
-    "resize": true,
-    "sortable": true,
-    "minWidth": 10,
-    "minWidthUnit": "%",
-    "editable": false,
-    "horizontalAlignment": "Center",
-    "verticalAlignment": "Center",
-    "headerHorizontalAlignment": "Center",
-    "headerVerticalAlignment": "Center",
-    "ignoreEscapeSequences": false,
-    "autoFocusOut": true,
-    "autoSelectText": false,
-    "dataDefinitions": {
-      "decimalDigits": 0.0
-    }
-  },
-  {
-    "name": "iBitMin",
-    "label": "Bit Min",
-    "control": "NumericInput",
-    "width": 1,
-    "widthUnit": "factor",
-    "resize": true,
-    "sortable": true,
-    "minWidth": 10,
-    "minWidthUnit": "%",
-    "editable": false,
-    "horizontalAlignment": "Center",
-    "verticalAlignment": "Center",
-    "headerHorizontalAlignment": "Center",
-    "headerVerticalAlignment": "Center",
-    "ignoreEscapeSequences": false,
-    "autoFocusOut": true,
-    "autoSelectText": false,
-    "dataDefinitions": {
-      "decimalDigits": 0.0
-    }
+    "dataDefinitions": [
+      {
+        "height": 200.0,
+        "source": "Imports/Images/background_red_normal.svg",
+        "text": "inativo",
+        "value": false,
+        "width": 200.0
+      },
+      {
+        "height": 200.0,
+        "source": "Imports/Images/background_green_normal.svg",
+        "text": "Ativo",
+        "value": true,
+        "width": 200.0
+      }
+    ]
   },
   {
     "name": "sTAG",
     "label": "Função",
-    "control": "TextBox",
-    "width": 1,
-    "widthUnit": "factor",
+    "control": "TextBlock",
+    "width": 25,
+    "widthUnit": "%",
     "resize": true,
     "sortable": true,
-    "minWidth": 10,
+    "minWidth": 0,
     "minWidthUnit": "%",
     "editable": false,
     "horizontalAlignment": "Center",
@@ -164,14 +88,33 @@
     ]
   },
   {
+    "name": "INFO::sCardInfo",
+    "label": "Info",
+    "control": "TextBlock",
+    "width": 40,
+    "widthUnit": "%",
+    "resize": false,
+    "sortable": true,
+    "minWidth": 0,
+    "minWidthUnit": "px",
+    "editable": false,
+    "horizontalAlignment": "Center",
+    "verticalAlignment": "Center",
+    "headerHorizontalAlignment": "Center",
+    "headerVerticalAlignment": "Center",
+    "ignoreEscapeSequences": false,
+    "autoFocusOut": true,
+    "autoSelectText": false
+  },
+  {
     "name": "iScuIndx",
     "label": "Scu",
-    "control": "TextBox",
-    "width": 1,
-    "widthUnit": "factor",
+    "control": "TextBlock",
+    "width": 10,
+    "widthUnit": "%",
     "resize": true,
     "sortable": true,
-    "minWidth": 10,
+    "minWidth": 0,
     "minWidthUnit": "%",
     "editable": true,
     "horizontalAlignment": "Center",
@@ -186,8 +129,8 @@
     "name": "bAllocated",
     "label": "Uso",
     "control": "Image",
-    "width": 1,
-    "widthUnit": "factor",
+    "width": 10,
+    "widthUnit": "%",
     "resize": true,
     "sortable": true,
     "minWidth": 0,
@@ -221,23 +164,23 @@
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-header-background-color" type="application/json">
-{
-  "angle": 0.0,
-  "stopPoints": [
     {
-      "color": "rgba(86, 175, 78, 1)",
-      "stop": "3.56%"
+    "angle": 0.0,
+    "stopPoints": [
+    {
+    "color": "rgba(222, 74, 85, 1)",
+    "stop": "3.56%"
     },
     {
-      "color": "rgba(42, 159, 42, 1)",
-      "stop": "47.59%"
+    "color": "rgba(246, 169, 178, 1)",
+    "stop": "47.01%"
     },
     {
-      "color": "rgba(56, 141, 65, 1)",
-      "stop": "97.48%"
+    "color": "rgba(222, 74, 74, 1)",
+    "stop": "97.48%"
     }
-  ]
-}
+    ]
+    }
 </script>
 
 
@@ -245,7 +188,7 @@
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "%pp%stAnalogicArray[0]::eTypeChannel%/pp%",
+    "event": "%pp%stDigitalArray%/pp%",
     "actions": [
       {
         "objectType": "SwitchCase",
@@ -253,20 +196,20 @@
         "compare": {
           "objectType": "Symbol",
           "valueType": "tchmi:server#/definitions/PLC1.E_TYPE_CHANNEL",
-          "symbolExpression": "%pp%stAnalogicArray[0]::eTypeChannel%/pp%"
+          "symbolExpression": "%pp%stDigitalArray[0]::eTypeChannel%/pp%"
         },
         "cases": [
           {
             "caseValue": {
               "objectType": "StaticValue",
               "valueType": "tchmi:server#/definitions/PLC1.E_TYPE_CHANNEL",
-              "value": 3
+              "value": 1
             },
             "actions": [
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiDatagrid_1::HeaderBackgroundColor%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiDatagrid_2::HeaderBackgroundColor%/ctrl%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Color",
@@ -274,15 +217,15 @@
                     "angle": 0.0,
                     "stopPoints": [
                       {
-                        "color": "rgba(74, 169, 222, 1)",
+                        "color": "rgba(222, 74, 85, 1)",
                         "stop": "3.56%"
                       },
                       {
-                        "color": "rgba(79, 158, 200, 1)",
+                        "color": "rgba(246, 169, 178, 1)",
                         "stop": "47.01%"
                       },
                       {
-                        "color": "rgba(19, 155, 226, 1)",
+                        "color": "rgba(222, 74, 74, 1)",
                         "stop": "97.48%"
                       }
                     ]
@@ -296,13 +239,13 @@
             "caseValue": {
               "objectType": "StaticValue",
               "valueType": "tchmi:server#/definitions/PLC1.E_TYPE_CHANNEL",
-              "value": 2
+              "value": 0
             },
             "actions": [
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiDatagrid_1::HeaderBackgroundColor%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiDatagrid_2::HeaderBackgroundColor%/ctrl%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Color",
@@ -310,15 +253,15 @@
                     "angle": 0.0,
                     "stopPoints": [
                       {
-                        "color": "rgba(86, 175, 78, 1)",
+                        "color": "rgba(168, 168, 10, 1)",
                         "stop": "3.56%"
                       },
                       {
-                        "color": "rgba(42, 159, 42, 1)",
+                        "color": "rgba(185, 205, 39, 1)",
                         "stop": "47.59%"
                       },
                       {
-                        "color": "rgba(56, 141, 65, 1)",
+                        "color": "rgba(127, 137, 11, 1)",
                         "stop": "97.48%"
                       }
                     ]

@@ -467,6 +467,9 @@
     <Content Include="SubContents\Config_Analogic_table_Content.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="SubContents\Config_Digital_table_Content.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="User_Contols\0.Controle\Limites_e_Erro.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -543,6 +546,13 @@
     <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table_UserControl.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table_UserControl.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Digital_Channel_table_UserControl.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Digital_Channel_table_UserControl.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\2.Configuracoes\UserControl_Auxiliares\Digital_Channel_table_UserControl.usercontrol</DependentUpon>
     </Content>
     <Folder Include="Fonts\" />
     <Folder Include="Functions\" />

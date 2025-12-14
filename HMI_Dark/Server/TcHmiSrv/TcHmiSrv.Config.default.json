@@ -152,6 +152,15 @@
             "startOffset": 1,
             "type": "array"
         },
+        "PLC1.ARRAY_1..50_OF-ST_DIGITAL_CONFIG": {
+            "items": {
+                "$ref": "#/definitions/PLC1.ST_DIGITAL_CONFIG"
+            },
+            "maxItems": 50,
+            "minItems": 50,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.ARRAY_1..5_1..2_OF-LREAL": {
             "displayAsMatrix": 2,
             "items": {
@@ -8471,6 +8480,42 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.IOs.DIGITAL.IN": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::IOs::DIGITAL::IN",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..50_OF-ST_DIGITAL_CONFIG"
+                    },
+                    {
+                        "comment": "ESTRUTURA DE ENTRADAS DIGITAIS",
+                        "propertyOrder": 1
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.IOs.DIGITAL.OUT": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::IOs::DIGITAL::OUT",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..50_OF-ST_DIGITAL_CONFIG"
+                    },
+                    {
+                        "comment": "ESTRUTURA DE SAIDAS DIGITAIS",
+                        "propertyOrder": 2
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.SCU1.ActiveSensor": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -13601,6 +13646,8 @@
                 "PLC1.HMI_SCU1.stSensorConfig": 3,
                 "PLC1.IOs.ANALOGIC.IN": 3,
                 "PLC1.IOs.ANALOGIC.OUT": 3,
+                "PLC1.IOs.DIGITAL.IN": 3,
+                "PLC1.IOs.DIGITAL.OUT": 3,
                 "PLC1.SCU1.ActiveSensor": 3,
                 "PLC1.SCU1.AxisCommandInput": 3,
                 "PLC1.SCU1.AxisOutput": 3,
