@@ -470,6 +470,9 @@
     <Content Include="SubContents\Config_Digital_table_Content.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="SubContents\Config_Panel_Conect.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="User_Contols\0.Controle\Limites_e_Erro.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -560,6 +563,13 @@
     <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Digital_Channel_table_UserControl.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>User_Contols\2.Configuracoes\UserControl_Auxiliares\Digital_Channel_table_UserControl.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\3.Formulario\Form_IOs_Conector.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\3.Formulario\Form_IOs_Conector.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\3.Formulario\Form_IOs_Conector.usercontrol</DependentUpon>
     </Content>
     <Folder Include="Fonts\" />
     <Folder Include="Functions\" />
@@ -971,6 +981,7 @@
     <Folder Include="User_Contols\1.Headers" />
     <Folder Include="User_Contols\2.Configuracoes" />
     <Folder Include="User_Contols\2.Configuracoes\UserControl_Auxiliares" />
+    <Folder Include="User_Contols\3.Formulario" />
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

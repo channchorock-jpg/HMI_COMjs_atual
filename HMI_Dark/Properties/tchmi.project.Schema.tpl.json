@@ -247,6 +247,14 @@
       "frameworkUserControlConfig": "User_Contols\\2.Configuracoes\\UserControl_Auxiliares\\Bind_SCU_Components.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/Bind_SCU_Components"
+    },
+    "Form_IOs_Conector": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "User_Contols\\3.Formulario\\Form_IOs_Conector.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Form_IOs_Conector"
     }
   }
 }

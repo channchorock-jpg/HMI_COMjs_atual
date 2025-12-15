@@ -24,7 +24,7 @@
   }
 ]
 </script>
-<div id="Toogle_Act_limite" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleSwitch" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="%ctrl%Toogle_Act_limite::RenderedHeight%/ctrl%" data-tchmi-text-font-weight="Bold" data-tchmi-text="Ativar Limites Max. e Min" data-tchmi-right="2" data-tchmi-bottom="18" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-height="10">
+<div id="Toogle_Act_limite" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleSwitch" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Toogle_Act_limite::RenderedHeight%/ctrl%*0.9%/f%" data-tchmi-text-font-weight="Bold" data-tchmi-text="Ativar Limites Max. e Min" data-tchmi-right="2" data-tchmi-bottom="18" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-height="10">
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -193,7 +193,7 @@
 ]
 </script>
 </div>
-<div id="Toogle_Act_Erro" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleSwitch" data-tchmi-height="10" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="Ativar Limite de Erro" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="%ctrl%Toogle_Act_Erro::RenderedHeight%/ctrl%" data-tchmi-text-font-weight="Bold" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="6">
+<div id="Toogle_Act_Erro" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleSwitch" data-tchmi-height="10" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="Ativar Limite de Erro" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Toogle_Act_Erro::RenderedHeight%/ctrl%*0.9%/f%" data-tchmi-text-font-weight="Bold" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="6">
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [

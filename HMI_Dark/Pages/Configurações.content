@@ -21,12 +21,14 @@
   "bottom": "Solid"
 }
 </script>
-<div id="TcHmiContainer_3" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-zindex="2" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-width="30" data-tchmi-height="50">
-<div id="SCU_Config_input_3" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/2.Configuracoes/SCU_Config_input.usercontrol" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-creator-locked="True" data-tchmi-zindex="1">
+<div id="TcHmiContainer_3" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="%" data-tchmi-left="33.5" data-tchmi-left-unit="%" data-tchmi-top="46.3" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-zindex="2" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-width="30" data-tchmi-height="50">
+<div id="SCU_Config_input_3" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/2.Configuracoes/SCU_Config_input.usercontrol" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-zindex="1">
 </div>
 </div>
 <div id="TcHmiContainer_5" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="40" data-tchmi-height-unit="%" data-tchmi-left="43.1" data-tchmi-left-unit="%" data-tchmi-top="4.9" data-tchmi-top-unit="%" data-tchmi-width="25" data-tchmi-width-unit="%">
 <div id="SCU_Config_Cycle_Control_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/2.Configuracoes/SCU_Config_Cycle_Control.usercontrol" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-width-mode="Value" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-creator-locked="True">
 </div>
+</div>
+<div id="Form_IOs_Conector_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="196" data-tchmi-left-unit="px" data-tchmi-target-user-control="User_Contols/3.Formulario/Form_IOs_Conector.usercontrol" data-tchmi-top="72" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px">
 </div>
 </div>
