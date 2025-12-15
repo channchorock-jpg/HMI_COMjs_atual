@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>HMI_Dark</Name>
-    <HmiCommunicationRouterPort>10112</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10114</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.762.53</HmiInitial>
     <HmiRecent>1.12.762.56</HmiRecent>
@@ -546,6 +546,13 @@
     <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table_UserControl.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table_UserControl.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Bind_SCU_Components.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Bind_SCU_Components.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\2.Configuracoes\UserControl_Auxiliares\Bind_SCU_Components.usercontrol</DependentUpon>
     </Content>
     <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Digital_Channel_table_UserControl.usercontrol">
       <SubType>Content</SubType>

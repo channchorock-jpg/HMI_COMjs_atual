@@ -28,13 +28,24 @@
           }
         ],
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%i%bAnalogicIn%/i%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": true
+        },
+        "asyncWait": true
       }
     ]
   }
 ]
 </script>
 </div>
-<div id="Button_Show_Anaalogic_Out" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="Saídas Analógicas" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size="%f%%ctrl%Button_Show_Anaalogic_Out::RenderedHeight%/ctrl%/2%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="2" data-tchmi-visibility="Visible" data-tchmi-bottom="92" data-tchmi-text-font-size-unit="px" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-width="20" data-tchmi-max-width="28" data-tchmi-max-width-unit="%">
+<div id="Button_Show_Anaalogic_Out" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="%" data-tchmi-left="25" data-tchmi-left-unit="%" data-tchmi-text="Saídas Analógicas" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size="%f%%ctrl%Button_Show_Anaalogic_Out::RenderedHeight%/ctrl%/2%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="2" data-tchmi-visibility="Visible" data-tchmi-bottom="92" data-tchmi-text-font-size-unit="px" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-width="20" data-tchmi-max-width="28" data-tchmi-max-width-unit="%" data-tchmi-state-symbol="%i%bAnalogicOut%/i%" data-tchmi-toggle-group="%i%iShowAnalogicChannel%/i%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "angle": 0.0,
@@ -185,7 +196,7 @@
 ]
 </script>
 </div>
-<div id="Button_Show_Anaalogic_IN" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="Entradas Analógicas" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size="%f%%ctrl%Button_Show_Anaalogic_Out::RenderedHeight%/ctrl%/2%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="2" data-tchmi-visibility="Visible" data-tchmi-bottom="92" data-tchmi-text-font-size-unit="px" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-width="20" data-tchmi-max-width-unit="%" data-tchmi-max-width="28">
+<div id="Button_Show_Anaalogic_IN" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="Entradas Analógicas" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size="%f%%ctrl%Button_Show_Anaalogic_Out::RenderedHeight%/ctrl%/2%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="2" data-tchmi-visibility="Visible" data-tchmi-bottom="92" data-tchmi-text-font-size-unit="px" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-width="20" data-tchmi-max-width-unit="%" data-tchmi-max-width="28" data-tchmi-state-symbol="%i%bAnalogicIn%/i%" data-tchmi-toggle-group="%i%iShowAnalogicChannel%/i%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "angle": 0.0,

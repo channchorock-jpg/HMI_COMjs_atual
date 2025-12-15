@@ -257,6 +257,9 @@
     },
     {
       "url": "User_Contols/2.Configuracoes/UserControl_Auxiliares/Digital_Channel_table_UserControl.usercontrol"
+    },
+    {
+      "url": "User_Contols/2.Configuracoes/UserControl_Auxiliares/Bind_SCU_Components.usercontrol"
     }
   ],
   "content": [
@@ -283,6 +286,13 @@
     },
     {
       "url": "SubContents/Config_Analogic_table_Content.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "SubContents/Config_Digital_table_Content.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
@@ -325,13 +335,6 @@
     },
     {
       "url": "Pages/TecladoVirtual.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "SubContents/Config_Digital_table_Content.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
@@ -529,6 +532,42 @@
       "eStateToShow": {
         "value": 3,
         "type": "tchmi:server#/definitions/PLC1.EStateMachine",
+        "persist": false,
+        "readonly": false
+      },
+      "iShowDigitalChannel": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/INT",
+        "persist": false,
+        "readonly": false
+      },
+      "bShowDigitalOut": {
+        "value": true,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "bDigitalIn": {
+        "value": false,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "bAnalogicIn": {
+        "value": true,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "bAnalogicOut": {
+        "value": false,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "iShowAnalogicChannel": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/INT",
         "persist": false,
         "readonly": false
       }

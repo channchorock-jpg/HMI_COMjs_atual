@@ -532,9 +532,9 @@
   }
 ]
 </script>
-<div id="SCU_PID_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="15" data-tchmi-height-unit="%" data-tchmi-left="0.1" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_PID.usercontrol" data-tchmi-top="50" data-tchmi-top-unit="%" data-tchmi-width="25" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-height-mode="Value" data-tchmi-zindex="1">
+<div id="SCU_PID_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="20" data-tchmi-height-unit="%" data-tchmi-left="0.1" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_PID.usercontrol" data-tchmi-top="50" data-tchmi-top-unit="%" data-tchmi-width="25" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-height-mode="Value" data-tchmi-zindex="1">
 </div>
-<div id="SCU_Limites_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="29.4" data-tchmi-height-unit="%" data-tchmi-left="0.1" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Limites.usercontrol" data-tchmi-top="65" data-tchmi-top-unit="%" data-tchmi-width="25" data-tchmi-width-unit="%" data-tchmi-zindex="1">
+<div id="SCU_Limites_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-left="0.1" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/0.Controle/SCU_Limites.usercontrol" data-tchmi-top="70" data-tchmi-top-unit="%" data-tchmi-width="25" data-tchmi-width-unit="%" data-tchmi-zindex="1">
 </div>
 <div id="TcHmiGrid_Controle_FeedBack_S1_S2_States" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-left="0.1" data-tchmi-left-unit="%" data-tchmi-top="25" data-tchmi-top-unit="%" data-tchmi-width="49.9" data-tchmi-width-unit="%" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-zindex="1">
 

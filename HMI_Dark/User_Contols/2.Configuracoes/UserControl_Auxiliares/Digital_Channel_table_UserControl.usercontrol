@@ -1,6 +1,6 @@
-<div id="Digital_Channel_table_UserControl" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="1920" data-tchmi-creator-viewport-height="1080">
+<div id="Digital_Channel_table_UserControl" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="1920" data-tchmi-creator-viewport-height="1080" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
 
-<div id="TcHmiDatagrid_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiDatagrid" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-data-symbol="%pp%stDigitalArray%/pp%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-indirect-write="false" data-tchmi-zindex="1" data-tchmi-grid-font-size-unit="%" data-tchmi-grid-font-size="%f%%ctrl%TcHmiDatagrid_2::RenderedHeight%/ctrl%/6%/f%" data-tchmi-header-height="5" data-tchmi-row-numbers-width="30" data-tchmi-row-numbers-font-size="15" data-tchmi-header-font-size="%f%%ctrl%TcHmiDatagrid_2::RenderedHeight%/ctrl%/30%/f%" data-tchmi-row-numbers-font-weight="Bold" data-tchmi-row-numbers-font-style="Normal" data-tchmi-header-font-weight="Bold" data-tchmi-header-height-unit="%">
+<div id="TcHmiDatagrid_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiDatagrid" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-data-symbol="%pp%stDigitalArray%/pp%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-indirect-write="false" data-tchmi-zindex="1" data-tchmi-grid-font-size-unit="%" data-tchmi-grid-font-size="%f%%ctrl%TcHmiDatagrid_2::RenderedHeight%/ctrl%/6%/f%" data-tchmi-header-height="%f%%ctrl%TcHmiDatagrid_2::RenderedHeight%/ctrl%/220%/f%" data-tchmi-row-numbers-width="30" data-tchmi-row-numbers-font-size="15" data-tchmi-header-font-size="%f%%ctrl%TcHmiDatagrid_2::RenderedHeight%/ctrl%/35%/f%" data-tchmi-row-numbers-font-weight="Bold" data-tchmi-row-numbers-font-style="Normal" data-tchmi-header-font-weight="Bold" data-tchmi-header-height-unit="%" data-tchmi-row-height="30">
 <script data-tchmi-target-attribute="data-tchmi-cell-content-padding" type="application/json">
 {
   "left": 3,
@@ -21,12 +21,12 @@
     "name": "bValue",
     "label": "LiveView",
     "control": "Image",
-    "width": 15,
+    "width": 14,
     "widthUnit": "%",
-    "resize": true,
+    "resize": false,
     "sortable": true,
     "minWidth": 0,
-    "minWidthUnit": "%",
+    "minWidthUnit": "px",
     "editable": true,
     "horizontalAlignment": "Center",
     "verticalAlignment": "Center",
@@ -58,10 +58,10 @@
     "control": "TextBlock",
     "width": 25,
     "widthUnit": "%",
-    "resize": true,
+    "resize": false,
     "sortable": true,
     "minWidth": 0,
-    "minWidthUnit": "%",
+    "minWidthUnit": "px",
     "editable": false,
     "horizontalAlignment": "Center",
     "verticalAlignment": "Center",
@@ -112,11 +112,11 @@
     "control": "TextBlock",
     "width": 10,
     "widthUnit": "%",
-    "resize": true,
+    "resize": false,
     "sortable": true,
     "minWidth": 0,
-    "minWidthUnit": "%",
-    "editable": true,
+    "minWidthUnit": "px",
+    "editable": false,
     "horizontalAlignment": "Center",
     "verticalAlignment": "Center",
     "headerHorizontalAlignment": "Center",
@@ -131,11 +131,11 @@
     "control": "Image",
     "width": 10,
     "widthUnit": "%",
-    "resize": true,
+    "resize": false,
     "sortable": true,
     "minWidth": 0,
     "minWidthUnit": "px",
-    "editable": true,
+    "editable": false,
     "horizontalAlignment": "Center",
     "verticalAlignment": "Center",
     "headerHorizontalAlignment": "Center",
@@ -164,23 +164,23 @@
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-header-background-color" type="application/json">
+{
+  "angle": 0.0,
+  "stopPoints": [
     {
-    "angle": 0.0,
-    "stopPoints": [
-    {
-    "color": "rgba(222, 74, 85, 1)",
-    "stop": "3.56%"
+      "color": "rgba(239, 4, 22, 1)",
+      "stop": "3.56%"
     },
     {
-    "color": "rgba(246, 169, 178, 1)",
-    "stop": "47.01%"
+      "color": "rgba(246, 169, 178, 1)",
+      "stop": "47.01%"
     },
     {
-    "color": "rgba(222, 74, 74, 1)",
-    "stop": "97.48%"
+      "color": "rgba(222, 3, 3, 1)",
+      "stop": "97.48%"
     }
-    ]
-    }
+  ]
+}
 </script>
 
 
@@ -217,7 +217,7 @@
                     "angle": 0.0,
                     "stopPoints": [
                       {
-                        "color": "rgba(222, 74, 85, 1)",
+                        "color": "rgba(251, 5, 23, 1)",
                         "stop": "3.56%"
                       },
                       {
@@ -225,7 +225,7 @@
                         "stop": "47.01%"
                       },
                       {
-                        "color": "rgba(222, 74, 74, 1)",
+                        "color": "rgba(226, 0, 0, 1)",
                         "stop": "97.48%"
                       }
                     ]
@@ -281,10 +281,10 @@
 
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 1,
+  "left": 0,
+  "right": 0,
+  "top": 0,
+  "bottom": 0,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
