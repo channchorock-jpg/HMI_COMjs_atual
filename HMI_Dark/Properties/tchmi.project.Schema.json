@@ -253,8 +253,8 @@
       "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
       "frameworkUserControlConfig": "User_Contols\\3.Formulario\\Form_IOs_Conector.usercontrol.json",
-      "type": "object",
-      "id": "tchmi:project#/definitions/Form_IOs_Conector"
+      "id": "tchmi:project#/definitions/Form_IOs_Conector",
+      "type": "object"
     }
   }
 }

@@ -178,6 +178,15 @@
             "startOffset": 1,
             "type": "array"
         },
+        "PLC1.ARRAY_1..9_OF-ST_PIN_INFO": {
+            "items": {
+                "$ref": "#/definitions/PLC1.ST_PIN_INFO"
+            },
+            "maxItems": 9,
+            "minItems": 9,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.EStateMachine": {
             "attributes": {
                 "generate_implicit_init_function": "",
@@ -718,7 +727,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 21
+                            "propertyOrder": 17
                         }
                     ]
                 },
@@ -728,7 +737,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 18
+                            "comment": "pvalue\t\t\t\t: POINTER TO REAL; \r\npIntRead\t\t\t: POINTER TO INT;\r\npIntWrite           : POINTER TO INT;\r\npbReadrequst\t\t: POINTER TO BOOL;\r\npbWriterequst\t\t: POINTER TO BOOL;",
+                            "propertyOrder": 14
                         }
                     ]
                 },
@@ -738,7 +748,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 19
+                            "propertyOrder": 15
                         }
                     ]
                 },
@@ -758,7 +768,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 22
+                            "propertyOrder": 18
                         }
                     ]
                 },
@@ -768,7 +778,7 @@
                             "$ref": "#/definitions/PLC1.E_ANALOGIC_IN_TYPES"
                         },
                         {
-                            "propertyOrder": 27
+                            "propertyOrder": 23
                         }
                     ]
                 },
@@ -778,7 +788,7 @@
                             "$ref": "#/definitions/PLC1.E_ANALOGIC_OUT_TYPES"
                         },
                         {
-                            "propertyOrder": 28
+                            "propertyOrder": 24
                         }
                     ]
                 },
@@ -788,7 +798,7 @@
                             "$ref": "#/definitions/PLC1.E_Sensor_Type"
                         },
                         {
-                            "propertyOrder": 25
+                            "propertyOrder": 21
                         }
                     ]
                 },
@@ -798,7 +808,7 @@
                             "$ref": "#/definitions/PLC1.E_TYPE_CHANNEL"
                         },
                         {
-                            "propertyOrder": 26
+                            "propertyOrder": 22
                         }
                     ]
                 },
@@ -906,7 +916,7 @@
                             "$ref": "tchmi:general#/definitions/INT"
                         },
                         {
-                            "propertyOrder": 23
+                            "propertyOrder": 19
                         }
                     ]
                 },
@@ -921,63 +931,13 @@
                         }
                     ]
                 },
-                "pIntRead": {
-                    "allOf": [
-                        {
-                            "$ref": "#/definitions/PLC1.POINTER-TO-INT"
-                        },
-                        {
-                            "propertyOrder": 14
-                        }
-                    ]
-                },
-                "pIntWrite": {
-                    "allOf": [
-                        {
-                            "$ref": "#/definitions/PLC1.POINTER-TO-INT"
-                        },
-                        {
-                            "propertyOrder": 15
-                        }
-                    ]
-                },
-                "pbReadrequst": {
-                    "allOf": [
-                        {
-                            "$ref": "#/definitions/PLC1.POINTER-TO-BOOL"
-                        },
-                        {
-                            "propertyOrder": 16
-                        }
-                    ]
-                },
-                "pbWriterequst": {
-                    "allOf": [
-                        {
-                            "$ref": "#/definitions/PLC1.POINTER-TO-BOOL"
-                        },
-                        {
-                            "propertyOrder": 17
-                        }
-                    ]
-                },
-                "pvalue": {
-                    "allOf": [
-                        {
-                            "$ref": "#/definitions/PLC1.POINTER-TO-REAL"
-                        },
-                        {
-                            "propertyOrder": 13
-                        }
-                    ]
-                },
                 "sName": {
                     "allOf": [
                         {
                             "$ref": "tchmi:general#/definitions/STRING%2880%29"
                         },
                         {
-                            "propertyOrder": 20
+                            "propertyOrder": 16
                         }
                     ]
                 },
@@ -987,7 +947,17 @@
                             "$ref": "tchmi:general#/definitions/STRING%2880%29"
                         },
                         {
-                            "propertyOrder": 24
+                            "propertyOrder": 20
+                        }
+                    ]
+                },
+                "stPinInfo": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..9_OF-ST_PIN_INFO"
+                        },
+                        {
+                            "propertyOrder": 13
                         }
                     ]
                 }
@@ -1469,7 +1439,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 15
+                            "propertyOrder": 16
                         }
                     ]
                 },
@@ -1489,7 +1459,7 @@
                             "$ref": "#/definitions/PLC1.E_DIGITAL_IN_TYPES"
                         },
                         {
-                            "propertyOrder": 13
+                            "propertyOrder": 14
                         }
                     ]
                 },
@@ -1499,7 +1469,7 @@
                             "$ref": "#/definitions/PLC1.E_DIGITAL_OUT_TYPES"
                         },
                         {
-                            "propertyOrder": 14
+                            "propertyOrder": 15
                         }
                     ]
                 },
@@ -1509,7 +1479,7 @@
                             "$ref": "#/definitions/PLC1.E_TYPE_CHANNEL"
                         },
                         {
-                            "propertyOrder": 12
+                            "propertyOrder": 13
                         }
                     ]
                 },
@@ -1573,6 +1543,16 @@
                         },
                         {
                             "propertyOrder": 11
+                        }
+                    ]
+                },
+                "stPinInfo": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..9_OF-ST_PIN_INFO"
+                        },
+                        {
+                            "propertyOrder": 12
                         }
                     ]
                 }
@@ -2185,6 +2165,32 @@
                         },
                         {
                             "propertyOrder": 9
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.ST_PIN_INFO": {
+            "properties": {
+                "bPin": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "sPinDesc": {
+                    "allOf": [
+                        {
+                            "maxLength": 20,
+                            "propertyOrder": 2
+                        },
+                        {
+                            "$ref": "tchmi:general#/definitions/String"
                         }
                     ]
                 }

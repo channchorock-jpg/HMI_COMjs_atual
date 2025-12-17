@@ -179,7 +179,7 @@
   }
 ]
 </script>
-<div id="Form_IOs_Conector_D_IN_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height="120" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/3.Formulario/Form_IOs_Conector.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="120" data-tchmi-width-unit="px">
+<div id="Form_IOs_Conector_D_IN_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="1" data-tchmi-height="120" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/3.Formulario/Form_IOs_Conector.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-stpininfo="%s%PLC1.IOs.DIGITAL.OUT[0]::stPinInfo%/s%">
 </div>
 <div id="Form_IOs_Conector_D_IN_3" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="1" data-tchmi-height="120" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-target-user-control="User_Contols/3.Formulario/Form_IOs_Conector.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="120" data-tchmi-width-unit="px">
 </div>

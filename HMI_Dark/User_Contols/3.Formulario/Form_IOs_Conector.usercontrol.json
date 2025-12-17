@@ -1,5 +1,24 @@
 {
-  "$schema": "./../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
   "parameters": [
-  ]
+    {
+      "name": "data-tchmi-stpininfo",
+      "displayName": "stPinInfo",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.ARRAY_1..9_OF-ST_PIN_INFO",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stPinInfo",
+      "propertySetterName": "setStPinInfo",
+      "propertyGetterName": "getStPinInfo",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.53/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
 }
