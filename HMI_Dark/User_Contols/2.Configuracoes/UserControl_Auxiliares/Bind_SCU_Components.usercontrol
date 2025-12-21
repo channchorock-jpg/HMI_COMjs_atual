@@ -1833,7 +1833,7 @@
                   {
                     "objectType": "Symbol",
                     "valueType": "tchmi:framework#/definitions/Control",
-                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated%/ctrl%"
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_Micro_1%/ctrl%"
                   },
                   {
                     "objectType": "StaticValue",
@@ -1872,7 +1872,7 @@
                   {
                     "objectType": "Symbol",
                     "valueType": "tchmi:framework#/definitions/Control",
-                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated%/ctrl%"
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_Micro_1%/ctrl%"
                   },
                   {
                     "objectType": "StaticValue",
@@ -1909,7 +1909,7 @@
                   {
                     "objectType": "Symbol",
                     "valueType": "tchmi:framework#/definitions/Control",
-                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated%/ctrl%"
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_Micro_1%/ctrl%"
                   }
                 ],
                 "asyncWait": true
@@ -1954,7 +1954,7 @@
                   {
                     "objectType": "Symbol",
                     "valueType": "tchmi:framework#/definitions/Control",
-                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated%/ctrl%"
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_Micro_1%/ctrl%"
                   },
                   {
                     "objectType": "StaticValue",
@@ -1993,7 +1993,7 @@
                   {
                     "objectType": "Symbol",
                     "valueType": "tchmi:framework#/definitions/Control",
-                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated%/ctrl%"
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_Micro_1%/ctrl%"
                   },
                   {
                     "objectType": "StaticValue",
@@ -2030,7 +2030,7 @@
                   {
                     "objectType": "Symbol",
                     "valueType": "tchmi:framework#/definitions/Control",
-                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated%/ctrl%"
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_Micro_1%/ctrl%"
                   }
                 ],
                 "asyncWait": true
@@ -4976,7 +4976,7 @@
 }
 </script>
 </div>
-<div id="Label_Tag_Micro_Descrip_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="3" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%pp%stAxisComInput::bInMicroSwitch[0]::INFO::sCardInfo%/pp%">
+<div id="Label_Tag_Micro_Descrip_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="2" data-tchmi-grid-column-index="3" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%pp%stAxisComInput::bInMicroSwitch[1]::INFO::sCardInfo%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "color": "rgba(105, 104, 104, 1)"
@@ -5904,11 +5904,11 @@
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%ctrl%TextBox_Digital_TAG::Text%/ctrl%",
+        "symbolExpression": "%pp%stAxisComInput::bInMicroSwitch[0]::iRequestChnnl%/pp%",
         "value": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/String",
-          "symbolExpression": "%pp%stAxisComInput::bInMicroSwitch[0]::sTAG%/pp%"
+          "symbolExpression": "%pp%stAxisComInput::bInMicroSwitch[0]::iDigChnl%/pp%"
         },
         "asyncWait": true
       },
@@ -5943,6 +5943,121 @@
           "valueType": "tchmi:server#/definitions/PLC1.E_TYPE_CHANNEL",
           "value": 0
         },
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_Free_Digital_Channel%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "StateSymbol"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComInput::bInMicroSwitch[0]::bfree%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_Apply_Digital_Config%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "StateSymbol"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComInput::bInMicroSwitch[0]::brequestBind%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%ComboBox_Digital_Channel%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "SelectedId"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComInput::bInMicroSwitch[0]::iRequestChnnl|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%TextBox_Digital_TAG%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Text"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComInput::bInMicroSwitch[0]::sTAG|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Label_Digital_Card_Info%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Text"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComInput::bInMicroSwitch[0]::INFO::sCardInfo|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
         "asyncWait": true
       }
     ]
