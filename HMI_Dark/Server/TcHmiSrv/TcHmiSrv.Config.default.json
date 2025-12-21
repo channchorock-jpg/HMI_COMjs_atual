@@ -152,6 +152,15 @@
             "startOffset": 1,
             "type": "array"
         },
+        "PLC1.ARRAY_1..50_OF-ST_ComboboxEntry": {
+            "items": {
+                "$ref": "#/definitions/PLC1.ST_ComboboxEntry"
+            },
+            "maxItems": 50,
+            "minItems": 50,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.ARRAY_1..50_OF-ST_DIGITAL_CONFIG": {
             "items": {
                 "$ref": "#/definitions/PLC1.ST_DIGITAL_CONFIG"
@@ -1152,6 +1161,252 @@
             },
             "type": "object"
         },
+        "PLC1.ST_AXIS_COM_HMI_INPUT": {
+            "properties": {
+                "bEmergency": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ST_DIGITAL_CONFIG"
+                        },
+                        {
+                            "comment": "Sinal de emergência interna",
+                            "propertyOrder": 4
+                        }
+                    ]
+                },
+                "bInEmergencyPanel": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ST_DIGITAL_CONFIG"
+                        },
+                        {
+                            "comment": "Sinal de emergência enviado pelo painel",
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "bInMicroSwitch": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..2_OF-ST_DIGITAL_CONFIG"
+                        },
+                        {
+                            "comment": "Estado da microchave  e  ou botão local",
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "bInSystemReset": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ST_DIGITAL_CONFIG"
+                        },
+                        {
+                            "comment": "Comando para reset do sistema",
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "bInvSplitValveCommand": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "bMachineLOW \t\t\t: BOOL;    \t\t\t\t\t// Indica se a máquina está pronta manaifol auxiliar ligado \r\nbMachineHIGH \t\t\t: BOOL;   \t\t\t\t\t// Indica se a máquina está ativa Manifold Ligado\r\nbStaticMode\t\t\t\t: ARRAY [1..2] OF BOOL;\t\t// Solicita modo estático\r\nbDynamicMode\t\t\t: ARRAY [1..2] OF BOOL ; \t// Solicita modo dinamico \r\nbDynSafeSwtchOff\t\t: ARRAY [1..2] OF BOOL; \t// Parada do modo dinamico no ponto médio (offset) vindo da HMI \r\nbStateMicroError\t\t: ARRAY [1..2] OF BOOL;\t\t// Estado da MicroChave  interna refrente a erro maximo atingido \r\nbStateMicroLimit \t\t: ARRAY [1..2] OF BOOL;  \t// Estado da microchave interna referente Limites Maximos e Minimos atingido",
+                            "propertyOrder": 5
+                        }
+                    ]
+                },
+                "bResetAlarms": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "Booleano para resetar os alarmes",
+                            "propertyOrder": 9
+                        }
+                    ]
+                },
+                "bSplitValveCommand": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 6
+                        }
+                    ]
+                },
+                "fOffsetNeg": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 8
+                        }
+                    ]
+                },
+                "fOffsetPos": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 7
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.ST_AXIS_HMI_OUTPUT": {
+            "properties": {
+                "bEmergencyOut": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ST_DIGITAL_CONFIG"
+                        },
+                        {
+                            "comment": "Sinal de emergência Enviado para o CLP",
+                            "propertyOrder": 9
+                        }
+                    ]
+                },
+                "bInvSplitValveCommand": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "VAriaveis de configuração da Valvula",
+                            "propertyOrder": 10
+                        }
+                    ]
+                },
+                "bManifold": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ST_DIGITAL_CONFIG"
+                        },
+                        {
+                            "comment": "Controle do manifold principal",
+                            "propertyOrder": 6
+                        }
+                    ]
+                },
+                "bManifoldAux": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ST_DIGITAL_CONFIG"
+                        },
+                        {
+                            "comment": "Controle do manifold auxiliar",
+                            "propertyOrder": 7
+                        }
+                    ]
+                },
+                "bPWRValve": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ST_DIGITAL_CONFIG"
+                        },
+                        {
+                            "comment": "Energização da valvula proporcional",
+                            "propertyOrder": 5
+                        }
+                    ]
+                },
+                "bReset": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ST_DIGITAL_CONFIG"
+                        },
+                        {
+                            "comment": "Sinal para reset do sistema Vindo do CLP",
+                            "propertyOrder": 8
+                        }
+                    ]
+                },
+                "bSplitValveCommand": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 11
+                        }
+                    ]
+                },
+                "fDAQ": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..2_OF-ST_ANALOGIC_CONFIG"
+                        },
+                        {
+                            "comment": "Variavel que Recebe o Valor  a ser retransmitida",
+                            "propertyOrder": 4
+                        }
+                    ]
+                },
+                "fErrorActComman": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "comment": "Erro atual",
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "fOffsetNeg": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 13
+                        }
+                    ]
+                },
+                "fOffsetPos": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 12
+                        }
+                    ]
+                },
+                "fSetpoinCommand": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "comment": "Valor do setpoint que comanda o Eixo",
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "fValveCommand": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..2_OF-ST_ANALOGIC_CONFIG"
+                        },
+                        {
+                            "comment": "Valor de controle para a válvula proporcional",
+                            "propertyOrder": 3
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
         "PLC1.ST_AXIS_OUTPUT": {
             "properties": {
                 "bEmergencyOut": {
@@ -1384,6 +1639,41 @@
                         },
                         {
                             "propertyOrder": 12
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.ST_ComboboxEntry": {
+            "properties": {
+                "id": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "text": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "value": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 3
                         }
                     ]
                 }
@@ -8374,6 +8664,40 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GSYS.stDIGinCha": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GSYS::stDIGinCha",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "comment": "Variaveis para receber valores de tido indice e nome para utilização na HMI Atribuição no P_SYS_CONFIG"
+                    },
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..50_OF-ST_ComboboxEntry"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GSYS.stDIGoutCha": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GSYS::stDIGoutCha",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "comment": "Variaveis para receber valores de tido indice e nome para utilização na HMI Atribuição no P_SYS_CONFIG"
+                    },
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..50_OF-ST_ComboboxEntry"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Global_Variables.WEST_EUROPE_TZI": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -8396,6 +8720,33 @@
                     },
                     {
                         "comment": "Emergência"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.HMI_SCU1.stAxisComInput": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::HMI_SCU1::stAxisComInput",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ST_AXIS_COM_HMI_INPUT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.HMI_SCU1.stAxisOutput": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::HMI_SCU1::stAxisOutput",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "comment": "Estrutura para binding dos canais digitais de entrada e saida  para eixo"
+                    },
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ST_AXIS_HMI_OUTPUT"
                     }
                 ]
             },
@@ -13639,6 +13990,8 @@
                 "LocalizeText": 3,
                 "Login": 3,
                 "Logout": 3,
+                "PLC1.GSYS.stDIGinCha": 3,
+                "PLC1.GSYS.stDIGoutCha": 3,
                 "PLC1.Global_Variables.WEST_EUROPE_TZI": 3,
                 "PLC1.HMI_SCU1.bEmergencia": 3,
                 "PLC1.HMI_SCU1.stAxisComInput": 3,

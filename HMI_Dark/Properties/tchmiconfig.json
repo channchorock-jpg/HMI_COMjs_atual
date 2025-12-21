@@ -253,6 +253,9 @@
       "url": "User_Contols/2.Configuracoes/SCU_Config_Cycle_Control.usercontrol"
     },
     {
+      "url": "User_Contols/2.Configuracoes/SCU_Config_IO_Complete.usercontrol"
+    },
+    {
       "url": "User_Contols/2.Configuracoes/UserControl_Auxiliares/Analogic_channel_table_UserControl.usercontrol"
     },
     {
@@ -260,6 +263,9 @@
     },
     {
       "url": "User_Contols/2.Configuracoes/UserControl_Auxiliares/Digital_Channel_table_UserControl.usercontrol"
+    },
+    {
+      "url": "User_Contols/2.Configuracoes/UserControl_Auxiliares/SCU_Config_Cycle_Control - Copy.usercontrol"
     },
     {
       "url": "User_Contols/3.Formulario/Form_IOs_Conector.usercontrol"

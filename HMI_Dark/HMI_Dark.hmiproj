@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>HMI_Dark</Name>
-    <HmiCommunicationRouterPort>10115</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10116</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.762.53</HmiInitial>
     <HmiRecent>1.12.762.56</HmiRecent>
@@ -543,6 +543,13 @@
       <SubType>Content</SubType>
       <DependentUpon>User_Contols\2.Configuracoes\SCU_Config_Cycle_Control.usercontrol</DependentUpon>
     </Content>
+    <Content Include="User_Contols\2.Configuracoes\SCU_Config_IO_Complete.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="User_Contols\2.Configuracoes\SCU_Config_IO_Complete.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>User_Contols\2.Configuracoes\SCU_Config_IO_Complete.usercontrol</DependentUpon>
+    </Content>
     <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Analogic_channel_table_UserControl.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -563,6 +570,9 @@
     <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\Digital_Channel_table_UserControl.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>User_Contols\2.Configuracoes\UserControl_Auxiliares\Digital_Channel_table_UserControl.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="User_Contols\2.Configuracoes\UserControl_Auxiliares\SCU_Config_Cycle_Control - Copy.usercontrol">
+      <SubType>Content</SubType>
     </Content>
     <Content Include="User_Contols\3.Formulario\Form_IOs_Conector.usercontrol">
       <SubType>Content</SubType>
