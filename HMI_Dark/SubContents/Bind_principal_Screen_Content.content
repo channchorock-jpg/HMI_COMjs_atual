@@ -140,7 +140,7 @@
           {
             "objectType": "StaticValue",
             "valueType": "tchmi:framework#/definitions/ControlPropertyName",
-            "value": "stDigitalConfig"
+            "value": "stDigitalindex"
           },
           {
             "objectType": "Symbol",
@@ -154,6 +154,8 @@
   }
 ]
 </script>
+
+
 </div>
 </div>
 </div>

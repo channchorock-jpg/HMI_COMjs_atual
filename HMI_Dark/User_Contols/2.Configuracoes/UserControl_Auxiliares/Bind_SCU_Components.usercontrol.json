@@ -35,8 +35,8 @@
       "refTo": ""
     },
     {
-      "name": "data-tchmi-stdigitalconfig",
-      "displayName": "stDigitalConfig",
+      "name": "data-tchmi-stdigitalindex",
+      "displayName": "stDigitalindex",
       "allowSymbolExpressionsInObject": false,
       "visible": true,
       "type": "tchmi:server#/definitions/PLC1.ARRAY_1..50_OF-ST_ComboboxEntry",
@@ -46,9 +46,9 @@
       "readOnly": false,
       "bindable": true,
       "heritable": true,
-      "propertyName": "stDigitalConfig",
-      "propertySetterName": "setStDigitalConfig",
-      "propertyGetterName": "getStDigitalConfig",
+      "propertyName": "stDigitalindex",
+      "propertySetterName": "setStDigitalindex",
+      "propertyGetterName": "getStDigitalindex",
       "refTo": ""
     },
     {

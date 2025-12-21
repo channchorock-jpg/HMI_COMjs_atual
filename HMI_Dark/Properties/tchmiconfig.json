@@ -1337,6 +1337,179 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "displayname": "Bind_Config_Dig_Out",
+      "name": "Bind_Config_Dig_Out",
+      "category": "Action Templates",
+      "actions": [
+        {
+          "objectType": "Function",
+          "active": false,
+          "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+          "fnParams": [
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:framework#/definitions/Control",
+              "symbolExpression": "%ctrl%TextBox_Digital_TAG%/ctrl%"
+            },
+            {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+              "value": "Text"
+            },
+            {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Symbol",
+              "value": null
+            }
+          ],
+          "asyncWait": true
+        },
+        {
+          "objectType": "WriteToSymbol",
+          "active": true,
+          "symbolExpression": "%ctrl%ComboBox_Digital_Channel::SelectedId%/ctrl%",
+          "value": {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%tp%stDigitalConfig::iRequestChnnl%/tp%"
+          },
+          "asyncWait": true
+        },
+        {
+          "objectType": "WriteToSymbol",
+          "active": true,
+          "symbolExpression": "%ctrl%TcHmiContainer_Digital_config::Visibility%/ctrl%",
+          "value": {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/Visibility",
+            "value": "Visible"
+          },
+          "asyncWait": true
+        },
+        {
+          "objectType": "WriteToSymbol",
+          "active": false,
+          "symbolExpression": "%pp%sCompScu%/pp%",
+          "value": {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%ctrl%Label_Bind_SCU_Manifold::Text%/ctrl%"
+          },
+          "asyncWait": true
+        },
+        {
+          "objectType": "WriteToSymbol",
+          "active": true,
+          "symbolExpression": "%ctrl%Bind_SCU_Components_1::eTypeChannel%/ctrl%",
+          "value": {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:server#/definitions/PLC1.E_TYPE_CHANNEL",
+            "value": 0
+          },
+          "asyncWait": true
+        },
+        {
+          "objectType": "Function",
+          "active": true,
+          "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+          "fnParams": [
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:framework#/definitions/Control",
+              "symbolExpression": "%ctrl%Button_Free_Digital_Channel%/ctrl%"
+            },
+            {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+              "value": "StateSymbol"
+            },
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:general#/definitions/String",
+              "symbolExpression": "%tp%stDigitalConfig::bfree%/tp%"
+            }
+          ],
+          "asyncWait": true
+        },
+        {
+          "objectType": "Function",
+          "active": true,
+          "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+          "fnParams": [
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:framework#/definitions/Control",
+              "symbolExpression": "%ctrl%Button_Apply_Digital_Config%/ctrl%"
+            },
+            {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+              "value": "StateSymbol"
+            },
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:general#/definitions/String",
+              "symbolExpression": "%tp%stDigitalConfig::brequestBind%/tp%"
+            }
+          ],
+          "asyncWait": true
+        },
+        {
+          "objectType": "Function",
+          "active": true,
+          "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+          "fnParams": [
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:framework#/definitions/Control",
+              "symbolExpression": "%ctrl%ComboBox_Digital_Channel%/ctrl%"
+            },
+            {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+              "value": "SelectedId"
+            },
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:general#/definitions/String",
+              "symbolExpression": "%tp%stDigitalConfig::iRequestChnnl%/tp%"
+            }
+          ],
+          "asyncWait": true
+        },
+        {
+          "objectType": "Function",
+          "active": true,
+          "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+          "fnParams": [
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:framework#/definitions/Control",
+              "symbolExpression": "%ctrl%TextBox_Digital_TAG%/ctrl%"
+            },
+            {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+              "value": "Text"
+            },
+            {
+              "objectType": "Symbol",
+              "valueType": "tchmi:general#/definitions/String",
+              "symbolExpression": "%tp%stDigitalConfig::sTAG%/tp%"
+            }
+          ],
+          "asyncWait": true
+        }
+      ],
+      "parameters": [
+        {
+          "name": "stDigitalConfig",
+          "type": "tchmi:server#/definitions/PLC1.ST_DIGITAL_CONFIG",
+          "description": ""
+        }
+      ]
     }
   ],
   "languages": {
