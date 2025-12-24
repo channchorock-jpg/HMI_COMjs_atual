@@ -8664,6 +8664,40 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GSYS.stANIntCha": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GSYS::stANIntCha",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "comment": "Variaveis para receber valores de tido indice e nome para utilização na HMI Atribuição no P_SYS_CONFIG"
+                    },
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..50_OF-ST_ComboboxEntry"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GSYS.stANOUtCha": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GSYS::stANOUtCha",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "comment": "Variaveis para receber valores de tido indice e nome para utilização na HMI Atribuição no P_SYS_CONFIG"
+                    },
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..50_OF-ST_ComboboxEntry"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GSYS.stDIGinCha": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -13990,6 +14024,8 @@
                 "LocalizeText": 3,
                 "Login": 3,
                 "Logout": 3,
+                "PLC1.GSYS.stANIntCha": 3,
+                "PLC1.GSYS.stANOUtCha": 3,
                 "PLC1.GSYS.stDIGinCha": 3,
                 "PLC1.GSYS.stDIGoutCha": 3,
                 "PLC1.Global_Variables.WEST_EUROPE_TZI": 3,
