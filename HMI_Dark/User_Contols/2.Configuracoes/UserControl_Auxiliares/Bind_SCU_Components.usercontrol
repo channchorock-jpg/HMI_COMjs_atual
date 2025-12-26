@@ -1767,7 +1767,7 @@ or": "rgba(255, 133, 124, 1)",
 ]
 </script>
 </div>
-<div id="Label_Bind_SCU_Alocated_Micro_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="1" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;D.IN&quot; +%pp%stAxisComInput::bInMicroSwitch[0]::iDigChnl%/pp%%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
+<div id="Label_Bind_SCU_Alocated_Micro_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="1" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;D.IN &quot; +%pp%stAxisComInput::bInMicroSwitch[0]::iDigChnl%/pp%%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -2087,7 +2087,7 @@ or": "rgba(255, 133, 124, 1)",
 ]
 </script>
 </div>
-<div id="Label_Bind_SCU_Alocated_Micro_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="2" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;D.IN&quot; +%pp%stAxisComInput::bInMicroSwitch[1]::iDigChnl%/pp%%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
+<div id="Label_Bind_SCU_Alocated_Micro_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="2" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;D.IN &quot; +%pp%stAxisComInput::bInMicroSwitch[1]::iDigChnl%/pp%%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -2407,7 +2407,7 @@ or": "rgba(255, 133, 124, 1)",
 ]
 </script>
 </div>
-<div id="Label_Bind_SCU_Alocated_Reset" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="3" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;D.IN&quot; +%pp%stAxisComInput::bInSystemReset::iDigChnl%/pp%%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-tooltip="">
+<div id="Label_Bind_SCU_Alocated_Reset" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="3" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;D.IN &quot; +%pp%stAxisComInput::bInSystemReset::iDigChnl%/pp%%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-tooltip="">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -4647,7 +4647,7 @@ or": "rgba(255, 133, 124, 1)",
 ]
 </script>
 </div>
-<div id="Label_Bind_SCU_Alocated_10" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="10" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;A.IN &quot; +%pp%stSensorConfig[1]::iAnChnl%/pp%%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
+<div id="Label_Bind_SCU_Alocated_Sensor_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="10" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;A.IN &quot; +%pp%stSensorConfig[1]::iAnChnl%/pp%%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -4755,7 +4755,7 @@ or": "rgba(255, 133, 124, 1)",
                   {
                     "objectType": "Symbol",
                     "valueType": "tchmi:framework#/definitions/Control",
-                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_10%/ctrl%"
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_Sensor_2%/ctrl%"
                   },
                   {
                     "objectType": "StaticValue",
@@ -4794,7 +4794,7 @@ or": "rgba(255, 133, 124, 1)",
                   {
                     "objectType": "Symbol",
                     "valueType": "tchmi:framework#/definitions/Control",
-                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_10%/ctrl%"
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_Sensor_2%/ctrl%"
                   },
                   {
                     "objectType": "StaticValue",
@@ -4831,7 +4831,7 @@ or": "rgba(255, 133, 124, 1)",
                   {
                     "objectType": "Symbol",
                     "valueType": "tchmi:framework#/definitions/Control",
-                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_10%/ctrl%"
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_Sensor_2%/ctrl%"
                   }
                 ],
                 "asyncWait": true
@@ -4844,7 +4844,7 @@ or": "rgba(255, 133, 124, 1)",
     ]
   },
   {
-    "event": "Label_Bind_SCU_Alocated_10.onAttached",
+    "event": "Label_Bind_SCU_Alocated_Sensor_2.onAttached",
     "actions": [
       {
         "objectType": "Condition",
@@ -4876,7 +4876,7 @@ or": "rgba(255, 133, 124, 1)",
                   {
                     "objectType": "Symbol",
                     "valueType": "tchmi:framework#/definitions/Control",
-                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_10%/ctrl%"
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_Sensor_2%/ctrl%"
                   },
                   {
                     "objectType": "StaticValue",
@@ -4915,7 +4915,7 @@ or": "rgba(255, 133, 124, 1)",
                   {
                     "objectType": "Symbol",
                     "valueType": "tchmi:framework#/definitions/Control",
-                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_10%/ctrl%"
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_Sensor_2%/ctrl%"
                   },
                   {
                     "objectType": "StaticValue",
@@ -4952,7 +4952,7 @@ or": "rgba(255, 133, 124, 1)",
                   {
                     "objectType": "Symbol",
                     "valueType": "tchmi:framework#/definitions/Control",
-                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_10%/ctrl%"
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_Sensor_2%/ctrl%"
                   }
                 ],
                 "asyncWait": true
@@ -4967,7 +4967,7 @@ or": "rgba(255, 133, 124, 1)",
 ]
 </script>
 </div>
-<div id="Label_Bind_SCU_Alocated_11" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="11" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;A.OUT&quot; +&quot; 21&quot;%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
+<div id="Label_Bind_SCU_Alocated_11" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="11" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;A.OUT  &quot; +%pp%stAxisComOutput::fValveCommand[0]::iAnChnl%/pp%%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -5038,9 +5038,256 @@ or": "rgba(255, 133, 124, 1)",
 {
   "color": "rgba(0, 0, 0, 1)"
 }
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%stAxisComOutput::fValveCommand[0]::bAllocated%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::bAllocated%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_11%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "angle": 0.0,
+                      "stopPoints": [
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "0%"
+                        },
+                        {
+                          "color": "rgba(190, 251, 142, 1)",
+                          "stop": "48.88%"
+                        },
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "100%"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlBoxShadow",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_11%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                    "value": [
+                      {
+                        "blur": 3.0,
+                        "blurUnit": "px",
+                        "color": {
+                          "color": "rgba(38, 205, 15, 0.5882352)"
+                        },
+                        "inset": false,
+                        "offsetX": 0,
+                        "offsetXUnit": "px",
+                        "offsetY": 0,
+                        "offsetYUnit": "px",
+                        "spread": 0.5,
+                        "spreadUnit": "px"
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_11%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Label_Bind_SCU_Alocated_11.onAttached",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::bAllocated%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_11%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "angle": 0.0,
+                      "stopPoints": [
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "0%"
+                        },
+                        {
+                          "color": "rgba(190, 251, 142, 1)",
+                          "stop": "48.88%"
+                        },
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "100%"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlBoxShadow",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_11%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                    "value": [
+                      {
+                        "blur": 3.0,
+                        "blurUnit": "px",
+                        "color": {
+                          "color": "rgba(38, 205, 15, 0.5882352)"
+                        },
+                        "inset": false,
+                        "offsetX": 0,
+                        "offsetXUnit": "px",
+                        "offsetY": 0,
+                        "offsetYUnit": "px",
+                        "spread": 0.5,
+                        "spreadUnit": "px"
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_11%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
 </script>
 </div>
-<div id="Label_Bind_SCU_Alocated_12" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="12" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;A.OUT&quot; +&quot; 21&quot;%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
+<div id="Label_Bind_SCU_Alocated_12" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="12" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;A.OUT  &quot; +%pp%stAxisComOutput::fValveCommand[1]::iAnChnl%/pp%%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -5111,9 +5358,256 @@ or": "rgba(255, 133, 124, 1)",
 {
   "color": "rgba(0, 0, 0, 1)"
 }
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%stAxisComOutput::fValveCommand[1]::bAllocated%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::bAllocated%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_12%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "angle": 0.0,
+                      "stopPoints": [
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "0%"
+                        },
+                        {
+                          "color": "rgba(190, 251, 142, 1)",
+                          "stop": "48.88%"
+                        },
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "100%"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlBoxShadow",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_12%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                    "value": [
+                      {
+                        "blur": 3.0,
+                        "blurUnit": "px",
+                        "color": {
+                          "color": "rgba(38, 205, 15, 0.5882352)"
+                        },
+                        "inset": false,
+                        "offsetX": 0,
+                        "offsetXUnit": "px",
+                        "offsetY": 0,
+                        "offsetYUnit": "px",
+                        "spread": 0.5,
+                        "spreadUnit": "px"
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_12%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Label_Bind_SCU_Alocated_12.onAttached",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::bAllocated%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_12%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "angle": 0.0,
+                      "stopPoints": [
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "0%"
+                        },
+                        {
+                          "color": "rgba(190, 251, 142, 1)",
+                          "stop": "48.88%"
+                        },
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "100%"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlBoxShadow",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_12%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                    "value": [
+                      {
+                        "blur": 3.0,
+                        "blurUnit": "px",
+                        "color": {
+                          "color": "rgba(38, 205, 15, 0.5882352)"
+                        },
+                        "inset": false,
+                        "offsetX": 0,
+                        "offsetXUnit": "px",
+                        "offsetY": 0,
+                        "offsetYUnit": "px",
+                        "spread": 0.5,
+                        "spreadUnit": "px"
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_12%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
 </script>
 </div>
-<div id="Label_Bind_SCU_Alocated_13" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="13" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;A.OUT&quot; +&quot; 21&quot;%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
+<div id="Label_Bind_SCU_Alocated_13" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="13" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;A.OUT  &quot; +%pp%stAxisComOutput::fDAQ[0]::iAnChnl%/pp%%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -5184,9 +5678,256 @@ or": "rgba(255, 133, 124, 1)",
 {
   "color": "rgba(0, 0, 0, 1)"
 }
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%stAxisComOutput::fDAQ[0]::bAllocated%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::bAllocated%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_13%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "angle": 0.0,
+                      "stopPoints": [
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "0%"
+                        },
+                        {
+                          "color": "rgba(190, 251, 142, 1)",
+                          "stop": "48.88%"
+                        },
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "100%"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlBoxShadow",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_13%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                    "value": [
+                      {
+                        "blur": 3.0,
+                        "blurUnit": "px",
+                        "color": {
+                          "color": "rgba(38, 205, 15, 0.5882352)"
+                        },
+                        "inset": false,
+                        "offsetX": 0,
+                        "offsetXUnit": "px",
+                        "offsetY": 0,
+                        "offsetYUnit": "px",
+                        "spread": 0.5,
+                        "spreadUnit": "px"
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_13%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Label_Bind_SCU_Alocated_13.onAttached",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::bAllocated%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_13%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "angle": 0.0,
+                      "stopPoints": [
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "0%"
+                        },
+                        {
+                          "color": "rgba(190, 251, 142, 1)",
+                          "stop": "48.88%"
+                        },
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "100%"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlBoxShadow",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_13%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                    "value": [
+                      {
+                        "blur": 3.0,
+                        "blurUnit": "px",
+                        "color": {
+                          "color": "rgba(38, 205, 15, 0.5882352)"
+                        },
+                        "inset": false,
+                        "offsetX": 0,
+                        "offsetXUnit": "px",
+                        "offsetY": 0,
+                        "offsetYUnit": "px",
+                        "spread": 0.5,
+                        "spreadUnit": "px"
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_13%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
 </script>
 </div>
-<div id="Label_Bind_SCU_Alocated_14" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="14" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;A.OUT&quot; +&quot; 21&quot;%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
+<div id="Label_Bind_SCU_Alocated_14" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="14" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;A.OUT  &quot; +%pp%stAxisComOutput::fDAQ[1]::iAnChnl%/pp%%/f%" data-tchmi-top="2" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="2" data-tchmi-bottom="2" data-tchmi-text-font-size="%f%%ctrl%Label_Bind_SCU_Alocated::RenderedHeight%/ctrl%*0.35%/f%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-weight="Bold">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -5257,6 +5998,132 @@ or": "rgba(255, 133, 124, 1)",
 {
   "color": "rgba(0, 0, 0, 1)"
 }
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%stAxisComOutput::fDAQ[1]::bAllocated%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stAxisComOutput::fDAQ[1]::bAllocated%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_14%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "angle": 0.0,
+                      "stopPoints": [
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "0%"
+                        },
+                        {
+                          "color": "rgba(190, 251, 142, 1)",
+                          "stop": "48.88%"
+                        },
+                        {
+                          "color": "rgba(38, 205, 15, 1)",
+                          "stop": "100%"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlBoxShadow",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_14%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                    "value": [
+                      {
+                        "blur": 3.0,
+                        "blurUnit": "px",
+                        "color": {
+                          "color": "rgba(38, 205, 15, 0.5882352)"
+                        },
+                        "inset": false,
+                        "offsetX": 0,
+                        "offsetXUnit": "px",
+                        "offsetY": 0,
+                        "offsetYUnit": "px",
+                        "spread": 0.5,
+                        "spreadUnit": "px"
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Bind_SCU_Alocated_14%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
 </script>
 </div>
 <div id="Label_Tag_Emerg" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="2" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%pp%stAxisComInput::bInEmergencyPanel::sTAG%/pp%">
@@ -6356,7 +7223,7 @@ or": "rgba(255, 133, 124, 1)",
 }
 </script>
 </div>
-<div id="Label_Tag_Sesnor_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="10" data-tchmi-grid-column-index="2" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
+<div id="Label_Tag_Sesnor_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="10" data-tchmi-grid-column-index="2" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%pp%stSensorConfig[1]::sTAG%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "color": "rgba(105, 104, 104, 1)"
@@ -6420,7 +7287,7 @@ or": "rgba(255, 133, 124, 1)",
 }
 </script>
 </div>
-<div id="Label_Tag_Emerg_12" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="11" data-tchmi-grid-column-index="2" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
+<div id="Label_Tag_Emerg_12" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="11" data-tchmi-grid-column-index="2" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%pp%stAxisComOutput::fValveCommand[0]::sTAG%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "color": "rgba(105, 104, 104, 1)"
@@ -6484,7 +7351,7 @@ or": "rgba(255, 133, 124, 1)",
 }
 </script>
 </div>
-<div id="Label_Tag_Emerg_13" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="12" data-tchmi-grid-column-index="2" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
+<div id="Label_Tag_Emerg_13" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="12" data-tchmi-grid-column-index="2" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%pp%stAxisComOutput::fValveCommand[1]::sTAG%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "color": "rgba(105, 104, 104, 1)"
@@ -6548,7 +7415,7 @@ or": "rgba(255, 133, 124, 1)",
 }
 </script>
 </div>
-<div id="Label_Tag_Emerg_14" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="13" data-tchmi-grid-column-index="2" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
+<div id="Label_Tag_Emerg_14" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="13" data-tchmi-grid-column-index="2" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%pp%stAxisComOutput::fDAQ[0]::sTAG%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "color": "rgba(105, 104, 104, 1)"
@@ -6612,7 +7479,7 @@ or": "rgba(255, 133, 124, 1)",
 }
 </script>
 </div>
-<div id="Label_Tag_Emerg_15" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="14" data-tchmi-grid-column-index="2" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
+<div id="Label_Tag_Emerg_15" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="14" data-tchmi-grid-column-index="2" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%pp%stAxisComOutput::fDAQ[1]::sTAG%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "color": "rgba(105, 104, 104, 1)"
@@ -7252,7 +8119,7 @@ or": "rgba(255, 133, 124, 1)",
 }
 </script>
 </div>
-<div id="Label_Tag_Sesnor_2_Descrip" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="10" data-tchmi-grid-column-index="3" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
+<div id="Label_Tag_Sesnor_2_Descrip" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="10" data-tchmi-grid-column-index="3" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%pp%stSensorConfig[1]::INFO::sCardInfo%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "color": "rgba(105, 104, 104, 1)"
@@ -7316,7 +8183,7 @@ or": "rgba(255, 133, 124, 1)",
 }
 </script>
 </div>
-<div id="Label_Tag_Emerg_Descrip_26" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="11" data-tchmi-grid-column-index="3" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
+<div id="Label_Tag_Emerg_Descrip_26" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="11" data-tchmi-grid-column-index="3" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%pp%stAxisComOutput::fValveCommand[0]::INFO::sCardInfo%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "color": "rgba(105, 104, 104, 1)"
@@ -7380,7 +8247,7 @@ or": "rgba(255, 133, 124, 1)",
 }
 </script>
 </div>
-<div id="Label_Tag_Emerg_Descrip_27" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="12" data-tchmi-grid-column-index="3" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
+<div id="Label_Tag_Emerg_Descrip_27" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="12" data-tchmi-grid-column-index="3" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%pp%stAxisComOutput::fValveCommand[1]::INFO::sCardInfo%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "color": "rgba(105, 104, 104, 1)"
@@ -7444,7 +8311,7 @@ or": "rgba(255, 133, 124, 1)",
 }
 </script>
 </div>
-<div id="Label_Tag_Emerg_Descrip_28" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="13" data-tchmi-grid-column-index="3" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
+<div id="Label_Tag_Emerg_Descrip_28" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-grid-row-index="13" data-tchmi-grid-column-index="3" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%pp%stAxisComOutput::fDAQ[0]::INFO::sCardInfo%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "color": "rgba(105, 104, 104, 1)"
@@ -7508,7 +8375,7 @@ or": "rgba(255, 133, 124, 1)",
 }
 </script>
 </div>
-<div id="Label_Tag_Emerg_Descrip_29" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="11.1" data-tchmi-grid-row-index="14" data-tchmi-grid-column-index="3" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
+<div id="Label_Tag_Emerg_Descrip_29" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="11.1" data-tchmi-grid-row-index="14" data-tchmi-grid-column-index="3" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%Label_feedBack_value::RenderedHeight%/ctrl%*3.5%/f%" data-tchmi-zindex="2" data-tchmi-text-font-size-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%pp%stAxisComOutput::fDAQ[1]::INFO::sCardInfo%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
             "color": "rgba(105, 104, 104, 1)"
@@ -10761,6 +11628,273 @@ or": "rgba(255, 133, 124, 1)",
         "asyncWait": true
       }
     ]
+  },
+  {
+    "event": "Button_Sensor2_Edit.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%ComboBox_ANalogic_Channels::SelectedId%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%stSensorConfig[1]::iAnChnl%/pp%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%stSensorConfig[1]::iRequestChnnl%/pp%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%stSensorConfig[1]::iAnChnl%/pp%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%eTypeChannel%/pp%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:server#/definitions/PLC1.E_TYPE_CHANNEL",
+          "value": 2
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_8::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Digital_config::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%ComboBox_ANalogic_Channels%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "SelectedId"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stSensorConfig[1]::iRequestChnnl|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%TextBox_Anolagic_TAG%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Text"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stSensorConfig[1]::sTAG|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_RealMAX%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stSensorConfig[1]::fMaxValue|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_RealMIN%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stSensorConfig[1]::fMinValue|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_BitMAX%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stSensorConfig[1]::iBitMax|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_BitMIN%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stSensorConfig[1]::iBitMin|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Label_Analogic_Card_Info%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Text"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stSensorConfig[1]::INFO::sCardInfo%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_Apply_Analogic_Config%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "StateSymbol"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stSensorConfig[1]::brequestBind%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_Free_Analogic_Config%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "StateSymbol"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stSensorConfig[1]::bFree%/pp%"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
   }
 ]
 </script>
@@ -10906,6 +12040,273 @@ or": "rgba(255, 133, 124, 1)",
             "objectType": "Symbol",
             "valueType": "tchmi:framework#/definitions/Control",
             "symbolExpression": "%ctrl%Button_Servo1_Edit%/ctrl%"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Button_Servo1_Edit.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%ComboBox_ANalogic_Channels::SelectedId%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::iAnChnl%/pp%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::iRequestChnnl%/pp%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::iAnChnl%/pp%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%eTypeChannel%/pp%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:server#/definitions/PLC1.E_TYPE_CHANNEL",
+          "value": 3
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_8::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Digital_config::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%ComboBox_ANalogic_Channels%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "SelectedId"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::iRequestChnnl|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%TextBox_Anolagic_TAG%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Text"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::sTAG|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_RealMAX%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::fMaxValue|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_RealMIN%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::fMinValue|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_BitMAX%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::iBitMax|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_BitMIN%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::iBitMin|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Label_Analogic_Card_Info%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Text"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::INFO::sCardInfo%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_Apply_Analogic_Config%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "StateSymbol"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::brequestBind%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_Free_Analogic_Config%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "StateSymbol"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[0]::bFree%/pp%"
           }
         ],
         "asyncWait": true
@@ -11067,6 +12468,273 @@ or": "rgba(255, 133, 124, 1)",
         "asyncWait": true
       }
     ]
+  },
+  {
+    "event": "Button_ServoB1_Edit.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%ComboBox_ANalogic_Channels::SelectedId%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::iAnChnl%/pp%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::iRequestChnnl%/pp%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::iAnChnl%/pp%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%eTypeChannel%/pp%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:server#/definitions/PLC1.E_TYPE_CHANNEL",
+          "value": 3
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_8::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Digital_config::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%ComboBox_ANalogic_Channels%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "SelectedId"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::iRequestChnnl|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%TextBox_Anolagic_TAG%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Text"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::sTAG|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_RealMAX%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::fMaxValue|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_RealMIN%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::fMinValue|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_BitMAX%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::iBitMax|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_BitMIN%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::iBitMin|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Label_Analogic_Card_Info%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Text"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::INFO::sCardInfo%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_Apply_Analogic_Config%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "StateSymbol"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::brequestBind%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_Free_Analogic_Config%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "StateSymbol"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fValveCommand[1]::bFree%/pp%"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
   }
 ]
 </script>
@@ -11223,6 +12891,273 @@ or": "rgba(255, 133, 124, 1)",
         "asyncWait": true
       }
     ]
+  },
+  {
+    "event": "Button_Daq1_Edit.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%ComboBox_ANalogic_Channels::SelectedId%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::iAnChnl%/pp%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::iRequestChnnl%/pp%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::iAnChnl%/pp%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%eTypeChannel%/pp%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:server#/definitions/PLC1.E_TYPE_CHANNEL",
+          "value": 3
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_8::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Digital_config::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%ComboBox_ANalogic_Channels%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "SelectedId"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::iRequestChnnl|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%TextBox_Anolagic_TAG%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Text"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::sTAG|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_RealMAX%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::fMaxValue|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_RealMIN%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::fMinValue|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_BitMAX%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::iBitMax|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_BitMIN%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::iBitMin|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Label_Analogic_Card_Info%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Text"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::INFO::sCardInfo%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_Apply_Analogic_Config%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "StateSymbol"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::brequestBind%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_Free_Analogic_Config%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "StateSymbol"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[0]::bFree%/pp%"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
   }
 ]
 </script>
@@ -11370,6 +13305,273 @@ or": "rgba(255, 133, 124, 1)",
             "value": {
               "color": "rgba(225, 221, 221, 1)"
             }
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Button_Daq2_Edit.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%ComboBox_ANalogic_Channels::SelectedId%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%stAxisComOutput::fDAQ[1]::iAnChnl%/pp%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%stAxisComOutput::fDAQ[1]::iRequestChnnl%/pp%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%stAxisComOutput::fDAQ[1]::iAnChnl%/pp%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%eTypeChannel%/pp%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:server#/definitions/PLC1.E_TYPE_CHANNEL",
+          "value": 3
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_8::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Digital_config::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%ComboBox_ANalogic_Channels%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "SelectedId"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[1]::iRequestChnnl|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%TextBox_Anolagic_TAG%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Text"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[1]::sTAG|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_RealMAX%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[1]::fMaxValue|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_RealMIN%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[1]::fMinValue|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_BitMAX%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[1]::iBitMax|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%InputBox_Analogic_BitMIN%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Value"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[1]::iBitMin|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Label_Analogic_Card_Info%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "Text"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[1]::INFO::sCardInfo%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_Apply_Analogic_Config%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "StateSymbol"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[1]::brequestBind%/pp%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.CreateBinding",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:framework#/definitions/Control",
+            "symbolExpression": "%ctrl%Button_Free_Analogic_Config%/ctrl%"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": "StateSymbol"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%stAxisComOutput::fDAQ[1]::bFree%/pp%"
           }
         ],
         "asyncWait": true
@@ -11824,7 +14026,7 @@ or": "rgba(255, 133, 124, 1)",
 </script>
 
         <!-- Row 0: Canal -->
-        <div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Label_AI_Channel_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="Canal" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="130" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
+        <div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Label_Analogic_Channel" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="Canal" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="130" data-tchmi-right="5" data-tchmi-bottom="5" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
 
             <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
                 {
@@ -12945,6 +15147,84 @@ or": "rgba(255, 133, 124, 1)",
                   }
                 ],
                 "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Analogic_TAG%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Analogic_Channel%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Analogic_Real_MAX%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Analogic_RealMIN%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Analogic_BitMAX%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.RestoreControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Analogic_BitMIN%/ctrl%"
+                  }
+                ],
+                "asyncWait": true
               }
             ]
           },
@@ -12974,6 +15254,156 @@ or": "rgba(255, 133, 124, 1)",
                     "objectType": "Symbol",
                     "valueType": "tchmi:general#/definitions/String",
                     "symbolExpression": "%pp%stAnalogicOutIdx%/pp%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Analogic_Channel%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "color": "rgba(30,144,255,1)"
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Analogic_TAG%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "color": "rgba(30,144,255,1)"
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Analogic_Real_MAX%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "color": "rgba(30,144,255,1)"
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Analogic_RealMIN%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "color": "rgba(30,144,255,1)"
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Analogic_BitMAX%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "color": "rgba(30,144,255,1)"
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_Dark.SetControlColor",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:framework#/definitions/Control",
+                    "symbolExpression": "%ctrl%Label_Analogic_BitMIN%/ctrl%"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": {
+                      "color": "rgba(30,144,255,1)"
+                    }
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/Color",
+                    "value": null
                   }
                 ],
                 "asyncWait": true
