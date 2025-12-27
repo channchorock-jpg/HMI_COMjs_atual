@@ -1,6 +1,23 @@
 {
   "parameters": [
     {
+      "name": "data-tchmi-eanalogouttype",
+      "displayName": "eAnalogOutType",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.E_ANALOGIC_OUT_TYPES",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "eAnalogOutType",
+      "propertySetterName": "setEAnalogOutType",
+      "propertyGetterName": "getEAnalogOutType",
+      "refTo": ""
+    },
+    {
       "name": "data-tchmi-scompscu",
       "displayName": "sCompScu",
       "allowSymbolExpressionsInObject": false,

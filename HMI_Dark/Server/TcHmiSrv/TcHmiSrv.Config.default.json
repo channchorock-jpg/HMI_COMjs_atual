@@ -45,6 +45,15 @@
             "startOffset": 1,
             "type": "array"
         },
+        "PLC1.ARRAY_1..26_OF-ST_ComboboxEntry": {
+            "items": {
+                "$ref": "#/definitions/PLC1.ST_ComboboxEntry"
+            },
+            "maxItems": 26,
+            "minItems": 26,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.ARRAY_1..2_OF-BOOL": {
             "items": {
                 "$ref": "tchmi:general#/definitions/BOOL"
@@ -8732,6 +8741,16 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GSYS.stMirror": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GSYS::stMirror",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..26_OF-ST_ComboboxEntry"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Global_Variables.WEST_EUROPE_TZI": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -14028,6 +14047,7 @@
                 "PLC1.GSYS.stANOUtCha": 3,
                 "PLC1.GSYS.stDIGinCha": 3,
                 "PLC1.GSYS.stDIGoutCha": 3,
+                "PLC1.GSYS.stMirror": 3,
                 "PLC1.Global_Variables.WEST_EUROPE_TZI": 3,
                 "PLC1.HMI_SCU1.bEmergencia": 3,
                 "PLC1.HMI_SCU1.stAxisComInput": 3,
