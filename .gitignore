@@ -259,3 +259,40 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+### TwinCAT 3 ###
+
+# TwinCAT PLC / System
+*.tpy
+*.tclrs
+*.compileinfo
+*.tmcRefac
+*.project.~u
+*.plcproj.bak
+*.tsproj.bak
+*.xti.bak
+LineIDs.dbg
+LineIDs.dbg.bak
+
+# Pastas geradas
+_Boot/
+_CompileInfo/
+_Libraries/
+_ModuleInstall/
+
+# Se por algum motivo a .vs/ não estiver sendo ignorada acima, garanta aqui:
+.vs/
+
+# Se usar Multiuser / Git integrado do TwinCAT
+.TcGit/
+### TwinCAT HMI ###
+
+.engineering_servers/
+liveview_*
+*.cache
+*.db-shm
+*.db-wal
+*.pid
+.hmiframework/
+.hmipkgs/*-*-*-*/
+tchmipublish.journal.json
+
